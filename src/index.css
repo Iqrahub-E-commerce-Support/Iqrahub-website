@@ -12,36 +12,53 @@ body {
 
 @layer base {
   @font-face {
-    font-family: "Gabarito-Black";
-    src: url("/fonts/Gabarito-Black.tff") format("ttf");
+    font-family: "Gabarito";
+    font-weight: 900; /* Black */
+    src: url("/fonts/Gabarito-Black.ttf") format("truetype");
   }
 
   @font-face {
-    font-family: "Gabarito-Bold";
-    src: url("/fonts/Gabarito-Bold.tff") format("tff");
+    font-family: "Gabarito";
+    font-weight: 700; /* Bold */
+    src: url("/fonts/Gabarito-Bold.ttf") format("truetype");
   }
 
   @font-face {
-    font-family: "Gabarito-ExtraBold";
-    src: url("/fonts/Gabarito-ExtraBold.tff") format("tff");
+    font-family: "Gabarito";
+    font-weight: 800; /* ExtraBold */
+    src: url("/fonts/Gabarito-ExtraBold.ttf") format("truetype");
   }
 
   @font-face {
-    font-family: "Gabarito-Medium";
-    src: url("/fonts/Gabarito-Medium.tff") format("tff");
+    font-family: "Gabarito";
+    font-weight: 500; /* Medium */
+    src: url("/fonts/Gabarito-Medium.ttf") format("truetype");
   }
+
   @font-face {
-    font-family: "Gabarito-Regular";
-    src: url("/fonts/Gabarito-Regular.tff") format("tff");
+    font-family: "Gabarito";
+    font-weight: 400; /* Regular */
+    src: url("/fonts/Gabarito-Regular.woff2") format("woff2");
   }
+
   @font-face {
-    font-family: "Gabarito-SemiBold";
-    src: url("/fonts/Gabarito-Medium.tff") format("tff");
+    font-family: "Gabarito";
+    font-weight: 600; /* SemiBold */
+    src: url("/fonts/Gabarito-SemiBold.ttf") format("truetype");
   }
 }
-
 @layer utilities{
   .flex-space-between {
-    @apply flex justify-between align-middle
+    @apply flex justify-between items-center
+  }
+  .nav-hover-btn {
+    @apply relative ms-10 font-gabarito cursor-pointer;
+    @apply after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0;
+    @apply after:bg-yellow after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)];
+    @apply hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white;
+  }
+  
+  .nav-hover-btn.active {
+    @apply after:scale-x-100 after:origin-bottom-left;
   }
 }

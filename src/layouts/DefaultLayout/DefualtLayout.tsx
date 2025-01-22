@@ -7,12 +7,11 @@ type Props = {};
 const DefaultLayout: React.FC<Props> = () => {
   return (
     <React.Fragment>
-      <div className="">
-        <div className="fixed top-0 left-0 right-0 -z-0 bg-white/1 shadow-[0_4px_30px_rgba(0,0,0,0.2)] backdrop-blur-[5.9px] border-b border-b-white/20 p-5 px-28">
-
-        <Header />
+      <div className="xl:container xl:mx-auto">
+        <div className="fixed top-0 left-0 right-0 -z-0 bg-white/1 shadow-[0_4px_30px_rgba(0,0,0,0.2)] backdrop-blur-[5.9px] border-b border-b-white/20 p-5 md:px-24 xl:px-[160px]">
+          <Header />
         </div>
-        <div className="z-10 ">
+        <div className="z-10">
           <Outlet />
         </div>
         {/* <Footer /> */}
