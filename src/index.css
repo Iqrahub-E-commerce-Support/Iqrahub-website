@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  width: 100dvw;
+  overflow-x: hidden;
+  background-color: #000000;
+  font-family: "Gabarito";
+  color: #ffffff;
+}
+
+@layer base {
+  @font-face {
+    font-family: "Gabarito-Black";
+    src: url("/fonts/Gabarito-Black.tff") format("ttf");
+  }
+
+  @font-face {
+    font-family: "Gabarito-Bold";
+    src: url("/fonts/Gabarito-Bold.tff") format("tff");
+  }
+
+  @font-face {
+    font-family: "Gabarito-ExtraBold";
+    src: url("/fonts/Gabarito-ExtraBold.tff") format("tff");
+  }
+
+  @font-face {
+    font-family: "Gabarito-Medium";
+    src: url("/fonts/Gabarito-Medium.tff") format("tff");
+  }
+  @font-face {
+    font-family: "Gabarito-Regular";
+    src: url("/fonts/Gabarito-Regular.tff") format("tff");
+  }
+  @font-face {
+    font-family: "Gabarito-SemiBold";
+    src: url("/fonts/Gabarito-Medium.tff") format("tff");
+  }
+}
+
+@layer utilities{
+  .flex-space-between {
+    @apply flex justify-between align-middle
+  }
+}
