@@ -16,7 +16,7 @@ export default {
       black:"#000000"
     },
     screens: {
-      xs: "120px",
+      xs: "0px",
       sm: "600px",
       // => @media (min-width: 640px) { ... }
 
@@ -28,6 +28,20 @@ export default {
 
       xl: "1580px",
       // => @media (min-width: 1280px) { ... }
+    },
+    animation: {
+      marquee: 'marquee 35s linear infinite',
+      marquee2: 'marquee2 35s linear infinite',
+    },
+    keyframes: {
+      marquee: {
+        '0%': { transform: 'translateX(0%)' },
+        '100%': { transform: 'translateX(-100%)' },
+      },
+      marquee2: {
+        '0%': { transform: 'translateX(100%)' },
+        '100%': { transform: 'translateX(0%)' },
+      },
     },
   },
   plugins: [],

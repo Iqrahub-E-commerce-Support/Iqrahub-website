@@ -47,9 +47,9 @@ body {
     src: url("/fonts/Gabarito-SemiBold.ttf") format("truetype");
   }
 }
-@layer utilities{
+@layer utilities {
   .flex-space-between {
-    @apply flex justify-between items-center
+    @apply flex justify-between items-center;
   }
   .nav-hover-btn {
     @apply relative ms-10 font-gabarito cursor-pointer;
@@ -57,7 +57,7 @@ body {
     @apply after:bg-yellow after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)];
     @apply hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white;
   }
-  
+
   .nav-hover-btn.active {
     @apply after:scale-x-100 after:origin-bottom-left;
   }

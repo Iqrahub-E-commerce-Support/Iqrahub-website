@@ -1,5 +1,5 @@
 import DefaultLayout from "@/layouts/DefaultLayout/DefualtLayout";
-import  { lazy, Suspense } from "react";
+import { lazy, Suspense } from "react";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -7,19 +7,19 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-const Home = lazy(() => import('@/pages/Home'));
+const Home = lazy(() => import("@/pages/Home"));
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
       <Route
-      // errorElement={<ErrorPage />}
-       element={<DefaultLayout />}
+        // errorElement={<ErrorPage />}
+        element={<DefaultLayout />}
       >
         <Route path="/" index element={<Home />} />
       </Route>
-    </Route>
-  )
+    </Route>,
+  ),
 );
 
 const Routing = () => {

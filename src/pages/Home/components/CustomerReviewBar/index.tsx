@@ -10,11 +10,11 @@ const CustomerReviewBar = () => {
     { img: profile, alt: "profile-5" },
   ];
   return (
-    <div className="flex-space-between xs:gap-2 gap-12  border rounded-full xs:px-2 md:px-5 xs:py-2 md:py-2 xs:mx-8 sm:mx-0">
+    <div className="flex-space-between xs:gap-2 gap-12   border rounded-full xs:px-2 md:px-5 xs:py-2 md:py-2 xs:mx-8 sm:mx-0">
       <div className="flex-space-between gap-2 xs:gap-1 ">
-        <span className="text-yellow xs:text-[12px] sm:text-[160px]">5.0</span>
+        <span className="text-yellow xs:text-[12px] sm:text-[15px]">5.0</span>
         <MdOutlineStar color={colors.yellow} size={15} />
-        <p className="text-[10px]">Recommended by 500k</p>
+        <p className="xs:text-[10px] sm:text-[15px]">Recommended by 500k</p>
       </div>
       <div className="flex -space-x-4 rtl:space-x-reverse">
         {propic.map((pro, index) => (
