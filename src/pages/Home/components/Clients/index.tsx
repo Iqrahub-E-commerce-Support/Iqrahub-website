@@ -16,10 +16,7 @@ const Clients = () => {
           <AsterRiskIcon />
           <p className="text-yellow">Award Winning Agency</p>
         </div>
-       <Heading
-       normalText="They Trust"
-       specialText="Us"
-       />
+        <Heading normalText="They Trust" specialText="Us" />
         {/* <Marquee/> */}
         <Marquee autoFill className="overflow-hidden">
           {items.map((item, index) => (

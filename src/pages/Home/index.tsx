@@ -34,10 +34,10 @@ const Home = () => {
         </div>
       </section>
       <section>
-        <Clients/>
+        <Clients />
       </section>
       <section className="mt-14">
-        <FeaturedService/>
+        <FeaturedService />
       </section>
     </>
   );

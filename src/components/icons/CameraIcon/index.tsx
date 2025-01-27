@@ -1,4 +1,3 @@
-
 const CameraIcon = () => {
   return (
     <>

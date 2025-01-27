@@ -8,7 +8,7 @@ const Header = () => {
       <header className="flex-space-between">
         <img src={Icon} alt="" className="xs:h-4 sm:h-3 md:h-10" />
         <Menu />
-        <GradientButton >
+        <GradientButton>
           Get in Touch <MdArrowForward />
         </GradientButton>
       </header>
