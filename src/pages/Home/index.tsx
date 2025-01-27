@@ -4,6 +4,7 @@ import { MdArrowForward } from "react-icons/md";
 import { MdPlayArrow } from "react-icons/md";
 import GradientButton from "@/components/GradientButton";
 import AreaOfExpertise from "./components/AreaOfExpertise";
+import AreaOfExpertiseSmallScreen from "./components/AreaOfExpertiseSmallScreen";
 const Home = () => {
   return (
     <>
@@ -23,7 +24,12 @@ const Home = () => {
         </div>
       </section>
       <section>
-        <AreaOfExpertise/>
+        <div className="xs:hidden md:block">
+          <AreaOfExpertise />
+        </div>
+        <div className="xs:block md:hidden">
+          <AreaOfExpertiseSmallScreen />
+        </div>
       </section>
     </>
   );

@@ -32,7 +32,7 @@ const AreaOfExpertise = () => {
   ];
 
   return (
-    <div className="overflow-hidden relative">
+    <div className="overflow-hidden relative mt-[-20px]">
       <div
         className={`flex gap-12 items-end justify-center mb-5 transition-transform duration-500 ease-in-out`}
       >
@@ -40,10 +40,10 @@ const AreaOfExpertise = () => {
           <div
             key={index}
             style={{ backgroundImage: `url(${card.bgimage}) ` }}
-            className={`relative group  border-2  transition-all duration-300 bg-cover bg-center 
+            className={`relative group  border-2 rounded-[12px] transition-all duration-300 bg-cover bg-center 
               ${
                 index === 2
-                  ? "h-[380px] w-[300px] "
+                  ? "h-[400px] w-[300px] "
                   : "h-[250px] w-[250px] bg-opacity-100"
               }`}
           >
@@ -53,7 +53,7 @@ const AreaOfExpertise = () => {
             {/* Card Content */}
             <div className="flex flex-col justify-end h-full ml-2">
               <h1 className="font-semibold ">{card.title}</h1>
-              <p className="mt-1">
+              <p className="mt-1 leading-5 mb-3 text-xs">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
