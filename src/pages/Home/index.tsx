@@ -6,6 +6,7 @@ import GradientButton from "@/components/GradientButton";
 import AreaOfExpertise from "./components/AreaOfExpertise";
 import AreaOfExpertiseSmallScreen from "./components/AreaOfExpertiseSmallScreen";
 import Clients from "./components/Clients";
+import FeaturedService from "./components/FeaturedService";
 const Home = () => {
   return (
     <>
@@ -24,7 +25,7 @@ const Home = () => {
           </GradientButton>
         </div>
       </section>
-      <section>
+      <section className="xs:mt-[150px] sm:mt-0">
         <div className="xs:hidden md:block -z-50">
           <AreaOfExpertise />
         </div>
@@ -34,6 +35,9 @@ const Home = () => {
       </section>
       <section>
         <Clients/>
+      </section>
+      <section className="mt-14">
+        <FeaturedService/>
       </section>
     </>
   );

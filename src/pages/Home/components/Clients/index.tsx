@@ -5,6 +5,7 @@ import img2 from "@/assets/images/clients/img-2.png";
 import img3 from "@/assets/images/clients/img-3.png";
 import img4 from "@/assets/images/clients/img-4.png";
 import img5 from "@/assets/images/clients/img-5.png";
+import Heading from "@/components/Heading";
 
 const Clients = () => {
   const items = [img1, img2, img3, img4, img5];
@@ -15,9 +16,10 @@ const Clients = () => {
           <AsterRiskIcon />
           <p className="text-yellow">Award Winning Agency</p>
         </div>
-        <p className="font-bold text-5xl">
-          They Trust <span className="text-yellow">Us</span>
-        </p>
+       <Heading
+       normalText="They Trust"
+       specialText="Us"
+       />
         {/* <Marquee/> */}
         <Marquee autoFill className="overflow-hidden">
           {items.map((item, index) => (
