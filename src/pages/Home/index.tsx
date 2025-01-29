@@ -7,6 +7,7 @@ import AreaOfExpertise from "./components/AreaOfExpertise";
 import AreaOfExpertiseSmallScreen from "./components/AreaOfExpertiseSmallScreen";
 import Clients from "./components/Clients";
 import FeaturedService from "./components/FeaturedService";
+import WayOfExecution from "./components/WayOfExecution";
 const Home = () => {
   return (
     <>
@@ -36,8 +37,14 @@ const Home = () => {
       <section>
         <Clients />
       </section>
-      <section className="mt-14">
+      <section>
         <FeaturedService />
+      </section>
+      <section>
+        <WayOfExecution/>
+      </section>
+      <section>
+        
       </section>
     </>
   );

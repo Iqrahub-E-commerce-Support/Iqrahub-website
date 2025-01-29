@@ -18,7 +18,7 @@ const Clients = () => {
         </div>
         <Heading normalText="They Trust" specialText="Us" />
         {/* <Marquee/> */}
-        <Marquee autoFill className="overflow-hidden">
+        <Marquee autoFill className="overflow-hidden pb-3">
           {items.map((item, index) => (
             <div
               key={index}
