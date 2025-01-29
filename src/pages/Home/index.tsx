@@ -8,6 +8,7 @@ import AreaOfExpertiseSmallScreen from "./components/AreaOfExpertiseSmallScreen"
 import Clients from "./components/Clients";
 import FeaturedService from "./components/FeaturedService";
 import WayOfExecution from "./components/WayOfExecution";
+import Form from "./components/Form";
 const Home = () => {
   return (
     <>
@@ -43,8 +44,8 @@ const Home = () => {
       <section>
         <WayOfExecution/>
       </section>
-      <section>
-        
+      <section className="mb-7">
+        <Form/>
       </section>
     </>
   );
