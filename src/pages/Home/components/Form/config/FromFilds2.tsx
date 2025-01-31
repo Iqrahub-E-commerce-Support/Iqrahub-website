@@ -4,7 +4,7 @@ export const fields2: IFormField[] = [
     {
         name: "brand",
         label: "Branding",
-        type: "switch",
+        type: "radio",
         size: { xs: 1, sm: 1, md: 2, lg: 2 },
         validation: {
             required: { value: true, message: "This field is required" },
@@ -14,7 +14,7 @@ export const fields2: IFormField[] = [
     {
         name: "website",
         label: "Website Design",
-        type: "switch",
+        type: "radio",
         size: { xs: 1, sm: 1, md: 2, lg: 2 },
         validation: {
             required: { value: true, message: "This field is required" },
@@ -24,7 +24,7 @@ export const fields2: IFormField[] = [
     {
         name: "support",
         label: "Design Support",
-        type: "switch",
+        type: "radio",
         size: { xs: 1, sm: 1, md: 2, lg: 2 },
         validation: {
             required: { value: true, message: "This field is required" },
@@ -34,7 +34,7 @@ export const fields2: IFormField[] = [
     {
         name: "websiteDevelopment",
         label: "Website Development",
-        type: "switch",
+        type: "radio",
         size: { xs: 1, sm: 1, md: 2, lg: 2 },
         validation: {
             required: { value: true, message: "This field is required" },
@@ -44,7 +44,7 @@ export const fields2: IFormField[] = [
     {
         name: "video",
         label: "Video Shooting",
-        type: "switch",
+        type: "radio",
         size: { xs: 1, sm: 1, md: 2, lg: 2 },
         validation: {
             required: { value: true, message: "This field is required" },
@@ -54,7 +54,7 @@ export const fields2: IFormField[] = [
     {
         name: "extra",
         label: "Something else...",
-        type: "switch",
+        type: "radio",
         size: { xs: 1, sm: 1, md: 2, lg: 2 },
         validation: {
             required: { value: true, message: "This field is required" },

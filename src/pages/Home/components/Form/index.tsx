@@ -1,8 +1,13 @@
 import Heading from "@/components/Heading";
 import RenderFields from "@/components/RenderFields";
-import { fields } from "./FormFields";
 import { useForm } from "react-hook-form";
-import { fields2 } from "./FromFilds2";
+import { fields } from "./config/FormFields";
+import { fields2 } from "./config/FromFilds2";
+import { fields3 } from "./config/FormField3";
+import Radio from "@/components/Radio";
+import React from "react";
+import GradientButton from "@/components/GradientButton";
+import { MdArrowForward } from "react-icons/md";
 
 const Form = () => {
   const {
@@ -10,16 +15,16 @@ const Form = () => {
     handleSubmit,
     formState: { errors },
     getValues,
-    reset,
   } = useForm({
     // defaultValues: formData.offers || {},
     mode: "all", // This will ensure validation happens on each input change
   });
-  const values = getValues()
-  console.log(values,"value")
-  const onSubmit = (value)=>{
-    console.log(value)
-  }
+  const [isChecked, setIsChecked] = React.useState(false);
+  const values = getValues();
+  console.log(values, "value");
+  const onSubmit = (value: any) => {
+    console.log(value);
+  };
   return (
     <>
       <Heading
@@ -33,17 +38,45 @@ const Form = () => {
         phasellus <br /> mollis sit aliquam sit nullam.
       </p>
       <form onSubmit={handleSubmit(onSubmit)}>
-      <div className="grid xs:grid-cols-1 md:grid-cols-2 gap-5">
-        <div className="border rounded-[8px] p-5">
-          <RenderFields formFields={fields} control={control} errors={errors} />
-        </div>
-        <div className="border rounded-[8px] p-5">
-        <RenderFields formFields={fields2} control={control} errors={errors} />
-          <button type="submit">
+        <div className="grid xs:grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="border rounded-[8px] p-5">
+            <RenderFields
+              formFields={fields}
+              control={control}
+              errors={errors}
+            />
+          </div>
+          <div className="grid gap-4">
+            <div className="border rounded-[8px] p-5">
+              <RenderFields
+                formFields={fields2}
+                control={control}
+                errors={errors}
+              />
+
+              <div className="w-full h-[1px] my-7 bg-gradient-to-r from-[rgba(255,255,255,0)] via-white to-[rgba(255,0,0,0)]" />
+
+              <RenderFields
+                formFields={fields3}
+                control={control}
+                errors={errors}
+              />
+              {/* <button type="submit">
           submit
-          </button>
+          </button> */}
+            </div>
+            <div className=" flex  justify-between border rounded-[8px] p-5 ">
+              <Radio
+                checked={isChecked}
+                onChange={() => setIsChecked((prev) => !prev)}
+                label="I agree with the processing of my personal data"
+              />
+              <GradientButton>
+                Send Enquiry <MdArrowForward />
+              </GradientButton>
+            </div>
+          </div>
         </div>
-      </div>
       </form>
     </>
   );

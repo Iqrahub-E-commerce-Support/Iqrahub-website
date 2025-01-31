@@ -9,14 +9,21 @@ import Clients from "./components/Clients";
 import FeaturedService from "./components/FeaturedService";
 import WayOfExecution from "./components/WayOfExecution";
 import Form from "./components/Form";
+
 const Home = () => {
   return (
     <>
       <section
         // className="h-[450px] bg-cover bg-center bg-gradient-to-r from-[#FFC506] to-[#C5261F] "
-        className="h-[550px] bg-cover  flex flex-col justify-center items-center gap-9  xs:pt-[15.2rem] sm:pt-[5%]"
-        style={{ backgroundImage: `url(${bg}) ` }}
+       className=" "
+       
       >
+        <div 
+         className="h-[500px] bg-cover   "
+         style={{ backgroundImage: `url(${bg})`, opacity:1}}
+        />
+        <div className="flex flex-col justify-center items-center  gap-9  xs:pt-[-15.2rem] sm:mt-[-28%]">
+
         <Hero />
         <div className="flex gap-5">
           <GradientButton>
@@ -26,8 +33,9 @@ const Home = () => {
             <MdPlayArrow size={30} />
           </GradientButton>
         </div>
+        </div>
       </section>
-      <section className="xs:mt-[150px] sm:mt-0">
+      <section className="xs:mt-[150px] sm:mt-0 lg:mt-4">
         <div className="xs:hidden md:block -z-50">
           <AreaOfExpertise />
         </div>
@@ -38,14 +46,14 @@ const Home = () => {
       <section>
         <Clients />
       </section>
-      <section>
+      <section  className="h-96 pt-12 mt-12 bg-cover relative">
         <FeaturedService />
       </section>
-      <section>
-        <WayOfExecution/>
+      <section className="mt-20">
+        <WayOfExecution />
       </section>
-      <section className="mb-7">
-        <Form/>
+      <section className="mt-16">
+        <Form />
       </section>
     </>
   );

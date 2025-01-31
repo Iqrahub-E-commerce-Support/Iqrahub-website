@@ -73,44 +73,39 @@ const RenderFields = ({ formFields, control, errors }: RenderFieldProps) => {
                   {...controllerField}
                   placeholder={field?.placeholder}
                   multiline={field?.multiline}
-                  // onChange={onChange}
-                  // value={value}
-                  // ref={ref}
-                  // error={fieldError?.message}
-                  // {...field.props}
                 />
               </div>
             )}
           />
         );
-      case "radio":
-        return (
-          <Controller
-            name={field.name}
-            control={control}
-            rules={field.validation}
-            render={({ field: { onChange, value } }) => (
-              <Radio
-                onChange={onChange}
-                value={value}
-                error={fieldError?.message}
-                // {...field.props}
+        case "radio":
+          return (
+            <div className="mb-3">
+              <Controller
+                name={field.name}
+                control={control}
+                rules={field.validation}
+                render={({ field: controllerField }) => (
+                  <Radio
+                    checked={controllerField.value || false} // Pass the value from react-hook-form
+                    onChange={(checked) => controllerField.onChange(checked)} // Update the value in react-hook-form
+                    label={field.label}
+                  />
+                )}
               />
-            )}
-          />
-        );
+            </div>
+          );
       case "switch":
         return (
           <Controller
             name={field.name}
             control={control}
             rules={field.validation}
-            render={({ field: { onChange, value } }) => (
+            render={({ field: controllerField }) => (
               <Switch
-                onChange={onChange}
-                value={value}
-                error={fieldError?.message}
-                {...field.props}
+              checked={controllerField.value || false} // Pass the value from react-hook-form
+              onChange={(checked) => controllerField.onChange(checked)} // Update the value in react-hook-form
+              label={field.label}
               />
             )}
           />

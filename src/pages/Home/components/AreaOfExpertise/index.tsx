@@ -32,7 +32,7 @@ const AreaOfExpertise = () => {
   ];
 
   return (
-    <div className="overflow-hidden relative mt-[-20px] z-auto">
+    <div className="overflow-hidden relative z-auto">
       <div
         className={`flex gap-12 items-end justify-center mb-5 transition-transform duration-500 ease-in-out`}
       >

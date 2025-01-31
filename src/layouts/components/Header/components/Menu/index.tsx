@@ -7,8 +7,8 @@ const Menu = () => {
   const menus = [
     { name: "Home", path: "/", isMenu: false },
     { name: "Karrak Stories", path: "/karrak-stories", isMenu: false },
-    { name: "Our Work", path: "/our-work", isMenu: false },
-    { name: "Services", path: "/services", isMenu: true },
+    { name: "Media Story", path: "/our-work", isMenu: false },
+    { name: "Tech Services", path: "/services", isMenu: true },
     { name: "About Us", path: "/about-us", isMenu: false },
   ];
 

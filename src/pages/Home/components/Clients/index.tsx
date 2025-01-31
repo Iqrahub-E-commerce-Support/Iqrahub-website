@@ -18,11 +18,11 @@ const Clients = () => {
         </div>
         <Heading normalText="They Trust" specialText="Us" />
         {/* <Marquee/> */}
-        <Marquee autoFill className="overflow-hidden pb-3">
+        <Marquee autoFill className="overflow-hidden py-3">
           {items.map((item, index) => (
             <div
               key={index}
-              className="border-2 border-[#1B1B1B] transform transition-all duration-300 hover:border-yellow px-3 py-1 rounded-full mr-3 hover:bg-gradient-to-l hover:from-yellow-opacity hover:to-transparent hover:scale-105"
+              className="border-2 border-[#1B1B1B] transform transition-all duration-300 hover:border-yellow px-7 py-4 rounded-full mr-5 hover:bg-gradient-to-l hover:from-yellow-opacity hover:to-transparent hover:scale-105"
             >
               <img
                 className="h-[30px] w-[80px] object-contain transition-all duration-300 "

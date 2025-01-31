@@ -1,18 +1,32 @@
+import React from "react";
 import TickIcon from "../icons/TickIcon";
 
-const Radio = ({ checked = true }) => {
+interface RadioProps {
+  checked?: boolean;
+  label: string;
+  onChange?: (checked: boolean) => void; // Callback for toggling
+}
+
+const Radio: React.FC<RadioProps> = ({ checked = false, label, onChange }) => {
+  const handleClick = () => {
+    if (onChange) {
+      onChange(!checked); // Toggle the checked state
+    }
+  };
+
   return (
-    <label className="flex items-center space-x-2 cursor-pointer">
+    <label className="flex items-center space-x-2 cursor-pointer gap-2">
       <input
         type="radio"
-        // name={name}
-        // value={value}
         checked={checked}
-        // onChange={() => onChange(value)}
+        onChange={() => {}} // Empty handler to avoid warnings
         className="hidden"
       />
       <div
-        className={`w-10 h-10 rounded-full border-2  flex items-center justify-center ${checked && "bg-yellow border-none"}`}
+        onClick={handleClick} // Add onClick handler to toggle
+        className={`w-12 h-12 rounded-full border-2 flex items-center justify-center transition-all duration-300 ${
+          checked ? "bg-yellow border-none" : "border-gray-300"
+        }`}
       >
         {checked && (
           <div>
@@ -20,7 +34,7 @@ const Radio = ({ checked = true }) => {
           </div>
         )}
       </div>
-      <span className="text-gray-700">text</span>
+      <span className="text-[16px]">{label}</span>
     </label>
   );
 };
