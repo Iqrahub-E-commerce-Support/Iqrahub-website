@@ -31,7 +31,7 @@ const Testimonial = () => {
   ];
 
   return (
-    <div className="grid item grid-cols-[1.1fr_2fr] gap-1">
+    <div className=" sm:block md:grid item grid-cols-[1.1fr_2fr] gap-1">
       <div className="flex flex-col justify-center">
         <div className="flex gap-2 mb-6">
           {[...Array(5)].map((_, index) => (

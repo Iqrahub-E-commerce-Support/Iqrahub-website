@@ -21,7 +21,7 @@ const WayOfExecution = () => {
   };
 
   return (
-    <div className="my-14 grid grid-cols-[1fr_2fr] gap-4">
+    <div className="my-14 xs:block md:grid grid-cols-[1fr_2fr] gap-4">
       {/* Left Section */}
       <div>
         <div className="flex gap-2 mb-6">
@@ -42,7 +42,7 @@ const WayOfExecution = () => {
         </GradientButton>
       </div>
 
-      <div className="relative w-full overflow-hidden">
+      <div className="relative w-full overflow-hidden xs:mt-7 md:mt-0" >
         <div className="flex gap-5 items-end w-full overflow-x-auto pb-4 no-scrollbar scrollbar-thin scrollbar-thumb-yellow scrollbar-track-black custom-scrollbar">
           {/* Video 1 */}
           <div className="relative w-[330px] h-[338px] flex-shrink-0">
