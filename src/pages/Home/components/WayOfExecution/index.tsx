@@ -1,11 +1,28 @@
+import React from "react";
+import { BiPause, BiPlay } from "react-icons/bi";
+import { MdArrowForward } from "react-icons/md";
 import GradientButton from "@/components/GradientButton";
 import Heading from "@/components/Heading";
 import StarIcon from "@/components/icons/StarIcon";
-import { MdArrowForward } from "react-icons/md";
 
 const WayOfExecution = () => {
+  const [isPlaying, setIsPlaying] = React.useState(false);
+  const videoRef = React.useRef(null);
+
+  const togglePlayPause = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+      } else {
+        videoRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
   return (
-    <div className="my-14 grid grid-cols-[1.5fr_2fr] w-full gap-4">
+    <div className="my-14 grid grid-cols-[1fr_2fr] gap-4">
+      {/* Left Section */}
       <div>
         <div className="flex gap-2 mb-6">
           {[...Array(5)].map((_, index) => (
@@ -24,7 +41,77 @@ const WayOfExecution = () => {
           Get in Touch <MdArrowForward />
         </GradientButton>
       </div>
-      <div className="bg-red ">Second Div (2/3 width)</div>
+
+      <div className="relative w-full overflow-hidden">
+        <div className="flex gap-5 items-end w-full overflow-x-auto pb-4 no-scrollbar scrollbar-thin scrollbar-thumb-yellow scrollbar-track-black custom-scrollbar">
+          {/* Video 1 */}
+          <div className="relative w-[330px] h-[338px] flex-shrink-0">
+            <video
+              ref={videoRef}
+              src="https://www.w3schools.com/html/mov_bbb.mp4"
+              className="absolute inset-0 w-full h-full object-cover rounded-lg"
+              loop
+              muted
+              playsInline
+            />
+            {!isPlaying && (
+              <button
+                onClick={togglePlayPause}
+                className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 transition-opacity duration-500 rounded-lg"
+              >
+                <div className="flex border-4 rounded-full items-center justify-center">
+                  <BiPlay size={60} className="text-white" />
+                </div>
+              </button>
+            )}
+            {isPlaying && (
+              <button
+                onClick={togglePlayPause}
+                className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg"
+              >
+                <div className="flex border-4 rounded-full items-center justify-center">
+                  <BiPause size={60} className="text-white" />
+                </div>
+              </button>
+            )}
+          </div>
+
+          {[2, 3].map((index) => (
+            <div
+              key={index}
+              className="relative w-[250px] h-[248px] flex-shrink-0 border-2 rounded-lg"
+            >
+              <video
+                src="https://www.w3schools.com/html/mov_bbb.mp4"
+                className="absolute inset-0 w-full h-full object-cover rounded-lg"
+                loop
+                muted
+                playsInline
+              />
+              {!isPlaying && (
+                <button
+                  onClick={togglePlayPause}
+                  className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 transition-opacity duration-500 rounded-lg"
+                >
+                  <div className="flex border-4 rounded-full items-center justify-center">
+                    <BiPlay size={60} className="text-white" />
+                  </div>
+                </button>
+              )}
+              {isPlaying && (
+                <button
+                  onClick={togglePlayPause}
+                  className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg"
+                >
+                  <div className="flex border-4 rounded-full items-center justify-center">
+                    <BiPause size={60} className="text-white" />
+                  </div>
+                </button>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

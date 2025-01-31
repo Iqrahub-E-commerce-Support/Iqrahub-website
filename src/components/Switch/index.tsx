@@ -4,7 +4,7 @@ interface SwitchProps {
   label: string;
 }
 const Switch: React.FC<SwitchProps> = forwardRef((props, forwardedRef) => {
-  const { label,checked } = props;
+  const { label, checked } = props;
   return (
     <label className="cursor-pointer flex items-center gap-4 mb-6">
       <input type="checkbox" className="hidden" ref={forwardedRef} {...props} />

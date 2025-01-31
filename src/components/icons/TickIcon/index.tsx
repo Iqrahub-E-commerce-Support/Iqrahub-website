@@ -1,4 +1,3 @@
-
 const TickIcon = () => {
   return (
     <svg

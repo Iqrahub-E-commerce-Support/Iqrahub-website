@@ -1,11 +1,6 @@
 // Define a union type for field types
 
-type FieldType =
-
-  | "text"
-  | "email"
-  | "switch"
-  |"radio"
+type FieldType = "text" | "email" | "switch" | "radio";
 // Define common properties for all fields
 interface IBaseField {
   name: string;
@@ -39,21 +34,9 @@ interface IBaseField {
   };
 }
 
-
 interface ITextField extends IBaseField {
-  type:
-    | "text"
-    | "email"
-    | "switch"
-    |"radio"
+  type: "text" | "email" | "switch" | "radio";
 }
 
-
-
-
-
-
-
 // Create a union type for all possible field interfaces
-export type IFormField =
-  | ITextField
+export type IFormField = ITextField;

@@ -7,10 +7,14 @@ interface TextFieldProps {
   placeholder?: string;
   multiline?: boolean;
   rows?: number;
-  onChange?: React.ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement> | undefined;
+  onChange?:
+    | React.ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement>
+    | undefined;
   disabled?: boolean | null;
   extras?: any;
-  onBlur?: (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
+  onBlur?: (
+    e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => void;
   autoFocus?: boolean;
   defaultValue?: string;
   onKeyDown?: any;
@@ -22,7 +26,10 @@ interface TextFieldProps {
   ref?: React.Ref<unknown>;
 }
 
-const TextField = forwardRef<HTMLInputElement | HTMLTextAreaElement, TextFieldProps>((props, ref) => {
+const TextField = forwardRef<
+  HTMLInputElement | HTMLTextAreaElement,
+  TextFieldProps
+>((props, ref) => {
   const {
     value,
     placeholder,
@@ -38,11 +45,11 @@ const TextField = forwardRef<HTMLInputElement | HTMLTextAreaElement, TextFieldPr
     onInput,
     helperText,
     hidden = false,
-    InputType = "text"
+    InputType = "text",
   } = props;
 
   const baseClassName = "text-white bg-black border border-white p-4 w-full";
-  const className = `${baseClassName} ${multiline ? 'rounded-lg' : 'rounded-full'}`;
+  const className = `${baseClassName} ${multiline ? "rounded-lg" : "rounded-full"}`;
 
   const commonProps = {
     className,
@@ -57,7 +64,7 @@ const TextField = forwardRef<HTMLInputElement | HTMLTextAreaElement, TextFieldPr
     disabled,
     onInput,
     "aria-describedby": helperText ? "helper-text" : undefined,
-    ...extras
+    ...extras,
   };
 
   return (
@@ -84,6 +91,6 @@ const TextField = forwardRef<HTMLInputElement | HTMLTextAreaElement, TextFieldPr
   );
 });
 
-TextField.displayName = 'TextField';
+TextField.displayName = "TextField";
 
 export default TextField;

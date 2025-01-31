@@ -9,7 +9,8 @@ import Clients from "./components/Clients";
 import FeaturedService from "./components/FeaturedService";
 import WayOfExecution from "./components/WayOfExecution";
 import Form from "./components/Form";
-
+import cali from "@/assets/images/cal.png";
+import Testimonial from "./components/Testimonial";
 const Home = () => {
   return (
     <>
@@ -47,6 +48,14 @@ const Home = () => {
       </section>
       <section className="mt-16">
         <Form />
+      </section>
+      <section className="relative mt-16 ">
+        <img
+          src={cali}
+          alt="Background"
+          className="absolute inset-x-1/4 h-96  object-cotain opacity-75"
+        />
+        <Testimonial />
       </section>
     </>
   );
