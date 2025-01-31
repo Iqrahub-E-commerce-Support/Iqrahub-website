@@ -15,15 +15,9 @@ const Home = () => {
     <>
       <section
         // className="h-[450px] bg-cover bg-center bg-gradient-to-r from-[#FFC506] to-[#C5261F] "
-       className=" "
-       
+        className="h-[550px] bg-center  flex flex-col justify-center items-center gap-9  xs:pt-[15.2rem] sm:pt-[5%]"
+        style={{ backgroundImage: `url(${bg}) ` }}
       >
-        <div 
-         className="h-[500px] bg-cover   "
-         style={{ backgroundImage: `url(${bg})`, opacity:1}}
-        />
-        <div className="flex flex-col justify-center items-center  gap-9  xs:pt-[-15.2rem] sm:mt-[-28%]">
-
         <Hero />
         <div className="flex gap-5">
           <GradientButton>
@@ -32,7 +26,6 @@ const Home = () => {
           <GradientButton>
             <MdPlayArrow size={30} />
           </GradientButton>
-        </div>
         </div>
       </section>
       <section className="xs:mt-[150px] sm:mt-0 lg:mt-4">
@@ -46,7 +39,7 @@ const Home = () => {
       <section>
         <Clients />
       </section>
-      <section  className="h-96 pt-12 mt-12 bg-cover relative">
+      <section className="h-96 pt-12 mt-12 bg-cover relative">
         <FeaturedService />
       </section>
       <section className="mt-20">
