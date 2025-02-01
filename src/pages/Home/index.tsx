@@ -12,6 +12,7 @@ import Form from "./components/Form";
 import cali from "@/assets/images/cal.png";
 import Testimonial from "./components/Testimonial";
 import OurSuccess from "./components/OurSuccess";
+import Faq from "@/components/Faq";
 
 const Home = () => {
   return (
@@ -60,6 +61,9 @@ const Home = () => {
       </section>
       <section className="mt-16 xs:mx-6 md:mx-0">
         <OurSuccess />
+      </section>
+      <section className="mt-16 xs:mx-6 md:mx-0">
+        <Faq />
       </section>
     </>
   );
