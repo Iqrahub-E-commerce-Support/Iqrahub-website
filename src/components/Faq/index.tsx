@@ -117,7 +117,7 @@ const Faq = () => {
                   : "opacity-0 translate-y-5 pointer-events-none"
               }`}
             >
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid xs:grid-cols-1 sm:grid-cols-2 gap-4">
                 {tab.questions.map((q, index) => (
                   <Accordion type="single" collapsible key={index}>
                     <AccordionItem

@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 type Props = {};
 
@@ -13,8 +14,10 @@ const DefaultLayout: React.FC<Props> = () => {
         </div>
         <div className="md:container md:mx-auto">
           <Outlet />
+          <div className="pt-[75px] pb-[40px]">
+            <Footer />
+          </div>
         </div>
-        {/* <Footer /> */}
       </div>
     </React.Fragment>
   );
