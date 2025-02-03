@@ -1,6 +1,6 @@
 interface HeadingProps {
   normalText: string;
-  specialText: string;
+  specialText?: string;
   optionalNormalText?: string;
   className?: string; // Accepting className as a prop
   specialTextClassName?: string; // Optional class for the special text
