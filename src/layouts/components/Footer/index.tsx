@@ -10,6 +10,14 @@ const Footer = () => {
         <SecondSection />
         <ThirdSection />
       </div>
+      <div className="flex justify-center py-9 gap-2">
+        <p className="opacity-50">
+
+      Copyright © {new Date().getFullYear()} Iqrahub story Media | All Rights Reserved | 
+        </p>
+        <a className="underline" href="">Terms and Conditions | </a>
+        <a className="underline" href="">Privacy Policy </a>
+      </div>
     </>
   );
 };

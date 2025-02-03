@@ -22,13 +22,14 @@ const Home = () => {
         style={{ backgroundImage: `url(${bg}) ` }}
       >
         <Hero />
-        <div className="flex gap-5">
+        <div className="flex gap-5 items-center">
           <GradientButton>
             Get in Touch <MdArrowForward />
           </GradientButton>
           <GradientButton>
             <MdPlayArrow size={30} />
           </GradientButton>
+          <p>How it work</p>
         </div>
       </section>
       <section className="xs:mt-[150px] sm:mt-0 lg:mt-4">

@@ -1,4 +1,4 @@
-import React from "react";
+import  { useRef, useState } from "react";
 import { BiPause, BiPlay } from "react-icons/bi";
 import { MdArrowForward } from "react-icons/md";
 import GradientButton from "@/components/GradientButton";
@@ -6,17 +6,25 @@ import Heading from "@/components/Heading";
 import StarIcon from "@/components/icons/StarIcon";
 
 const WayOfExecution = () => {
-  const [isPlaying, setIsPlaying] = React.useState(false);
-  const videoRef = React.useRef(null);
+  const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
+  const [playingIndex, setPlayingIndex] = useState<number | null>(null);
 
-  const togglePlayPause = () => {
-    if (videoRef.current) {
-      if (isPlaying) {
-        videoRef.current.pause();
+  const togglePlayPause = (index: number) => {
+    const video = videoRefs.current[index];
+
+    if (video) {
+      if (playingIndex === index) {
+        video.pause();
+        setPlayingIndex(null);
       } else {
-        videoRef.current.play();
+        // Pause all other videos before playing the selected one
+        videoRefs.current.forEach((vid, i) => {
+          if (vid && i !== index) vid.pause();
+        });
+
+        video.play();
+        setPlayingIndex(index);
       }
-      setIsPlaying(!isPlaying);
     }
   };
 
@@ -42,72 +50,38 @@ const WayOfExecution = () => {
         </GradientButton>
       </div>
 
+      {/* Video Section */}
       <div className="relative w-full overflow-hidden xs:mt-7 md:mt-0">
         <div className="flex gap-5 items-end w-full overflow-x-auto pb-4 no-scrollbar scrollbar-thin scrollbar-thumb-yellow scrollbar-track-black custom-scrollbar">
-          {/* Video 1 */}
-          <div className="relative w-[330px] h-[338px] flex-shrink-0">
-            <video
-              ref={videoRef}
-              src="https://www.w3schools.com/html/mov_bbb.mp4"
-              className="absolute inset-0 w-full h-full object-cover rounded-lg"
-              loop
-              muted
-              playsInline
-            />
-            {!isPlaying && (
-              <button
-                onClick={togglePlayPause}
-                className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 transition-opacity duration-500 rounded-lg"
-              >
-                <div className="flex border-4 rounded-full items-center justify-center">
-                  <BiPlay size={60} className="text-white" />
-                </div>
-              </button>
-            )}
-            {isPlaying && (
-              <button
-                onClick={togglePlayPause}
-                className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg"
-              >
-                <div className="flex border-4 rounded-full items-center justify-center">
-                  <BiPause size={60} className="text-white" />
-                </div>
-              </button>
-            )}
-          </div>
-
-          {[2, 3].map((index) => (
+          {[0, 1, 2].map((index) => (
             <div
               key={index}
-              className="relative w-[250px] h-[248px] flex-shrink-0 border-2 rounded-lg"
+              className={`relative ${
+                index === 0 ? "w-[330px] h-[338px]" : "w-[250px] h-[248px]"
+              } flex-shrink-0 border-2 rounded-lg`}
             >
               <video
+                ref={(el) => (videoRefs.current[index] = el)}
                 src="https://www.w3schools.com/html/mov_bbb.mp4"
                 className="absolute inset-0 w-full h-full object-cover rounded-lg"
                 loop
                 muted
                 playsInline
               />
-              {!isPlaying && (
-                <button
-                  onClick={togglePlayPause}
-                  className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 transition-opacity duration-500 rounded-lg"
-                >
-                  <div className="flex border-4 rounded-full items-center justify-center">
-                    <BiPlay size={60} className="text-white" />
-                  </div>
-                </button>
-              )}
-              {isPlaying && (
-                <button
-                  onClick={togglePlayPause}
-                  className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg"
-                >
-                  <div className="flex border-4 rounded-full items-center justify-center">
+              <button
+                onClick={() => togglePlayPause(index)}
+                className={`absolute inset-0 flex items-center justify-center bg-black ${
+                  playingIndex === index ? "bg-opacity-40 opacity-0 hover:opacity-100" : "bg-opacity-50"
+                } transition-opacity duration-300 rounded-lg`}
+              >
+                <div className="flex border-4 rounded-full items-center justify-center">
+                  {playingIndex === index ? (
                     <BiPause size={60} className="text-white" />
-                  </div>
-                </button>
-              )}
+                  ) : (
+                    <BiPlay size={60} className="text-white" />
+                  )}
+                </div>
+              </button>
             </div>
           ))}
         </div>

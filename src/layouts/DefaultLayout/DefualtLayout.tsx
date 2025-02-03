@@ -14,7 +14,7 @@ const DefaultLayout: React.FC<Props> = () => {
         </div>
         <div className="md:container md:mx-auto">
           <Outlet />
-          <div className="pt-[75px] pb-[40px]">
+          <div className="pt-[75px] ">
             <Footer />
           </div>
         </div>
