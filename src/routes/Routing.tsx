@@ -19,7 +19,7 @@ const router = createBrowserRouter(
         element={<DefaultLayout />}
       >
         <Route path={ROUTES.home} index element={<Home />} />
-        <Route path={ROUTES.techServices}  element={<TechSerivces />} />
+        <Route path={ROUTES.techServices} element={<TechSerivces />} />
       </Route>
     </Route>,
   ),

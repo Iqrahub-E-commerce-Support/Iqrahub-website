@@ -112,7 +112,7 @@ body {
     @apply hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white;
   }
   .glassy-bg {
-    @apply bg-white/[1px] shadow-[0_4px_30px_rgba(0,0,0,0.2)] backdrop-blur-[5.9px]
+    @apply bg-white/[1px] shadow-[0_4px_30px_rgba(0,0,0,0.2)] backdrop-blur-[5.9px];
   }
   .nav-hover-btn.active {
     @apply after:scale-x-100 after:origin-bottom-left;

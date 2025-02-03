@@ -6,9 +6,7 @@ const Hero = () => {
     <>
       <CustomerReviewBar />
       <div>
-        <Heading
-        normalText=""
-        />
+        <Heading normalText="" />
         <h1 className="font-gabarito font-bold xs:text-5xl md:text-6xl text-center leading-[67px] ">
           Get Professional Fast <br />
           Branding, <span className="text-yellow"> Website,</span> Messaging

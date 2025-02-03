@@ -1,4 +1,3 @@
-
 const NanoTechnologyIcon = () => {
   return (
     <svg

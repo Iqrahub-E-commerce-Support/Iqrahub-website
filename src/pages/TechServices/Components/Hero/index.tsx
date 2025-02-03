@@ -14,7 +14,7 @@ const Hero = () => {
           <p>Showcase</p>
         </div>
         <Heading
-          className="md:text-[50px]"
+          className="md:text-[55px]"
           normalText="TECH"
           specialText="SERVICES"
         />

@@ -1,4 +1,4 @@
-import  { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { BiPause, BiPlay } from "react-icons/bi";
 import { MdArrowForward } from "react-icons/md";
 import GradientButton from "@/components/GradientButton";
@@ -71,7 +71,9 @@ const WayOfExecution = () => {
               <button
                 onClick={() => togglePlayPause(index)}
                 className={`absolute inset-0 flex items-center justify-center bg-black ${
-                  playingIndex === index ? "bg-opacity-40 opacity-0 hover:opacity-100" : "bg-opacity-50"
+                  playingIndex === index
+                    ? "bg-opacity-40 opacity-0 hover:opacity-100"
+                    : "bg-opacity-50"
                 } transition-opacity duration-300 rounded-lg`}
               >
                 <div className="flex border-4 rounded-full items-center justify-center">

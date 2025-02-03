@@ -6,7 +6,7 @@ const Menu = () => {
   const location = useLocation();
   console.log(location.pathname, "location");
   const menus = [
-    { name: "Home", path:ROUTES.home, isMenu: false },
+    { name: "Home", path: ROUTES.home, isMenu: false },
     { name: "Karrak Stories", path: "/karrak-stories", isMenu: false },
     { name: "Media Story", path: "/our-work", isMenu: false },
     { name: "Tech Services", path: ROUTES.techServices, isMenu: true },
@@ -19,7 +19,7 @@ const Menu = () => {
         <Link to={menu.path} key={index}>
           <p
             className={`nav-hover-btn font-gabarito  flex items-center cursor-pointer  ${
-              location.pathname === `/${menu.path}`
+              location.pathname === `${menu.path}`
                 ? "active text-yellow"
                 : "hover:text-yellow"
             }`}
