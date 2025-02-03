@@ -1,6 +1,7 @@
 import bg from "@/assets/images/caligraphy.png";
 import Hero from "./Components/Hero";
 import Processes from "./Components/Processes";
+import VideoSection from "./Components/VIdeoSection";
 const TechSerivces = () => {
   return (
     <>
@@ -13,9 +14,10 @@ const TechSerivces = () => {
       <section className="h-screen">
         <Processes />
       </section>
-      {/* <section className="pt-[120px] my-[120px]">
-sdfa
-    </section> */}
+      <section className="pt-[120px]">
+        <VideoSection />
+      </section>
+      <section></section>
     </>
   );
 };
