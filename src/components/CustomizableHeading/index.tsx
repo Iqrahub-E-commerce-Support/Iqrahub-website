@@ -4,6 +4,7 @@ interface CustomizableHeadingProps {
   thirdTxt?: string;
   MainStyle?: string;
   SpecialCharacterStyle?: string;
+  thirdTextStyle?: string;
 }
 const CustomizableHeading = (props: CustomizableHeadingProps) => {
   const {
@@ -12,13 +13,14 @@ const CustomizableHeading = (props: CustomizableHeadingProps) => {
     thirdTxt,
     MainStyle = "text-3xl font-bold",
     SpecialCharacterStyle = "font-thin",
+    thirdTextStyle = "",
   } = props;
 
   return (
     <h1 className={MainStyle}>
       {firstTxt}
       <span className={SpecialCharacterStyle}> {secondTxt} </span>
-      {thirdTxt}
+      <span className={thirdTextStyle}>{thirdTxt}</span>
     </h1>
   );
 };

@@ -2,6 +2,7 @@ import bg from "@/assets/images/caligraphy.png";
 import Hero from "./Components/Hero";
 import Processes from "./Components/Processes";
 import VideoSection from "./Components/VIdeoSection";
+import Projects from "./Components/Projects";
 const TechSerivces = () => {
   return (
     <>
@@ -17,7 +18,9 @@ const TechSerivces = () => {
       <section className="pt-[120px]">
         <VideoSection />
       </section>
-      <section></section>
+      <section className="pt-[120px]">
+        <Projects />
+      </section>
     </>
   );
 };
