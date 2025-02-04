@@ -123,11 +123,11 @@ const Faq = () => {
                     <AccordionItem
                       value={`item-${index}`}
                       className="border px-3 data-[state=open]:rounded-2xl transition-all duration-100 
-                      data-[state=closed]:rounded-full data-[state=open]:bg-gradient-to-tl 
+                     xs:data-[state=closed]:rounded-3xl sm:data-[state=closed]:rounded-full  data-[state=open]:bg-gradient-to-tl 
                       from-yellow-opacity0.2 to-black"
                     >
                       <AccordionTrigger
-                        className="group text-lg font-semibold 
+                        className="group xs:text-[16px] sm:text-lg md:text-[14px] lg:text-lg font-semibold 
                         data-[state=open]:text-yellow transition-all duration-300"
                       >
                         {q.question}

@@ -39,7 +39,7 @@ const Form = () => {
       </p>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="grid xs:grid-cols-1 md:grid-cols-2 gap-5">
-          <div className="border rounded-[8px] p-5">
+          <div className="border rounded-[8px]  xs:p-5 md:p-4 lg:p-5">
             <RenderFields
               formFields={fields}
               control={control}
@@ -47,7 +47,7 @@ const Form = () => {
             />
           </div>
           <div className="grid gap-4">
-            <div className="border rounded-[8px] p-5">
+            <div className="border rounded-[8px] xs:p-5 md:p-4 lg:p-5">
               <RenderFields
                 formFields={fields2}
                 control={control}
@@ -65,15 +65,20 @@ const Form = () => {
           submit
           </button> */}
             </div>
-            <div className=" flex  justify-between border rounded-[8px] p-5 ">
-              <Radio
-                checked={isChecked}
-                onChange={() => setIsChecked((prev) => !prev)}
-                label="I agree with the processing of my personal data"
-              />
-              <GradientButton>
-                Send Enquiry <MdArrowForward />
-              </GradientButton>
+            <div className="xs:block sm:flex md:block lg:flex  justify-between border rounded-[8px] xs:p-5 md:p-4 lg:p-5 ">
+              <div className="flex items-center">
+                <Radio
+                  checked={isChecked}
+                  onChange={() => setIsChecked((prev) => !prev)}
+                  // label="I agree with the processing of my personal data"
+                />
+                <p>I agree with the processing of my personal data</p>
+              </div>
+              <div className="md:flex lg:block justify-end">
+                <GradientButton className="mt-3">
+                  Send Enquiry <MdArrowForward />
+                </GradientButton>
+              </div>
             </div>
           </div>
         </div>

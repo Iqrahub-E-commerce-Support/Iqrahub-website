@@ -32,7 +32,7 @@ const Testimonial = () => {
 
   return (
     <div className=" sm:block md:grid item grid-cols-[1.1fr_2fr] gap-1">
-      <div className="flex flex-col justify-center">
+      <div className="flex flex-col justify-center md:ml-16 ">
         <div className="flex gap-2 mb-6">
           {[...Array(5)].map((_, index) => (
             <StarIcon color="white" key={index} />
@@ -56,17 +56,20 @@ const Testimonial = () => {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         }}
-        style={{ width: "100%", paddingBottom: 100, paddingLeft: 35 }}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
-        }}
+        // style={{ width: "100%", paddingBottom: 100, paddingLeft: 35 }}
+        // autoplay={{
+        //   delay: 3000,
+        //   disableOnInteraction: false,
+        //   pauseOnMouseEnter: true,
+        // }}
         spaceBetween={20}
         slidesPerView={1}
         loop={true}
-        className="testimonial-swiper h-full"
+        className="testimonial-swiper"
         breakpoints={{
+          140: {
+            slidesPerView: 1,
+          },
           640: {
             slidesPerView: 1,
           },
@@ -83,15 +86,45 @@ const Testimonial = () => {
             <TestimonialCard {...testimonial} />
           </SwiperSlide>
         ))}
-        <div className="swiper-button-prev -ml-2" />
-        <div className="swiper-button-next" />
+        <div className="swiper-button-prev -ml-[8px] " />
+        <div className="swiper-button-next xs:-mr-3 sm:-mr-0" />
       </Swiper>
 
       <style>{`
         .testimonial-swiper {
-          position: relative;
+        width:100%;
+        padding-bottom:100px;
+        padding-left:35px;
+          // position: relative;
         }
-        
+          @media (max-width: 6400px) {
+    .testimonial-swiper {
+      padding-bottom: 180px;
+      padding-left: 10px;
+    }
+  }
+          @media (max-width: 900px) {
+    .testimonial-swiper {
+      padding-bottom: 140px;
+      padding-left: 0px;
+      margin-left:10px;
+    }
+  }
+          @media (max-width: 1280px) {
+    .testimonial-swiper {
+      padding-bottom: 140px;
+      padding-left: 40px;
+      margin-left:10px;
+    }
+  }
+          @media (min-width: 1280px) {
+    .testimonial-swiper {
+      padding-bottom: 140px;
+      padding-left: 85px;
+      margin-left:10px;
+    }
+  }
+
         .testimonial-swiper .swiper-button-next,
         .testimonial-swiper .swiper-button-prev {
           color: white;
@@ -100,7 +133,7 @@ const Testimonial = () => {
           height: 50px;
           border-radius: 50%;
           transform: translateY(-180%);
-        //   transform: translateX(1%);
+          // transform: translateX(1%);
         }
         
         .testimonial-swiper .swiper-button-next:after,
@@ -114,11 +147,11 @@ const Testimonial = () => {
         }
         
         .testimonial-swiper .swiper-button-next {
-          right: 10px;
+          // right: 10px;
         }
         
         .testimonial-swiper .swiper-button-prev {
-          left: 10px;
+          // left: 10px;
         }
       `}</style>
     </div>

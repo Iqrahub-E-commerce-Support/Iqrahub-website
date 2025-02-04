@@ -29,9 +29,9 @@ const WayOfExecution = () => {
   };
 
   return (
-    <div className="my-14 xs:block md:grid grid-cols-[1fr_2fr] gap-4">
+    <div className="my-14 xs:block md:grid md:grid-cols-[1.5fr_2fr] lg:grid-cols-[1fr_2fr] gap-4">
       {/* Left Section */}
-      <div>
+      <div className="md:ml-16 3xl:ml-0">
         <div className="flex gap-2 mb-6">
           {[...Array(5)].map((_, index) => (
             <StarIcon key={index} />

@@ -68,7 +68,9 @@ const RenderFields = ({ formFields, control, errors }: RenderFieldProps) => {
             rules={field.validation}
             render={({ field: controllerField }) => (
               <div className="mb-5">
-                <p className="ml-2 mb-2">{field?.label}</p>
+                <p className="ml-2 mb-2 xs:text-[14px] lg:text-[16px]">
+                  {field?.label}
+                </p>
                 <TextField
                   {...controllerField}
                   placeholder={field?.placeholder}

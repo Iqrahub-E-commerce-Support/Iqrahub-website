@@ -74,7 +74,7 @@ const Projects = () => {
       ],
     },
     {
-      tabValue: "iqra2",
+      tabValue: "laca",
       tabTitle: "LA-Ca Bite Catalogue",
       slides: [
         {

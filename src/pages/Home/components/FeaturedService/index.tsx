@@ -20,7 +20,7 @@ const FeaturedService = () => {
     },
   ];
   return (
-    <div className="xs:mx-6 md:mx-0">
+    <div>
       <div className="flex justify-between items-center">
         <Heading normalText="Featured" specialText="Service" />
         <Link to={"./service"} style={{ textDecoration: "underline" }}>

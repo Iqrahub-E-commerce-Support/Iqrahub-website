@@ -5,7 +5,7 @@ import ThirdSection from "./components/ThirdSection";
 const Footer = () => {
   return (
     <>
-      <div className="flex flex-wrap justify-between gap-6 border-b pb-[40px] xs:mx-6 md:mx-0">
+      <div className="flex flex-wrap justify-between gap-6 border-b pb-[40px] xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
         <FirstSection />
         <SecondSection />
         <ThirdSection />

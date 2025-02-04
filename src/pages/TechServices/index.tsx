@@ -7,18 +7,18 @@ const TechSerivces = () => {
   return (
     <>
       <section
-        className="h-[450px] bg-center   xs:pt-[13.2rem] sm:pt-[5%] "
+        className="h-[450px] bg-center   xs:pt-[13.2rem] sm:pt-[5%] container mx-auto "
         style={{ backgroundImage: `url(${bg}) ` }}
       >
         <Hero />
       </section>
-      <section className="h-screen">
+      <section className="h-screen  container mx-auto ">
         <Processes />
       </section>
-      <section className="pt-[120px]">
+      <section className="pt-[120px]  container mx-auto ">
         <VideoSection />
       </section>
-      <section className="pt-[120px]">
+      <section className="pt-[120px]  container mx-auto ">
         <Projects />
       </section>
     </>
