@@ -1,5 +1,5 @@
 interface CustomizableHeadingProps {
-  firstTxt: string;
+  firstTxt?: string;
   secondTxt?: string;
   thirdTxt?: string;
   MainStyle?: string;

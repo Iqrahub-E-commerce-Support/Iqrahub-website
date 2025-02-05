@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { BiPlay, BiPause } from "react-icons/bi";
 import VideoFrame from "@/assets/images/VideoFrame.png";
-
+import sampleVid from "@/assets/images/video/sample_vid.mp4";
 const CustomizedVideoWithFrame = () => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -23,7 +23,7 @@ const CustomizedVideoWithFrame = () => {
       <div className="relative flex-shrink-0">
         <video
           ref={videoRef}
-          src="https://www.w3schools.com/html/mov_bbb.mp4"
+          src={sampleVid}
           className="absolute inset-0 w-full h-[89vh] pt-3 pb-1 px-2 object-fill rounded-[28px] z-10"
           muted
           loop
