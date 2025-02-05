@@ -35,7 +35,7 @@ const OurSuccess = () => {
           industry. Lorem Ipsum has been the.
         </p>
       </div>
-      <div className="flex gap-5">
+      <div className="flex justify-center gap-5">
         <div className="flex flex-col gap-5 mt-9">
           {stats.slice(0, 2).map((stat, index) => (
             <SuccessCard

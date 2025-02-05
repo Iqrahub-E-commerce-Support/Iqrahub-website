@@ -45,14 +45,13 @@ const Home = () => {
       <section>
         <Clients />
       </section>
-
       <section className="pt-12 mt-12  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto bg-cover relative">
         <FeaturedService />
       </section>
       <section className="xs:mt-14 md:mt-20 xs:mx-6  sm:mx-7 md:mx-0 3xl:container 3xl:mx-auto">
         <WayOfExecution />
       </section>
-      <section className="mt-16 xs:mx-6 sm:mx-7   md:mx-16 3xl:container 3xl:mx-auto">
+      <section className="xs:mt-6 sm:mt-16 xs:mx-6 sm:mx-7   md:mx-16 3xl:container 3xl:mx-auto">
         <Form />
       </section>
       <section className="relative mt-16  xs:mx-6 sm:mx-7 md:mx-0 lg:mr-10 3xl:container 3xl:mx-auto ">

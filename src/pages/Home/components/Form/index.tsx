@@ -74,7 +74,7 @@ const Form = () => {
                 />
                 <p>I agree with the processing of my personal data</p>
               </div>
-              <div className="md:flex lg:block justify-end">
+              <div className="xs:flex sm:block md:flex lg:block justify-end">
                 <GradientButton className="mt-3">
                   Send Enquiry <MdArrowForward />
                 </GradientButton>

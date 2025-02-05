@@ -10,7 +10,7 @@ const Footer = () => {
         <SecondSection />
         <ThirdSection />
       </div>
-      <div className="flex justify-center py-9 gap-2">
+      <div className="xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto flex flex-wrap justify-center py-9 gap-2">
         <p className="opacity-50">
           Copyright © {new Date().getFullYear()} Iqrahub story Media | All
           Rights Reserved |

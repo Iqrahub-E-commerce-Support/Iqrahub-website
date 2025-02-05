@@ -97,10 +97,10 @@ const Testimonial = () => {
         padding-left:35px;
           // position: relative;
         }
-          @media (max-width: 6400px) {
+          @media (max-width: 540px) {
     .testimonial-swiper {
       padding-bottom: 180px;
-      padding-left: 10px;
+      padding-left: 0px;
     }
   }
           @media (max-width: 900px) {
@@ -110,13 +110,13 @@ const Testimonial = () => {
       margin-left:10px;
     }
   }
-          @media (max-width: 1280px) {
-    .testimonial-swiper {
-      padding-bottom: 140px;
-      padding-left: 40px;
-      margin-left:10px;
-    }
-  }
+  //         @media (max-width: 1280px) {
+  //   .testimonial-swiper {
+  //     padding-bottom: 140px;
+  //     padding-left: 40px;
+  //     margin-left:10px;
+  //   }
+  // }
           @media (min-width: 1280px) {
     .testimonial-swiper {
       padding-bottom: 140px;
