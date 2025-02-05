@@ -7,15 +7,15 @@ const MediaStory = () => {
   return (
     <>
       <section
-        className="h-[450px] bg-center   xs:pt-[13.2rem] sm:pt-[5%] container mx-auto "
+        className="h-[450px] bg-center flex flex-col justify-center items-center gap-9 xs:px-2 sm:px-7 md:px-16     3xl:container 3xl:mx-auto "
         style={{ backgroundImage: `url(${bg}) ` }}
       >
         <Hero />
       </section>
-      <section className="mt-[5px]  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
+      <section className=" xs:mt-0 sm:mt-[5px]  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
         <CustomizedVideoWithFrame />
       </section>
-      <section className="mt-[121px]   xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto">
+      <section className="xs:mt-[100%] sm:mt-[121px]   xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto">
         <StorySection />
       </section>
       <section className="mt-[75px] xs:mt-14 md:mt-20 xs:mx-6  sm:mx-7 md:ml-16 3xl:container 3xl:mx-auto ">
