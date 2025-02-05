@@ -12,13 +12,13 @@ const TechSerivces = () => {
       >
         <Hero />
       </section>
-      <section className="h-screen  container mx-auto ">
+      <section className="mt-[55px] xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto">
         <Processes />
       </section>
-      <section className="pt-[120px]  container mx-auto ">
+      <section className="mt-[120px]  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
         <VideoSection />
       </section>
-      <section className="pt-[120px]  container mx-auto ">
+      <section className="pt-[120px] xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto">
         <Projects />
       </section>
     </>

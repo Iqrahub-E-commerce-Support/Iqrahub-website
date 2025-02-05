@@ -14,8 +14,8 @@ const Processes = () => {
           your audiences and boost engagement
         </p>
       </div>
-      <div className="w-full h-full mt-14">
-        <img className="object-contain" src={process} alt="" />
+      <div className="flex justify-center mt-12">
+        <img className="object-fill w-[95%] h-[95%]" src={process} alt="" />
       </div>
     </>
   );
