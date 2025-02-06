@@ -137,7 +137,7 @@ const Projects = () => {
         </TabsList>
         {projectData.map((project) => (
           <TabsContent key={project.tabValue} value={project.tabValue}>
-            <div className="relative  w-full mt-[80px]">
+            <div className="relative xs:-ml-8 sm:ml-0  w-full mt-[80px]">
               <Swiper
                 modules={[Navigation, Autoplay]}
                 navigation={{
@@ -164,7 +164,7 @@ const Projects = () => {
               >
                 {project.slides.map((slide, index) => (
                   <SwiperSlide key={index} className="mx-8">
-                    <div className="xs:block md:flex  justify-start xs:gap-0 sm:gap-8">
+                    <div className="xs:block md:flex  xs:justify-start sm:justify-between md:justify-start xs:gap-0 sm:gap-8">
                       <img
                         className="xs:-ml-7 sm:ml-0 xs:h-full sm:h-[350px]  md:h-[250px]  lg:h-[350px] xs:w-[300px] sm:w-[450px]  md:w-[380px] lg:w-[480px]"
                         src={slide.projectImg}
