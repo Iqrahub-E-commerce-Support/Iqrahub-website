@@ -15,7 +15,7 @@ const CustomizableHeaderContainer = (
   const { heading1, heading2, subHeading, button } = props;
   return (
     <>
-      <div className="flex justify-between items-end">
+      <div className="flex flex-wrap justify-between items-end">
         <div>
           <CustomizableHeading
             firstTxt={heading1 && heading1}
@@ -23,9 +23,9 @@ const CustomizableHeaderContainer = (
             MainStyle="text-3xl font-bold text-yellow"
             SpecialCharacterStyle="text-white font-thin"
           />
-          <p className="w-[460px] mt-2  text-offWhite">{subHeading}</p>
+          <p className="sm:w-[460px] mt-2  text-offWhite">{subHeading}</p>
         </div>
-        <Button variant="contained">
+        <Button style="xs:mt-4 sm:mt-0" variant="contained">
           {button} <ArrowRight />
         </Button>
       </div>

@@ -1,8 +1,5 @@
-import Button from "@/components/Button";
 import CustomizableHeaderContainer from "@/components/CustomizableHeaderContainer";
-import CustomizableHeading from "@/components/CustomizableHeading";
 import CustomizedVideoWithFrame from "@/components/CustomizedVideoWithFrame";
-import { ArrowRight } from "lucide-react";
 
 const VideoSection = () => {
   return (

@@ -11,7 +11,7 @@ const CustomizableHeading = (props: CustomizableHeadingProps) => {
     firstTxt,
     secondTxt,
     thirdTxt,
-    MainStyle = "text-3xl font-bold",
+    MainStyle = "xs:text-[24px] sm:text-3xl font-bold",
     SpecialCharacterStyle = "font-thin",
     thirdTextStyle = "",
   } = props;

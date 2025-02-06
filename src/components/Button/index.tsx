@@ -1,6 +1,6 @@
 interface ButtonProps {
   children: React.ReactNode;
-  style?: { [key: string]: any };
+  style?: string
   variant?: "outlined" | "contained" | "rounded";
 }
 
@@ -19,7 +19,7 @@ const Button = (props: ButtonProps) => {
           ? rounded
           : defaultStyles;
   return (
-    <button type="button" style={{ ...style }} className={`${variantStyle}`}>
+    <button type="button"  className={`${variantStyle} ${style}`}>
       <div className="flex gap-2 items-center">{children}</div>
     </button>
   );

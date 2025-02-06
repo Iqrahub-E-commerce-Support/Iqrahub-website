@@ -9,13 +9,17 @@ const Processes = () => {
           firstTxt="WEBSITE"
           secondTxt="Design & Development"
         />
-        <p className="w-[500px] mt-2 text-center text-offWhite">
+        <p className="sm:w-[500px] mt-2  sm:text-center text-offWhite">
           We design and develop interactive digital experiences that delight
           your audiences and boost engagement
         </p>
       </div>
       <div className="flex justify-center mt-12">
-        <img className="object-fill w-[95%] h-[95%]" src={process} alt="" />
+        <img
+          className="object-fill xs:w-screen sm:w-[95%] h-[95%]"
+          src={process}
+          alt=""
+        />
       </div>
     </>
   );

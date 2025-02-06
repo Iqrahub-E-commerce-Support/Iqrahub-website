@@ -110,7 +110,7 @@ const Projects = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col xs:items-start sm:items-center">
         <p className="text-[18px]">Web Development Projects</p>
         <CustomizableHeading
           firstTxt="WE BUILD"
@@ -137,7 +137,7 @@ const Projects = () => {
         </TabsList>
         {projectData.map((project) => (
           <TabsContent key={project.tabValue} value={project.tabValue}>
-            <div className="relative w-full mt-[80px]">
+            <div className="relative  w-full mt-[80px]">
               <Swiper
                 modules={[Navigation, Autoplay]}
                 navigation={{
@@ -145,7 +145,7 @@ const Projects = () => {
                   nextEl: ".swiper-button-next",
                   prevEl: ".swiper-button-prev",
                 }}
-                style={{ width: "100%", paddingBottom: 100, paddingLeft: 35 }}
+                // style={{ width: "100%", paddingBottom: 100, paddingLeft: 35 }}
                 autoplay={{
                   delay: 3000,
                   disableOnInteraction: false,
@@ -156,6 +156,7 @@ const Projects = () => {
                 loop={true}
                 className="testimonial-swiper h-full"
                 breakpoints={{
+                  0: { slidesPerView: 1 },
                   640: { slidesPerView: 1 },
                   768: { slidesPerView: 1 },
                   1024: { slidesPerView: 1 },
@@ -163,13 +164,13 @@ const Projects = () => {
               >
                 {project.slides.map((slide, index) => (
                   <SwiperSlide key={index} className="mx-8">
-                    <div className="flex justify-start gap-2">
+                    <div className="xs:block md:flex  justify-start xs:gap-0 sm:gap-8">
                       <img
-                        className="h-[350px] w-[480px]"
+                        className="xs:-ml-7 sm:ml-0 xs:h-full sm:h-[350px]  md:h-[250px]  lg:h-[350px] xs:w-[300px] sm:w-[450px]  md:w-[380px] lg:w-[480px]"
                         src={slide.projectImg}
                         alt="projects"
                       />
-                      <div className="w-[52%]">
+                      <div className="xs:w-[84%]  md:w-[36%] xl:w-[52%]">
                         <p className="text-yellow text-[18px] mt-4 mb-3">
                           {slide.category}
                         </p>
@@ -178,9 +179,9 @@ const Projects = () => {
                           secondTxt={slide.heading.second}
                         />
                         <p className="mt-6">{slide.description}</p>
-                        <div className="flex gap-4 mt-9">
+                        <div className="flex flex-wrap gap-4 mt-9">
                           {slide.team.map((member, idx) => (
-                            <div key={idx} className="flex gap-3">
+                            <div key={idx} className="flex flex-wrap gap-3">
                               <img
                                 className="h-14 w-12"
                                 src={member.image}
@@ -209,11 +210,18 @@ const Projects = () => {
       </Tabs>
       <style>{`
         .testimonial-swiper {
-          /* position: relative; */
+        //  position: relative;
         }
         
+                @media (max-width: 740px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+      display:none;
+    }
+  }
         .testimonial-swiper .swiper-button-next,
         .testimonial-swiper .swiper-button-prev {
+         
           color: white;
           border: 6px solid rgba(255, 255, 255, 0.5);
           width: 50px;

@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <>
       <div className="flex flex-col items-center mt-[85px] gap-3">
-        <div className="flex gap-[25px] items-center">
+        <div className="flex  gap-[25px] items-center">
           <p className="font-thin">Project</p>
           <NanoTechnologyIcon />
           <p>Showcase</p>
@@ -19,15 +19,15 @@ const Hero = () => {
           specialText="SERVICES"
         />
         <p className="text-[17px]">Creative solutions for modern brands</p>
-        <div className="glassy-bg flex  xs:gap-2 mt-[30px]  border rounded-full xs:px-2 md:px-5 xs:py-2 md:py-2 xs:mx-8 sm:mx-0">
-          <div className="flex items-center gap-[15px]">
+        <div className="glassy-bg flex xs:justify-start justify-between items-center xs:gap-4 gap-12   border rounded-full xs:px-2 md:px-5 xs:py-2 md:py-2 xs:mx-8 sm:mx-0 ">
+          <div className="flex items-center xs:gap-2 smgap-[15px]">
             <ComponentIcon />
-            <h5>Web Design & Build</h5>
+            <p className="xs:text-[13px] sm:text-[15px]">Web Design & Build</p>
           </div>
-          <div className="ml-[30px]">
+          <div className="xs:ml-2 sm:ml-[30px]">
             <ArtIcon />
           </div>
-          <div className="ml-[30px]">
+          <div className="xs:ml-0 sm:ml-[30px]">
             <ColorIcon />
           </div>
         </div>
