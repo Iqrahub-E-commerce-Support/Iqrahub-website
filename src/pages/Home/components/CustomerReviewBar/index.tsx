@@ -10,7 +10,7 @@ const CustomerReviewBar = () => {
     { img: profile, alt: "profile-5" },
   ];
   return (
-    <div className="flex-space-between xs:gap-2 gap-12   border rounded-full xs:px-2 md:px-5 xs:py-2 md:py-2 xs:mx-8 sm:mx-0 bg-white/1 shadow-[0_4px_30px_rgba(0,0,0,0.2)] backdrop-blur-[5.9px]">
+    <div className="glassy-bg flex space-between xs:gap-2 gap-12   border rounded-full xs:px-2 md:px-5 xs:py-2 md:py-2 xs:mx-8 sm:mx-0 ">
       <div className="flex-space-between gap-2 xs:gap-1 ">
         <span className="text-yellow xs:text-[12px] sm:text-[15px]">5.0</span>
         <MdOutlineStar color={colors.yellow} size={15} />

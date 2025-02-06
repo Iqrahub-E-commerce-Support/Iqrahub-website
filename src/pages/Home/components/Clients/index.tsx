@@ -12,7 +12,7 @@ const Clients = () => {
   return (
     <>
       <div className="flex flex-col items-center mt-10 gap-7">
-        <div className="flex justify-center items-center gap-3 bg-yellow bg-opacity-15 py-1 px-3 rounded-full">
+        <div className="flex justify-center items-center gap-3 bg-yellow bg-opacity-15 py-1 px-3 rounded-full ">
           <AsterRiskIcon />
           <p className="text-yellow">Award Winning Agency</p>
         </div>
