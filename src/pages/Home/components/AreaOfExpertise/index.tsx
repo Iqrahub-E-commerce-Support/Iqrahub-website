@@ -20,7 +20,7 @@ const AreaOfExpertise = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setPositionIndexes((prevIndexes) =>
-        prevIndexes.map((index) => (index + 1) % cards.length)
+        prevIndexes.map((index) => (index + 1) % cards.length),
       );
     }, 3000);
 

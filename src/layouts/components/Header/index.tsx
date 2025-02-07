@@ -5,12 +5,11 @@ import GradientButton from "@/components/GradientButton";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-
   return (
     <>
-      <header  className="flex-space-between">
-        <Link to={'/'}>
-        <img src={Icon} alt="icon" className="xs:h-8  md:h-10" />
+      <header className="flex-space-between">
+        <Link to={"/"}>
+          <img src={Icon} alt="icon" className="xs:h-8  md:h-10" />
         </Link>
         <Menu />
         <GradientButton>

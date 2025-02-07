@@ -42,7 +42,7 @@ const Home = () => {
           <AreaOfExpertiseSmallScreen />
         </div>
       </section>
-      <section >
+      <section>
         <Clients />
       </section>
       <section className="pt-12 mt-12  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto bg-cover relative">

@@ -13,7 +13,7 @@ import img10 from "@/assets/images/clients/img-10.png";
 import Heading from "@/components/Heading";
 
 const Clients = () => {
-  const items = [img1, img2, img3, img4, img5,img6,img7,img8,img9,img10];
+  const items = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
   return (
     <>
       <div className="flex flex-col items-center mt-10 gap-7">
