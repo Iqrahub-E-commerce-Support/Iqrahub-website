@@ -57,11 +57,11 @@ const Testimonial = () => {
           prevEl: ".swiper-button-prev",
         }}
         // style={{ width: "100%", paddingBottom: 100, paddingLeft: 35 }}
-        // autoplay={{
-        //   delay: 3000,
-        //   disableOnInteraction: false,
-        //   pauseOnMouseEnter: true,
-        // }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
         spaceBetween={20}
         slidesPerView={1}
         loop={true}
@@ -82,7 +82,7 @@ const Testimonial = () => {
         }}
       >
         {testimonials.map((testimonial, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide className="xs:mx -0 xl:mx-20" key={index}>
             <TestimonialCard {...testimonial} />
           </SwiperSlide>
         ))}
