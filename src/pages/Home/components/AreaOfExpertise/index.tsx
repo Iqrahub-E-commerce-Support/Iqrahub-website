@@ -52,7 +52,7 @@ const AreaOfExpertise = () => {
           initial="pos1"
           animate={positions[positionIndexes[index]]}
           variants={cardVariants}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.3 }}
         >
           <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-40 transition-opacity duration-300 z-10"></div>
           <div className="flex flex-col justify-end h-full ml-2 text-white p-4">
