@@ -2,6 +2,7 @@ import ProjectHero from "@/components/ProjectHero";
 import bg from "@/assets/images/caligraphy.png";
 import Intro from "./components/Intro";
 import Process from "./components/Process";
+import RelatedWorks from "./components/RelatedWorks";
 const AppDevelopment = () => {
   return (
     <>
@@ -16,6 +17,9 @@ const AppDevelopment = () => {
       </section>
       <section className="mt-[60px]  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
         <Process />
+      </section>
+      <section className="mt-[60px]  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
+        <RelatedWorks/>
       </section>
     </>
   );

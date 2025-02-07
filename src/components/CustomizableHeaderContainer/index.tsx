@@ -25,7 +25,7 @@ const CustomizableHeaderContainer = (
           />
           <p className="sm:w-[460px] mt-2  text-offWhite">{subHeading}</p>
         </div>
-        <Button style="xs:mt-4 sm:mt-0" variant="contained">
+        <Button style="xs:mt-4 md:mt-0" variant="contained">
           {button} <ArrowRight />
         </Button>
       </div>

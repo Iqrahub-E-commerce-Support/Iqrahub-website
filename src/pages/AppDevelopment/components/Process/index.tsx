@@ -60,7 +60,7 @@ const Process = () => {
       {processSteps.map((step, index) => (
         <div
           key={step.id}
-          className={`mt-14 flex gap-10 ${index % 2 === 0 ? "justify-center" : ""}`}
+          className={`mt-14 flex gap-10 ${index % 2 === 0 ? "justify-evenly" : "justify-around"}`}
         >
           {index % 2 === 0 && <img src={step.image} alt={step.title} />}
           <div>
