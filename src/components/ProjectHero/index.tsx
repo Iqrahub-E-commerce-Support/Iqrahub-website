@@ -31,7 +31,11 @@ const ProjectHero = (props: ProjectHeroProps) => {
         <div className="glassy-bg flex xs:justify-start justify-between items-center xs:gap-4 gap-12   border rounded-full xs:px-2 md:px-5 xs:py-2 md:py-2 xs:mx-8 sm:mx-0 ">
           <Link to={`${ROUTES.techServices}${ROUTES.webdesign}`}>
             <div className="flex items-center xs:gap-2 sm:gap-[15px] cursor-pointer">
-              <ComponentIcon />
+              <ComponentIcon
+                className={
+                  lastSegment === pathname.webdesign ? "text-yellow " : ""
+                }
+              />
               {lastSegment === pathname.webdesign && (
                 <p className="xs:text-[13px] sm:text-[15px] font-bold">
                   Web Design & Build
@@ -41,7 +45,14 @@ const ProjectHero = (props: ProjectHeroProps) => {
           </Link>
           <Link to={`${ROUTES.techServices}${ROUTES.appDevelopment}`}>
             <div className="flex items-center xs:gap-2 sm:gap-[15px] xs:ml-2 sm:ml-[30px] cursor-pointer">
-              <ArtIcon />
+              <ArtIcon
+                color={
+                  lastSegment === pathname.appDevelopment ? "#FFC506" : "white"
+                }
+                className={
+                  lastSegment === pathname.appDevelopment ? "text-yellow " : ""
+                }
+              />
               {lastSegment === pathname.appDevelopment && (
                 <p className="xs:text-[13px] sm:text-[15px] font-bold">
                   Web Design & Build

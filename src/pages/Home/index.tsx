@@ -4,7 +4,7 @@ import { MdArrowForward } from "react-icons/md";
 import { MdPlayArrow } from "react-icons/md";
 import GradientButton from "@/components/GradientButton";
 import AreaOfExpertise from "./components/AreaOfExpertise";
-import AreaOfExpertiseSmallScreen from "./components/AreaOfExpertiseSmallScreen";
+// import AreaOfExpertiseSmallScreen from "./components/AreaOfExpertiseSmallScreen";
 import Clients from "./components/Clients";
 import FeaturedService from "./components/FeaturedService";
 import WayOfExecution from "./components/WayOfExecution";
@@ -35,12 +35,12 @@ const Home = () => {
         </div>
       </section>
       <section className="xs:mt-[220px] sm:mt-0 lg:mt-4">
-        <div className="xs:hidden md:block -z-50">
+        <div className="block -z-50">
           <AreaOfExpertise />
         </div>
-        <div className="xs:block md:hidden">
+        {/* <div className="xs:block md:hidden">
           <AreaOfExpertiseSmallScreen />
-        </div>
+        </div> */}
       </section>
       <section>
         <Clients />

@@ -12,6 +12,7 @@ const Home = lazy(() => import("@/pages/Home"));
 const TechSerivces = lazy(() => import("@/pages/TechServices"));
 const AppDevelopment = lazy(() => import("@/pages/AppDevelopment"));
 const MediaStory = lazy(() => import("@/pages/MediaStory"));
+const CaseStudy = lazy(() => import("@/pages/CaseStudy"));
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -30,6 +31,7 @@ const router = createBrowserRouter(
           element={<AppDevelopment />}
         />
         <Route path={ROUTES.mediaStory} element={<MediaStory />} />
+        <Route path={ROUTES.caseStudy} element={<CaseStudy />} />
       </Route>
     </Route>,
   ),
