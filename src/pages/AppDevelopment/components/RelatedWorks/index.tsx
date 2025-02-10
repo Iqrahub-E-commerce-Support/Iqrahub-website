@@ -5,9 +5,9 @@ import sample3 from "@/assets/images/AppDevelopment/sample3.png";
 import ArrowIcon from "@/components/icons/ArrowIcon";
 const RelatedWorks = () => {
   const content = [
-    { backroundImg: sample1,title:'Meedgo.com',link:'' },
-    { backroundImg: sample2,title:'GES Solution',link:'' },
-    { backroundImg: sample3,title:'SP-Travel Website',link:'' },
+    { backroundImg: sample1, title: "Meedgo.com", link: "" },
+    { backroundImg: sample2, title: "GES Solution", link: "" },
+    { backroundImg: sample3, title: "SP-Travel Website", link: "" },
   ];
 
   return (
@@ -32,9 +32,10 @@ const RelatedWorks = () => {
                   <h6 className="text-[24px] font-bold">{content.title}</h6>
                 </div>
                 <div className="flex justify-between items-center">
-
-                  <h6  className="bg-white text-black hover:bg-black hover:text-white transition-all duration-300 py-1 px-3 rounded-full cursor-pointer">View Project</h6>
-                  <ArrowIcon/>
+                  <h6 className="bg-white text-black hover:bg-black hover:text-white transition-all duration-300 py-1 px-3 rounded-full cursor-pointer">
+                    View Project
+                  </h6>
+                  <ArrowIcon />
                 </div>
               </div>
             </div>

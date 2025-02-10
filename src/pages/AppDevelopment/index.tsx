@@ -12,14 +12,14 @@ const AppDevelopment = () => {
       >
         <ProjectHero />
       </section>
-      <section className="xs:-mt-[5rem]  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto">
+      <section className="xs:-mt-[7rem]  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto">
         <Intro />
       </section>
       <section className="mt-[60px]  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
         <Process />
       </section>
       <section className="mt-[60px]  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
-        <RelatedWorks/>
+        <RelatedWorks />
       </section>
     </>
   );
