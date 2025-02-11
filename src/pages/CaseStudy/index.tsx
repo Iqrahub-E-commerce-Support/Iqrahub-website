@@ -2,6 +2,7 @@ import bg from "@/assets/images/Vionex Skyswift.png";
 import Hero from "./components/Hero";
 import Detials from "./components/Details";
 import Speciality from "./components/Speciality";
+import Insights from "./components/Insights";
 const CaseStudy = () => {
   return (
     <>
@@ -15,10 +16,10 @@ const CaseStudy = () => {
         <Detials />
       </section>
       <section className=" mt-11">
-        <Speciality/>
+        <Speciality />
       </section>
       <section className="custom-container">
-        
+        <Insights />
       </section>
     </>
   );

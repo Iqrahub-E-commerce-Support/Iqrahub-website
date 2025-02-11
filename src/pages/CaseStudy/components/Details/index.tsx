@@ -21,8 +21,8 @@ const Detials = () => {
         </div>
         <div className="relative bg-grey p-5 rounded-[20px]">
           <div className="absolute -inset-4 h-20 w-20 bg-black rounded-full flex items-center justify-center ">
-            <div className=" h-14 w-14 border rounded-full flex items-center justify-center p-3">
-              <p className="text-center">
+            <div className=" h-16 w-16 border-2 border-grey rounded-full flex items-center justify-center p-3 ">
+              <p className="text-center ">
                 Aa <br />
                 Text
               </p>
@@ -37,7 +37,7 @@ const Detials = () => {
         </div>
         <div className="grid grid-cols-3 gap-5">
           <div className="bg-grey rounded-[20px] p-5 flex justify-center items-center">
-            <h2 className="text-lg font-bold text-[150px]">Aa</h2>
+            <h2 className="text-lg font-bold text-[10rem]">Aa</h2>
           </div>
 
           {/* Column 2 with 2 rows */}
