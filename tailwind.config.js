@@ -72,6 +72,7 @@ export default {
             height: "0",
           },
         },
+    
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -80,6 +81,7 @@ export default {
       transitionTimingFunction: {
         "custom-ease": "cubic-bezier(0.65, 0.05, 0.36, 1)",
       },
+   
     },
     colors: {
       yellow: "#FFC506",
@@ -88,6 +90,7 @@ export default {
       white: "#ffffff",
       offWhite: "#eeeeee",
       black: "#000000",
+      grey:"#202020",
       "yellow-opacity": "rgba(255, 197, 6, 0.4)",
       "yellow-opacity0.2": "rgba(255, 197, 6, 0.2)",
     },

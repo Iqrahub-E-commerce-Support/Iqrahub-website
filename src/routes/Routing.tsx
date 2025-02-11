@@ -10,7 +10,9 @@ import {
 
 const Home = lazy(() => import("@/pages/Home"));
 const TechSerivces = lazy(() => import("@/pages/TechServices"));
+const AppDevelopment = lazy(() => import("@/pages/AppDevelopment"));
 const MediaStory = lazy(() => import("@/pages/MediaStory"));
+const CaseStudy = lazy(() => import("@/pages/CaseStudy"));
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,8 +22,16 @@ const router = createBrowserRouter(
         element={<DefaultLayout />}
       >
         <Route path={ROUTES.home} index element={<Home />} />
-        <Route path={ROUTES.techServices} element={<TechSerivces />} />
+        <Route
+          path={`${ROUTES.techServices}${ROUTES.webdesign}`}
+          element={<TechSerivces />}
+        />
+        <Route
+          path={`${ROUTES.techServices}${ROUTES.appDevelopment}`}
+          element={<AppDevelopment />}
+        />
         <Route path={ROUTES.mediaStory} element={<MediaStory />} />
+        {/* <Route path={ROUTES.caseStudy} element={<CaseStudy />} /> */}
       </Route>
     </Route>,
   ),

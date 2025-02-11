@@ -1,4 +1,4 @@
-import bg from "@/assets/images/caligraphy.png";
+import bg from "@/assets/images/Media.png";
 import Hero from "./components/Hero";
 import CustomizedVideoWithFrame from "@/components/CustomizedVideoWithFrame";
 import StorySection from "./components/StorySection";
@@ -7,7 +7,7 @@ const MediaStory = () => {
   return (
     <>
       <section
-        className="h-[450px] bg-center flex flex-col justify-center items-center gap-9 xs:px-2 sm:px-7 md:px-16     3xl:container 3xl:mx-auto "
+        className="h-[450px] bg-cover flex flex-col justify-center items-center gap-9 xs:px-2 sm:px-7 md:px-16     3xl:container 3xl:mx-auto "
         style={{ backgroundImage: `url(${bg}) ` }}
       >
         <Hero />

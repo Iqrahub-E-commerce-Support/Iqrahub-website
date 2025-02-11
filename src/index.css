@@ -117,6 +117,9 @@ body {
   .nav-hover-btn.active {
     @apply after:scale-x-100 after:origin-bottom-left;
   }
+  .custom-container {
+    @apply xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto;
+  }
 }
 @layer base {
   * {
