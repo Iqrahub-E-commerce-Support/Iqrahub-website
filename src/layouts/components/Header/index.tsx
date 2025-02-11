@@ -3,10 +3,7 @@ import Menu from "./components/Menu";
 import { MdArrowForward } from "react-icons/md";
 import GradientButton from "@/components/GradientButton";
 import { Link } from "react-router-dom";
-import {
-  Menu as Menus,
-  X,
-} from "lucide-react";
+import { Menu as Menus, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import React from "react";
 import { ROUTES } from "@/app/resources/routes-constants";
@@ -45,14 +42,14 @@ const Header = () => {
   };
   const menus = [
     { name: "Home", path: ROUTES.home, isMenu: false },
-    { name: "Karrak Stories", path: "/karrak-stories", isMenu: false },
+    { name: "Karrak Stories", path: "#", isMenu: false },
     { name: "Media Story", path: ROUTES.mediaStory, isMenu: false },
     {
       name: "Tech Services",
       path: `${ROUTES.techServices}${ROUTES.webdesign}`,
       isMenu: true,
     },
-    { name: "About Us", path: "/about-us", isMenu: false },
+    { name: "About Us", path: "#", isMenu: false },
   ];
   const itemVariants = {
     initial: {
@@ -144,10 +141,10 @@ const Header = () => {
                           transition: { duration: 0.2 },
                         }}
                       >
-                        <Link onClick={()=>setIsOpen(false)} to={item.path}>
-                        <span className="font-bold text-[3.1rem] group-hover:text-black">
-                          {item.name}
-                        </span>
+                        <Link onClick={() => setIsOpen(false)} to={item.path}>
+                          <span className="font-bold text-[3.1rem] group-hover:text-black">
+                            {item.name}
+                          </span>
                         </Link>
                       </motion.div>
                     </motion.a>

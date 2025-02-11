@@ -45,44 +45,63 @@ const processSteps = [
 
 const Process = () => {
   return (
-    <>
-      <div className="flex flex-col items-center">
+    <div className="overflow-hidden">
+      <div className="flex flex-col gap-2 items-center">
         <CustomizableHeading
           firstTxt="UI/UX DESIGNING"
           secondTxt="PROCESS"
           MainStyle="text-[56px] "
         />
-        <p className="text-start">
+        <p className="text-center mb-12">
           We create and refine visual identity systems that provide you with a
           unique positioning and personality
         </p>
       </div>
-      {processSteps.map((step, index) => (
-        <div
-          key={step.id}
-          className={`mt-14 flex gap-10 ${index % 2 === 0 ? "justify-evenly" : "justify-around"}`}
-        >
-          {index % 2 === 0 && <img src={step.image} alt={step.title} />}
-          <div>
-            <h5 className="text-[80px] font-black leading-[85px]">
-              {step.id}
-              <br />
-              {step.title}
-            </h5>
-            <p className="w-[80%]">{step.description}</p>
-            <div className="flex items-center gap-4 mt-6">
-              <p>Deliverables:</p>
-              {step.deliverables.map((item) => (
-                <div key={item} className="border rounded-full py-2 px-4">
-                  {item}
+
+      <div className="space-y-20">
+        {processSteps.map((step, index) => (
+          <div
+            key={step.id}
+            className={`flex flex-col gap-8 ${
+              index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+            }`}
+          >
+            <div className="w-full md:w-1/2">
+              <img
+                src={step.image}
+                alt={step.title}
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+
+            <div className="w-full md:w-1/2 space-y-4">
+              <div className="space-y-2">
+                <h2 className="text-5xl md:text-6xl lg:text-7xl font-black leading-tight">
+                  {step.id}
+                  <br />
+                  {step.title}
+                </h2>
+                <p className="text-lg">{step.description}</p>
+              </div>
+
+              <div className="space-y-4">
+                <p className="font-medium">Deliverables:</p>
+                <div className="flex flex-wrap gap-2">
+                  {step.deliverables.map((item) => (
+                    <span
+                      key={item}
+                      className="border rounded-full py-2 px-4 text-sm md:text-base"
+                    >
+                      {item}
+                    </span>
+                  ))}
                 </div>
-              ))}
+              </div>
             </div>
           </div>
-          {index % 2 !== 0 && <img src={step.image} alt={step.title} />}
-        </div>
-      ))}
-    </>
+        ))}
+      </div>
+    </div>
   );
 };
 

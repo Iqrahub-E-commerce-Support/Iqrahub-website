@@ -9,14 +9,14 @@ const Menu = () => {
   console.log(firstSegment, "segments");
   const menus = [
     { name: "Home", path: ROUTES.home, isMenu: false },
-    { name: "Karrak Stories", path: "/karrak-stories", isMenu: false },
+    { name: "Karrak Stories", path: "#", isMenu: false },
     { name: "Media Story", path: ROUTES.mediaStory, isMenu: false },
     {
       name: "Tech Services",
       path: `${ROUTES.techServices}${ROUTES.webdesign}`,
       isMenu: true,
     },
-    { name: "About Us", path: "/about-us", isMenu: false },
+    { name: "About Us", path: "#", isMenu: false },
   ];
 
   return (

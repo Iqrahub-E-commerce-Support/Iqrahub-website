@@ -1,7 +1,6 @@
 import { pathname, ROUTES } from "@/app/resources/routes-constants";
 import Heading from "@/components/Heading";
 import ArtIcon from "@/components/icons/ArtIcon";
-import ColorIcon from "@/components/icons/ColorIcon";
 import ComponentIcon from "@/components/icons/ComponentIcon";
 import NanoTechnologyIcon from "@/components/icons/NanoTechnologyIcon";
 import { Link, useLocation } from "react-router-dom";
@@ -16,14 +15,14 @@ const ProjectHero = (props: ProjectHeroProps) => {
 
   return (
     <>
-      <div className="flex flex-col items-center mt-[85px] gap-3">
-        <div className="flex  gap-[25px] items-center">
-          <p className="font-thin">Project</p>
+      <div className="flex flex-col items-center mt-[70px] gap-3">
+        <div className="flex  gap-[25px] items-center justify-center">
+          <p className="font-medium">Project</p>
           <NanoTechnologyIcon />
-          <p>Showcase</p>
+          <p className="font-medium">Showcase</p>
         </div>
         <Heading
-          className="md:text-[55px]"
+          className="md:text-[80px]"
           normalText="TECH"
           specialText="SERVICES"
         />
@@ -60,9 +59,6 @@ const ProjectHero = (props: ProjectHeroProps) => {
               )}
             </div>
           </Link>
-          <div className="xs:ml-0 sm:ml-[30px] cursor-pointer">
-            <ColorIcon />
-          </div>
         </div>
       </div>
     </>
