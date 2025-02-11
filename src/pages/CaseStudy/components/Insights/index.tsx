@@ -2,6 +2,7 @@ import CustomizableHeading from "@/components/CustomizableHeading";
 import bg1 from "@/assets/images/vionex/action1.png";
 import bg2 from "@/assets/images/vionex/action2.png";
 import bg3 from "@/assets/images/vionex/action3.png";
+
 const Insights = () => {
   const content = [
     {
@@ -22,33 +23,41 @@ const Insights = () => {
         "Ideal for drones designed for exploration and mapping missions.",
     },
   ];
+
   return (
-    <>
-      <div className={`flex flex-col gap-2 items-center justify-center `}>
+    <div className="flex flex-col items-center">
+      {/* Heading Section */}
+      <div className="text-center">
         <CustomizableHeading
           firstTxt="SKYSWIFT DRONES"
           secondTxt="IN ACTION"
-          MainStyle="md:text-[54px] text-yellow"
+          MainStyle="md:text-[44px] lg:text-[54px] text-yellow"
           SpecialCharacterStyle="font-thin text-white"
         />
-        <p className="mt-2 w-[55%] text-center">
+        <p className="mt-2 w-full sm:w-[75%] lg:w-[55%] text-center text-sm sm:text-base">
           From delivering medical supplies to enhancing military operations and
           optimizing farming, drones are transforming industries.
         </p>
       </div>
-      <div className="mt-4 grid grid-cols-3">
+
+      {/* Content Grid */}
+      <div className="mt-6 grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 sm:gap-4 md:gap-0 w-full px-4">
         {content.map((item, index) => (
           <div
             key={index}
-            className={`h-[400px] bg-cover flex flex-col justify-end p-6 ${index === 0 ? "rounded-tl-[15px]" : index === 2 ? "rounded-tr-[15px]" : ""}`}
+            className={`h-[300px] sm:h-[350px] lg:h-[400px] bg-cover flex flex-col justify-end p-4 sm:p-6 text-white ${
+              index === 0 ? "md:rounded-tl-[15px]" : index === 2 ? "md:rounded-tr-[15px]" : ""
+            }`}
             style={{ backgroundImage: `url(${item.background})` }}
           >
-            <h6 className="text-[28px] font-bold">{item.heading}</h6>
-            <p>{item.subHeading}</p>
+            <h6 className="text-[22px] sm:text-[24px] lg:text-[28px] font-bold">
+              {item.heading}
+            </h6>
+            <p className="text-sm sm:text-base">{item.subHeading}</p>
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
