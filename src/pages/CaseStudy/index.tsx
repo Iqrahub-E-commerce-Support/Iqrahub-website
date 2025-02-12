@@ -15,17 +15,17 @@ const CaseStudy = () => {
       >
         <Hero />
       </section>
-      <section>
+      <section className="xs:mx-6 sm:mx-7 md:mx-0">
         <Objectives />
       </section>
       <section
-        className="mt-[165px] xs:h-[100%] sm:h-[120vh]"
+        className="xs:mt-4 sm:mt-[165px] xs:bg-cover xl:bg-contain 2xl:mt-[245px] 3xl:mt-[230px] md:mt-0 lg:mt-[165px] xs:h-[100%] sm:h-[120vh]"
         style={{
           backgroundImage: `url(${challengesbg}) `,
-          backgroundSize: "contain",
+          // backgroundSize: "contain",
         }}
       >
-       <Challenges/>
+        <Challenges />
       </section>
       <section>
         <Detials />

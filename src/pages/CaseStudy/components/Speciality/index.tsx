@@ -34,7 +34,7 @@ const Speciality = () => {
               of transparency, high competition, and environmental impact.
             </p>
           </div>
-          <img src={swiftlink} alt="SwiftLink Drone"/>
+          <img src={swiftlink} alt="SwiftLink Drone" />
         </div>
 
         {/* SwiftMini Drone */}

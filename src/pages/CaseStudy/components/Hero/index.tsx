@@ -74,7 +74,7 @@ const Hero = () => {
       </h5>
 
       <div className="flex flex-col items-center  mb-8 md:mb-16">
-        <div className="flex flex-col sm:flex-row xs:items-center sm:items-start gap-3 md:gap-5 mb-3 px-4 md:px-0">
+        <div className="flex flex-col sm:flex-row  xs:items-center sm:items-start gap-3 md:gap-5 mb-3 px-4 md:px-0">
           {content.map((item, index) => (
             <div
               key={index}
@@ -86,7 +86,7 @@ const Hero = () => {
             </div>
           ))}
         </div>
-        <p className="text-center px-4 md:px-24 lg:px-32  text-sm md:text-base">
+        <p className="text-center xs:px-6 md:px-24 lg:px-32  text-sm md:text-base">
           <span className="font-bold">Vionex </span>
           is a pioneering research and development company specializing in
           aerospace technologies. Known for pushing the boundaries of innovation

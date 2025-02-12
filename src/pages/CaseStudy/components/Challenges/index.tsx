@@ -1,22 +1,23 @@
 const Challenges = () => {
   return (
     <>
-    
       <div className="xs:px-6 sm:px-7 md:px-16  flex items-center w-screen gap-4 pt-16">
-        <p className=" text-xl font-semibold ">Challenges</p>
-        <div className="h-[0.1px] w-[72%] bg-white" />
-        <p className="text-yellow text-xl font-semibold ">
+        <p className="xs:text-lg sm:text-xl font-semibold ">Challenges</p>
+        <div className="h-[0.1px] xs:w-[25%] sm:w-[72%] bg-white" />
+        <p className="text-yellow xs:text-lg sm:text-xl font-semibold ">
           With Iqrahub Story Media
         </p>
       </div>
-      <div className="flex flex-col justify-center h-full items-center">
-        <h2 className="font-black text-yellow text-[60px]">CHALLENGES</h2>
-        <h6 className="font-bold text-[22px] mx-48 text-center">
+      <div className="xs:px-6 sm:px-7 md:px-16 sm:flex flex-col justify-center h-full items-center">
+        <h2 className="font-black text-yellow xs:text-[48px] text-center sm:text-[56px] md:text-[60px]">
+          CHALLENGES
+        </h2>
+        <h6 className="font-bold xs:text-[18px] sm:text-[22px] xs:mx-0 xl:mx-48 text-center">
           Our challenge was to visually and narratively demonstrate how SkySwift
           could offer a faster, more affordable, and sustainable delivery
           solution.{" "}
         </h6>
-        <p className="text-center font-medium text-[18px]  mx-48 mt-5">
+        <p className="text-center font-medium xs:text-[14px] sm:text-[18px] xs:mx-0  xl:mx-48 mt-5 xs:pb-4 lg:pb-0">
           We needed to address concerns about efficiency, cost reduction, and
           environmental impact while making the concept of drone delivery both
           relatable and aspirational. The goal was to create a campaign that

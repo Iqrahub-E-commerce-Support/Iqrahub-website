@@ -47,7 +47,11 @@ const Insights = () => {
           <div
             key={index}
             className={`h-[300px] sm:h-[350px] lg:h-[400px] bg-cover flex flex-col justify-end p-4 sm:p-6 text-white ${
-              index === 0 ? "md:rounded-tl-[15px]" : index === 2 ? "md:rounded-tr-[15px]" : ""
+              index === 0
+                ? "md:rounded-tl-[15px]"
+                : index === 2
+                  ? "md:rounded-tr-[15px]"
+                  : ""
             }`}
             style={{ backgroundImage: `url(${item.background})` }}
           >
