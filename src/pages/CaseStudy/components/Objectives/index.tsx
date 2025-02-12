@@ -11,7 +11,7 @@ const Objectives = () => {
           How Drones Are <br />
           Transforming Logistics
         </h3>
-        <h6 className="mt-[18px] text-[36px] font-bold">OBJECTIVE</h6>
+        <h6 className="mt-[18px] text-[36px] font-medium">OBJECTIVE</h6>
         <p className="mt-[18px] text-[18px] mr-[59px]">
           The goal of the SkySwift project was to create a strong brand identity
           for a cutting-edge drone delivery system. We aimed to position
