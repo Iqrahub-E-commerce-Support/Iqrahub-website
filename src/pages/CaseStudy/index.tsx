@@ -5,6 +5,7 @@ import Detials from "./components/Details";
 import Speciality from "./components/Speciality";
 import Insights from "./components/Insights";
 import Objectives from "./components/Objectives";
+import Challenges from "./components/Challenges";
 const CaseStudy = () => {
   return (
     <>
@@ -21,10 +22,10 @@ const CaseStudy = () => {
         className="mt-[165px] xs:h-[100%] sm:h-[120vh]"
         style={{
           backgroundImage: `url(${challengesbg}) `,
-          backgroundSize: "cover",
+          backgroundSize: "contain",
         }}
       >
-       
+       <Challenges/>
       </section>
       <section>
         <Detials />
