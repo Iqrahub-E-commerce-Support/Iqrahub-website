@@ -13,7 +13,7 @@ const Detials = () => {
       <div className="grid grid-rows-[auto_auto_auto_auto] gap-5 md:mr-10">
         {/* Logo */}
         <div className="flex justify-center md:justify-start">
-          <img src={logo} alt="logo" className="max-w-full w-36 md:w-48" />
+          <img src={logo} alt="logo" className="max-w-full w-36 md:w-48 object-center" />
         </div>
 
         {/* SkySwift Description */}

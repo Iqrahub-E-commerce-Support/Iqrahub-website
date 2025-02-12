@@ -27,16 +27,17 @@ const Insights = () => {
   return (
     <div className="flex flex-col items-center">
       {/* Heading Section */}
-      <div className="text-center">
+      <div className="flex flex-col gap-5 items-center xs:mt-10 sm:mt-0 xs:leading-10 sm:leading-0 ">
         <CustomizableHeading
-          firstTxt="SKYSWIFT DRONES"
-          secondTxt="IN ACTION"
-          MainStyle="md:text-[44px] lg:text-[54px] text-yellow"
-          SpecialCharacterStyle="font-thin text-white"
+          firstTxt="SKYSWIFT DRONE"
+          secondTxt="SPECIALITIES"
+          MainStyle="xs:text-[35px] xs:text-center sm:'text-start md:text-[45px] text-yellow  font-black"
+          SpecialCharacterStyle="text-white font-thin"
         />
-        <p className="mt-2 w-full sm:w-[75%] lg:w-[55%] text-center text-sm sm:text-base">
-          From delivering medical supplies to enhancing military operations and
-          optimizing farming, drones are transforming industries.
+        <p className="w-full max-w-2xl text-center text-sm md:text-base">
+          SkySwift envisions a diverse fleet of drones, each tailored to
+          specific logistical needs. The drones are categorized based on payload
+          capacity and range:
         </p>
       </div>
 
