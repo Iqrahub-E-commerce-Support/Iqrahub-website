@@ -6,6 +6,7 @@ import Speciality from "./components/Speciality";
 import Insights from "./components/Insights";
 import Objectives from "./components/Objectives";
 import Challenges from "./components/Challenges";
+import KeyInsights from "./components/KeyInsights";
 const CaseStudy = () => {
   return (
     <>
@@ -35,6 +36,9 @@ const CaseStudy = () => {
       </section>
       <section className="custom-container">
         <Insights />
+      </section>
+      <section className="custom-container">
+        <KeyInsights />
       </section>
     </>
   );
