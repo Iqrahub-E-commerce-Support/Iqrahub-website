@@ -22,11 +22,22 @@ const insights = [
 ];
 
 const emojiStats = [
-  { icon: <SadIcon width='auto' height='auto' />, percentage: "0%" },
-  { icon: <DisappointmentEmojiIcon width='auto' height='auto' />, percentage: "0%" },
-  { icon: <NeutralEmojiIon width='auto' height='auto' />, percentage: "0%" },
-  { icon: <HappyEmojiIcon width='auto' height='auto' />, percentage: "30%", highlight: true },
-  { icon: <VeryHappyEmojiIcon width='auto' height='auto' />, percentage: "70%", highlight: true },
+  { icon: <SadIcon width="auto" height="auto" />, percentage: "0%" },
+  {
+    icon: <DisappointmentEmojiIcon width="auto" height="auto" />,
+    percentage: "0%",
+  },
+  { icon: <NeutralEmojiIon width="auto" height="auto" />, percentage: "0%" },
+  {
+    icon: <HappyEmojiIcon width="auto" height="auto" />,
+    percentage: "30%",
+    highlight: true,
+  },
+  {
+    icon: <VeryHappyEmojiIcon width="auto" height="auto" />,
+    percentage: "70%",
+    highlight: true,
+  },
 ];
 
 const KeyInsights = () => {
