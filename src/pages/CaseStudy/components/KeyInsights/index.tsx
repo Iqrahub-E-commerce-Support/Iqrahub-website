@@ -22,11 +22,11 @@ const insights = [
 ];
 
 const emojiStats = [
-  { icon: <SadIcon />, percentage: "0%" },
-  { icon: <DisappointmentEmojiIcon />, percentage: "0%" },
-  { icon: <NeutralEmojiIon />, percentage: "0%" },
-  { icon: <HappyEmojiIcon />, percentage: "30%", highlight: true },
-  { icon: <VeryHappyEmojiIcon />, percentage: "70%", highlight: true },
+  { icon: <SadIcon width='auto' height='auto' />, percentage: "0%" },
+  { icon: <DisappointmentEmojiIcon width='auto' height='auto' />, percentage: "0%" },
+  { icon: <NeutralEmojiIon width='auto' height='auto' />, percentage: "0%" },
+  { icon: <HappyEmojiIcon width='auto' height='auto' />, percentage: "30%", highlight: true },
+  { icon: <VeryHappyEmojiIcon width='auto' height='auto' />, percentage: "70%", highlight: true },
 ];
 
 const KeyInsights = () => {
@@ -47,37 +47,39 @@ const KeyInsights = () => {
       </div>
 
       {/* Stats Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-6 md:gap-8 mb-8">
-        <div className="grid grid-rows-[2fr_1fr] gap-6 md:gap-8">
-          <div className="grid grid-cols-2 gap-6 md:gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-[3fr_1fr] gap-4 sm:gap-6 md:gap-8 mb-6 sm:mb-8">
+        <div className="grid grid-rows-[auto_auto] gap-4 sm:gap-6 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
             {insights.map((insight, index) => (
               <div
                 key={index}
-                className="bg-grey rounded-[34px] p-6 text-center font-medium"
+                className="bg-grey rounded-[20px] sm:rounded-[34px] p-4 sm:p-6 text-center font-medium"
               >
-                <div className="text-4xl md:text-5xl lg:text-[85px] font-medium mb-3">
+                <div className="text-3xl sm:text-4xl md:text-5xl lg:text-[85px] font-medium mb-2 sm:mb-3">
                   {insight.percentage}
                 </div>
-                <div className="text-sm md:text-[25px] font-bold">
+                <div className="text-xs sm:text-sm md:text-[25px] font-bold">
                   {insight.title}
-                  <p className="text-[18px] mt-4">{insight.description}</p>
+                  <p className="text-xs sm:text-sm md:text-[18px] mt-2 sm:mt-4">
+                    {insight.description}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
-          <div className="grid grid-cols-[1fr_1fr_1fr_1fr_1fr]">
+          <div className="grid grid-cols-5 gap-3 sm:gap-4 md:gap-6">
             {emojiStats.map((emoji, index) => (
               <div
                 key={index}
-                className={`h-36 w-36 rounded-[20px] flex flex-col gap-3 justify-center items-center ${
+                className={`xs:h-[50px] sm:h-full aspect-square rounded-[10px] sm:rounded-[20px] flex flex-col gap-2 sm:gap-3 lg:gap-10 justify-center items-center py-7 ${
                   emoji.highlight
                     ? "bg-gradient-to-tr from-[#FF3F02] to-yellow"
                     : "bg-grey"
                 }`}
               >
-                {emoji.icon}
+                <div className="w-6 sm:w-8 md:w-10">{emoji.icon}</div>
                 <p
-                  className={`text-[24px] font-regular ${emoji.highlight ? "text-black" : ""}`}
+                  className={`text-sm sm:text-base md:text-[24px] 2xl:text-[30px] font-regular ${emoji.highlight ? "text-black" : ""}`}
                 >
                   {emoji.percentage}
                 </p>
@@ -89,16 +91,16 @@ const KeyInsights = () => {
         <img
           src={keyInsights}
           alt="Drone Delivery System"
-          className="object-fill w-full h-[470px]  rounded-[34px]"
+          className="xs:object-center sm:object-contain md:object-contain lg:object-cover w-full h-[300px] sm:h-[400px] lg:h-full rounded-[20px] sm:rounded-[34px]"
         />
       </div>
 
       {/* Sustainability Benefits */}
-      <div className="bg-[#2A2A2A] rounded-[34px] p-6 md:p-8">
-        <h3 className="text-xl md:text-2xl font-bold mb-2">
+      <div className="bg-[#2A2A2A] rounded-[20px] sm:rounded-[34px] p-4 sm:p-6 md:p-8">
+        <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">
           Sustainability Benefits
         </h3>
-        <p className="text-sm md:text-base">
+        <p className="text-xs sm:text-sm md:text-base">
           As The Electric-Powered Drones Reduce Carbon Emissions, Offering An
           Eco-Friendly Last-Mile Delivery Solution, These Findings Highlight The
           Transformative Power Of Drone Delivery And Its Potential To Disrupt

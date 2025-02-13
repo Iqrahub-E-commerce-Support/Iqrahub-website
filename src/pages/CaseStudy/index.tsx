@@ -34,11 +34,14 @@ const CaseStudy = () => {
       <section className=" mt-14">
         <Speciality />
       </section>
-      <section className="custom-container">
+      <section className="custom-container mt-16">
         <Insights />
       </section>
-      <section className="custom-container">
+      <section className="custom-container mt-28">
         <KeyInsights />
+      </section>
+      <section>
+        
       </section>
     </>
   );
