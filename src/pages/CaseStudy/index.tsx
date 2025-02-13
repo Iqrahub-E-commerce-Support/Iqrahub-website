@@ -8,6 +8,7 @@ import Objectives from "./components/Objectives";
 import Challenges from "./components/Challenges";
 import KeyInsights from "./components/KeyInsights";
 import Solutions from "./components/Solutions";
+import VideoSection from "./components/VideoSection";
 const CaseStudy = () => {
   return (
     <>
@@ -43,6 +44,9 @@ const CaseStudy = () => {
       </section>
       <section className="custom-container mt-20">
         <Solutions />
+      </section>
+      <section className="custom-container mt-20">
+        <VideoSection/>
       </section>
     </>
   );
