@@ -7,7 +7,7 @@ export const fields2: IFormField[] = [
     type: "radio",
     size: { xs: 1, sm: 1, md: 2, lg: 2 },
     validation: {
-      required: { value: true, message: "This field is required" },
+      required: { value: false, message: "This field is required" },
     },
     placeholder: "Brian Clark",
   },
@@ -17,7 +17,7 @@ export const fields2: IFormField[] = [
     type: "radio",
     size: { xs: 1, sm: 1, md: 2, lg: 2 },
     validation: {
-      required: { value: true, message: "This field is required" },
+      required: { value: false, message: "This field is required" },
     },
     placeholder: "example@youremail.com",
   },
@@ -27,7 +27,7 @@ export const fields2: IFormField[] = [
     type: "radio",
     size: { xs: 1, sm: 1, md: 2, lg: 2 },
     validation: {
-      required: { value: true, message: "This field is required" },
+      required: { value: false, message: "This field is required" },
     },
     placeholder: "IQRAHUB Agency",
   },
@@ -37,7 +37,7 @@ export const fields2: IFormField[] = [
     type: "radio",
     size: { xs: 1, sm: 1, md: 2, lg: 2 },
     validation: {
-      required: { value: true, message: "This field is required" },
+      required: { value: false, message: "This field is required" },
     },
     placeholder: "(123) 456-7890",
   },
@@ -47,7 +47,7 @@ export const fields2: IFormField[] = [
     type: "radio",
     size: { xs: 1, sm: 1, md: 2, lg: 2 },
     validation: {
-      required: { value: true, message: "This field is required" },
+      required: { value: false, message: "This field is required" },
     },
     placeholder: "AED 5k - AED 1000K",
   },
@@ -57,7 +57,7 @@ export const fields2: IFormField[] = [
     type: "radio",
     size: { xs: 1, sm: 1, md: 2, lg: 2 },
     validation: {
-      required: { value: true, message: "This field is required" },
+      required: { value: false, message: "This field is required" },
     },
     placeholder: "Type your Message here...",
     multiline: true,

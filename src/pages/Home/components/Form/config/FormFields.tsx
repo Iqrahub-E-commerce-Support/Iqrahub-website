@@ -1,4 +1,5 @@
 import { IFormField } from "@/components/RenderFields/types/form.types";
+import regexList from "@/constants/regexList";
 
 export const fields: IFormField[] = [
   {
@@ -18,6 +19,10 @@ export const fields: IFormField[] = [
     size: { xs: 1, sm: 1, md: 2, lg: 2 },
     validation: {
       required: { value: true, message: "This field is required" },
+      pattern: {
+        value: regexList.email.value,
+        message: regexList.email.message,
+      },
     },
     placeholder: "example@youremail.com",
   },
@@ -38,6 +43,10 @@ export const fields: IFormField[] = [
     size: { xs: 1, sm: 1, md: 2, lg: 2 },
     validation: {
       required: { value: true, message: "This field is required" },
+      pattern: {
+        value: regexList.phoneInput.value,
+        message: regexList.phoneInput.message,
+      },
     },
     placeholder: "(123) 456-7890",
   },
