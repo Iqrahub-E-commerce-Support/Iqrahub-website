@@ -9,12 +9,13 @@ import Challenges from "./components/Challenges";
 import KeyInsights from "./components/KeyInsights";
 import Solutions from "./components/Solutions";
 import VideoSection from "./components/VideoSection";
+import Conclusion from "./components/Conclusion";
 const CaseStudy = () => {
   return (
     <>
       <section
-        className="xs:h-[100%] sm:h-full  w-full   flex flex-col  items-center justify-between gap-9  xs:pt-[4.2rem] sm:pt-[5%]  3xl:container 3xl:mx-auto "
-        style={{ backgroundImage: `url(${bg}) `, backgroundSize: "cover" }}
+        className="xs:h-[100%] sm:h-full  w-full bg-cover   flex flex-col  items-center justify-between gap-9  xs:pt-[4.2rem] sm:pt-[5%]   "
+        style={{ backgroundImage: `url(${bg}) ` }}
       >
         <Hero />
       </section>
@@ -46,7 +47,10 @@ const CaseStudy = () => {
         <Solutions />
       </section>
       <section className="custom-container mt-20">
-        <VideoSection/>
+        <VideoSection />
+      </section>
+      <section className="custom-container xs:mt-[350px] sm:mt-20 mb-16">
+        <Conclusion />
       </section>
     </>
   );
