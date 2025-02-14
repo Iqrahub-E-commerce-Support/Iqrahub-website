@@ -6,6 +6,7 @@ import RocketIcon from "@/components/icons/RocketIcon/Index";
 import story1 from "@/assets/images/story/Story1.jpg";
 import story2 from "@/assets/images/story/Story2.jpg";
 import story3 from "@/assets/images/story/Story3.jpg";
+
 import story4 from "@/assets/images/story/Story4.jpg";
 import ProcessStepCard from "../ProcessStepCard";
 import ImageCard from "../ImageCard";
