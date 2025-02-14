@@ -4,9 +4,9 @@ import { useLocation, Link } from "react-router-dom";
 const Menu = () => {
   const location = useLocation();
   const path = location.pathname;
-  const segments = location.pathname.split("/");
-  const firstSegment = segments[1];
-  console.log(firstSegment, "segments");
+  // const segments = location.pathname.split(" ");
+  // const firstSegment = segments[0];
+  // console.log(segments, "segments");
   const menus = [
     { name: "Home", path: ROUTES.home, isMenu: false },
     { name: "Karrak Stories", path: "#", isMenu: false },

@@ -17,9 +17,12 @@ const CustomizableHeading = (props: CustomizableHeadingProps) => {
   } = props;
 
   return (
-    <h1 className={`xs:text-[24px] sm:text-3xl font-bold ${MainStyle}`}>
+    <h1 className={`xs:text-[24px] sm:text-3xl font-black ${MainStyle}`}>
       {firstTxt}
-      <span className={SpecialCharacterStyle}> {secondTxt} </span>
+      <span className={`font-thin ${SpecialCharacterStyle}`}>
+        {" "}
+        {secondTxt}{" "}
+      </span>
       <span className={thirdTextStyle}>{thirdTxt}</span>
     </h1>
   );

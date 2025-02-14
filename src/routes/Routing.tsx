@@ -31,7 +31,7 @@ const router = createBrowserRouter(
           element={<AppDevelopment />}
         />
         <Route path={ROUTES.mediaStory} element={<MediaStory />} />
-        {/* <Route path={ROUTES.caseStudy} element={<CaseStudy />} /> */}
+        <Route path={ROUTES.caseStudy} element={<CaseStudy />} />
       </Route>
     </Route>,
   ),

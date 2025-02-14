@@ -5,47 +5,51 @@ import swiftmini from "@/assets/images/vionex/swiftmini.png";
 const Speciality = () => {
   return (
     <>
-      <div className="flex flex-col gap-5 items-center">
+      <div className="flex flex-col gap-5 items-center ">
         <CustomizableHeading
           firstTxt="SKYSWIFT DRONE"
           secondTxt="SPECIALITIES"
-          MainStyle="md:text-[45px] text-yellow"
+          MainStyle="xs:text-[35px] xs:text-center sm:'text-start md:text-[45px] text-yellow  font-black"
           SpecialCharacterStyle="text-white font-thin"
         />
-        <p className="w-[47%] text-center">
+        <p className="w-full max-w-2xl text-center text-sm md:text-base">
           SkySwift envisions a diverse fleet of drones, each tailored to
           specific logistical needs. The drones are categorized based on payload
-          capacity and range:  
+          capacity and range:
         </p>
       </div>
-      <div className="grid grid-rows-2 mt-6">
-        <div className="grid grid-cols-2">
-          <div className="flex flex-col items-center justify-center">
+
+      <div className="grid grid-rows-2  mt-6">
+        {/* SwiftLink Drone */}
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center ">
+          <div className="flex flex-col items-center justify-center ">
             <CustomizableHeading
               firstTxt="SwiftLink"
               secondTxt="Drone"
-              MainStyle="md:text-[45px] text-yellow"
+              MainStyle="text-yellow text-2xl md:text-[45px]"
               SpecialCharacterStyle="text-white"
             />
-            <p className="text-center w-[430px] mt-4">
+            <p className="text-center w-full max-w-lg mt-4 text-sm md:text-base">
               The parcel delivery industry faces challenges such as delays, lack
-              of transparency, high competition, environmental impact,{" "}
+              of transparency, high competition, and environmental impact.
             </p>
           </div>
-          <img src={swiftlink} alt="swiftlink" />
+          <img src={swiftlink} alt="SwiftLink Drone" />
         </div>
-        <div className="grid grid-cols-2">
-          <img src={swiftmini} alt="swiftmini" />
-          <div className="flex flex-col items-center justify-center">
+
+        {/* SwiftMini Drone */}
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center ">
+          <img src={swiftmini} alt="SwiftMini Drone" />
+          <div className="flex flex-col items-center justify-center px-4 md:px-0">
             <CustomizableHeading
               firstTxt="SwiftMini"
               secondTxt="Drone"
-              MainStyle="md:text-[45px] text-yellow"
+              MainStyle="text-yellow text-2xl md:text-[45px]"
               SpecialCharacterStyle="text-white"
             />
-            <p className="text-center w-[430px] mt-4">
+            <p className="text-center w-full max-w-lg mt-4 text-sm md:text-base">
               The parcel delivery industry faces challenges such as delays, lack
-              of transparency, high competition, environmental impact,
+              of transparency, high competition, and environmental impact.
             </p>
           </div>
         </div>
