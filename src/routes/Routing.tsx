@@ -13,6 +13,7 @@ const TechSerivces = lazy(() => import("@/pages/TechServices"));
 const AppDevelopment = lazy(() => import("@/pages/AppDevelopment"));
 const MediaStory = lazy(() => import("@/pages/MediaStory"));
 const CaseStudy = lazy(() => import("@/pages/CaseStudy"));
+const AlmuqtadirCaseStudy = lazy(() => import("@/pages/AlmuqtadirCaseStudy"));
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -32,9 +33,13 @@ const router = createBrowserRouter(
         />
         <Route path={ROUTES.mediaStory} element={<MediaStory />} />
         <Route path={ROUTES.caseStudy} element={<CaseStudy />} />
+        <Route
+          path={ROUTES.almuqtadirCaseStudy}
+          element={<AlmuqtadirCaseStudy />}
+        />
       </Route>
-    </Route>,
-  ),
+    </Route>
+  )
 );
 
 const Routing = () => {
