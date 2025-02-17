@@ -9,6 +9,7 @@ import story3 from "@/assets/images/story/Story3.jpg";
 
 import story4 from "@/assets/images/story/Story4.jpg";
 import ProcessStepCard from "../ProcessStepCard";
+
 import ImageCard from "../ImageCard";
 const StorySection = () => {
   // Process steps data
