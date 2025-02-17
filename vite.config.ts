@@ -17,7 +17,8 @@ export default defineConfig({
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,jpg}'], // Limit patterns
         cleanupOutdatedCaches:true,
-        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, // 5 MB
+        // maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, // 5 MB
+        maximumFileSizeToCacheInBytes: 10 * 1024 * 1024, // 5 MB
         globIgnores: ['**/About-Us-DDAOD_3D.jpg', '**/Image Skeleton-BEKqKSLe.png'], // Exclude large assets
       },
     }),
