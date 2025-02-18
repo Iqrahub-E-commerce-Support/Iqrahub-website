@@ -67,9 +67,8 @@ const Process = () => {
             </p>
           </div>
         </div>
-        
+
         <img src={process} alt="process" className=" -mt-16 z-10 " />
-        
       </div>
     </>
   );

@@ -7,6 +7,7 @@ export default {
     extend: {
       fontFamily: {
         gabarito: ["Gabarito", "sans-serif"],
+        thunder:["Thunder"]
       },
       borderRadius: {
         lg: "var(--radius)",

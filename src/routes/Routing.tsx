@@ -38,8 +38,8 @@ const router = createBrowserRouter(
           element={<AlmuqtadirCaseStudy />}
         />
       </Route>
-    </Route>
-  )
+    </Route>,
+  ),
 );
 
 const Routing = () => {

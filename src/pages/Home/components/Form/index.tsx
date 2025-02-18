@@ -102,7 +102,7 @@ const Form = () => {
           },
         ])
         .select();
-        console.log(data,"whtat")
+      console.log(data, "whtat");
       if (error) {
         console.error("Supabase error:", error);
         alert(`Error submitting form: ${error.message}`);
