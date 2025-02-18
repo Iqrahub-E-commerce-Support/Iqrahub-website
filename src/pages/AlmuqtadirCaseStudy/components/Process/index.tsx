@@ -1,8 +1,13 @@
 import CustomizableHeading from "@/components/CustomizableHeading";
 import process from "@/assets/images/almuqtadir/process.png";
+import leftDesign from "@/assets/images/almuqtadir/leftDesign.png";
+import rightDesign from "@/assets/images/almuqtadir/sideDesign.png";
 const Process = () => {
   return (
     <>
+    <div className="custom-container border-x-2 border-gold-900 ">
+    <img src={leftDesign} alt="" className="relatvie h-[350px] pt-16" />
+    <div className="-mt-[330px]">
       <div className="flex flex-col items-center">
         <CustomizableHeading
           firstTxt="THE PROCESS"
@@ -16,7 +21,7 @@ const Process = () => {
           identified key challenges.
         </p>
       </div>
-      <div className="mt-20 grid grid-cols-[2fr_1.5fr] gap-4">
+      <div className="mt-20 grid grid-cols-[2fr_1.5fr] gap-4 px-10">
         <div className="grid grid-row-3 gap-4">
           <div className="grid grid-cols-2 gap-4">
             <div className="glassy-bg flex flex-col justify-center border-2 border-gold rounded-[20px] px-8 ">
@@ -70,6 +75,9 @@ const Process = () => {
 
         <img src={process} alt="process" className=" -mt-16 z-10 " />
       </div>
+    </div>
+    <img src={rightDesign} alt="" className="h-[350px] place-self-end -mt-80" />
+    </div>
     </>
   );
 };

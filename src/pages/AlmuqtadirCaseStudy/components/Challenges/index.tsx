@@ -2,7 +2,7 @@ import challengesPic from "@/assets/images/almuqtadir/challenges.jpg";
 import CustomizableHeading from "@/components/CustomizableHeading";
 const Challenges = () => {
   return (
-    <div className="grid grid-cols-[1fr_1fr] gap-6 ">
+    <div className="grid grid-cols-[1fr_1fr] gap-6 border-x-2 custom-container border-gold-900 ">
       <img src={challengesPic} alt="challengepic" />
       <div className="flex flex-col justify-center">
         <div className="-mt-6 -ml-14">
