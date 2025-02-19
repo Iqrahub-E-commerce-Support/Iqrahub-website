@@ -12,10 +12,10 @@ const Process = () => {
         <CustomizableHeading
           firstTxt="THE PROCESS"
           secondTxt="OF MUQTADIR"
-          MainStyle="text-gold font-extrabold text-[48px] "
+          MainStyle="text-gold font-extrabold md:text-[48px] "
           SpecialCharacterStyle="font-thin text-white"
         />
-        <p className=" mt-1 w-[720px] text-center text-[18px]">
+        <p className=" mt-2 w-[720px] text-center text-[18px]">
           Recognizing that their main customers were wedding buyers purchasing
           over 40 grams of gold in advance, we analyzed their sales process and
           identified key challenges.

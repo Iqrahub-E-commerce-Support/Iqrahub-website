@@ -5,6 +5,7 @@ import PrecessCal from "@/assets/images/almuqtadir/ProcessBg.png";
 import DigitalEcosystem from "./components/DigitalEcosystem";
 import Hero from "./components/Hero";
 import EcoBg from "@/assets/images/almuqtadir/Ecosystembg.png";
+import Outcome from "./components/Outcome";
 const AlmuqtadirCaseStudy = () => {
   return (
     <>
@@ -26,10 +27,21 @@ const AlmuqtadirCaseStudy = () => {
         <Process />
       </section>
       <section
-        className="h-full bg-cover"
+        className="h-full bg-cover relative"
         style={{ backgroundImage: `url(${EcoBg})` }}
       >
+        <img
+          src={PrecessCal}
+          alt="Background"
+          className="absolute inset-x-96 inset-y-64  h-[700px] w-[2500px]   object-cover opacity-60  z-0"
+        />
         <DigitalEcosystem />
+      </section>
+      <section className="">
+        <Outcome/>
+      </section>
+      <section>
+        
       </section>
     </>
   );

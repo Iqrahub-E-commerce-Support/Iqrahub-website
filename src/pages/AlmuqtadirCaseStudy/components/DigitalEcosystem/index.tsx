@@ -10,7 +10,7 @@ const DigitalEcosystem = () => {
         <CustomizableHeading
           firstTxt="building the"
           secondTxt="digital ecosystem"
-          MainStyle="text-gold font-extrabold text-[48px] uppercase "
+          MainStyle="text-gold font-extrabold md:text-[48px] uppercase "
           SpecialCharacterStyle="font-thin text-white"
         />
         <p className=" mt-1 w-[720px] text-center text-[18px]">
@@ -45,14 +45,14 @@ const DigitalEcosystem = () => {
         <img
           src={ecopic2}
           alt="pic2"
-          className="border-2 border-gold rounded-[15px] h-full"
+          className="border-2 border-gold rounded-[15px] h-full z-10 object-cover"
         />
 
         <div className="grid grid-rows-[1.3fr_1fr_1fr] gap-4">
           <img
             src={ecopic3}
             alt="pic1"
-            className="border-2 border-gold rounded-[15px] "
+            className="border-2 border-gold rounded-[15px] z-10"
           />
 
           <div className="glassy-bg flex flex-col justify-center items-center border-2 border-gold rounded-[20px] px-8 py-4 ">
