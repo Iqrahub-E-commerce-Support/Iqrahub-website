@@ -1,9 +1,11 @@
 const HappyEmojiIcon = ({
   width = 28,
   height = 27,
+  color = "currentColor",
 }: {
   width?: any;
   height?: any;
+  color?: string;
 }) => {
   return (
     <svg
@@ -15,7 +17,7 @@ const HappyEmojiIcon = ({
     >
       <path
         d="M24.75 17.6411C24.75 17.6411 18.9728 23.6411 14.25 23.6411C9.52724 23.6411 3.75 17.6411 3.75 17.6411"
-        stroke="currentColor"
+        stroke={color}
         strokeWidth="6"
         strokeLinecap="round"
       />
@@ -25,7 +27,7 @@ const HappyEmojiIcon = ({
         width="8"
         height="8"
         rx="4"
-        fill="currentColor"
+        fill={color}
       />
       <rect
         x="18.75"
@@ -33,7 +35,7 @@ const HappyEmojiIcon = ({
         width="8"
         height="8"
         rx="4"
-        fill="currentColor"
+        fill={color}
       />
     </svg>
   );

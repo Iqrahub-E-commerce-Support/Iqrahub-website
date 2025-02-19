@@ -1,0 +1,96 @@
+import CustomizableHeading from "@/components/CustomizableHeading";
+import CustomizableMobileFrame from "@/components/CustomizableMobileFrame";
+import SadIcon from "@/components/icons/SadIcon";
+import DisappointmentEmojiIcon from "@/components/icons/DisappointmentEmojiIcon";
+import NeutralEmojiIon from "@/components/icons/NeutralEmojiIcon";
+import HappyEmojiIcon from "@/components/icons/HappyEmojiIcon";
+import VeryHappyEmojiIcon from "@/components/icons/VeryHappyEmojiIcon";
+const Impact = () => {
+    const emojiStats = [
+        { icon: <SadIcon color="#FFD475" width="auto" height="auto"  />, percentage: "0%" },
+        {
+          icon: <DisappointmentEmojiIcon color="#FFD475" width="auto" height="auto" />,
+          percentage: "0%",
+        },
+        { icon: <NeutralEmojiIon color="#FFD475" width="auto" height="auto" />, percentage: "0%" },
+        {
+          icon: <HappyEmojiIcon color="black" width="auto" height="auto" />,
+          percentage: "30%",
+          highlight: true,
+        },
+        {
+          icon: <VeryHappyEmojiIcon color="black" width="auto" height="auto" />,
+          percentage: "70%",
+          highlight: true,
+        },
+      ];
+  return (
+    <div className="custom-container border-x-2 border-gold-900 px-9 pt-11 "
+    style={{
+        boxShadow: "4px 0px 0px rgba(193,149,53,0.4), -4px 0px 0px rgba(193,149,53,0.4)",
+      }}
+    >
+      <div className="grid grid-cols-[1fr_2fr] gap-6">
+        
+        <CustomizableMobileFrame />
+        
+        <div className="">
+          <div className="mt-[42px]">
+            <CustomizableHeading
+              firstTxt="the launch"
+              secondTxt="impact"
+              MainStyle="uppercase md:text-[48px] text-gold"
+              SpecialCharacterStyle="font-thin text-white"
+            />
+            <p className=" mt-2  capitalize text-[18px] z-10 mb-8">
+            The launch of our digital campaigns led to impressive results:
+            </p>
+          </div>
+       
+          <div className="grid grid-cols-2 gap-[36px]">
+          <div className="glassy-bg  border-2 border-gold  rounded-[20px] py-9 ">
+           <p className="font-thunder font-medium text-[75px] text-center text-gold">120M+</p>
+            <p className="text-[24px] capitalize text-center -mt-6 ">
+            impressions in Q1 of launch
+            </p>
+          </div>
+          <div className="glassy-bg  border-2 border-gold  rounded-[20px] py-9 ">
+           <p className="font-thunder font-medium text-[75px] text-center text-gold">1,200+</p>
+            <p className="text-[24px] capitalize text-center -mt-6 ">
+            high-quality leads
+            </p>
+          </div>
+          </div>
+          <div className="glassy-bg  border-2 border-gold  rounded-[20px] py-2 mt-[36px] ">
+           <p className="font-thunder font-medium text-[75px] text-center text-gold">$2 Million</p>
+            <p className="text-[24px] capitalize text-center -mt-6 ">
+            in revenue from the initial campaign
+            </p>
+          </div>
+          <div className="grid grid-cols-5 gap-3 sm:gap-4 md:gap-6 mt-[36px]"
+          >
+            {emojiStats.map((emoji, index) => (
+              <div
+                key={index}
+                className={`xs:h-[50px] sm:h-[120px] aspect-square rounded-[10px] sm:rounded-[20px] flex flex-col gap-2 sm:gap-3 lg:gap-7 justify-center items-center py-6 border-2 border-gold ${
+                  emoji.highlight
+                    ? "bg-gold"
+                    : "glassy-bg"
+                }`}
+              >
+                <div className="w-6 sm:w-8 md:w-10">{emoji.icon}</div>
+                <p
+                  className={`text-sm sm:text-base md:text-[24px] 2xl:text-[30px] font-regular ${emoji.highlight ? "text-black" : ""}`}
+                >
+                  {emoji.percentage}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Impact;

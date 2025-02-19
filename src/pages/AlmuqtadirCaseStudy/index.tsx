@@ -7,6 +7,7 @@ import Hero from "./components/Hero";
 import EcoBg from "@/assets/images/almuqtadir/Ecosystembg.png";
 import Outcome from "./components/Outcome";
 import VideoSection from "./components/VideoSection";
+import Impact from "./components/Impact";
 const AlmuqtadirCaseStudy = () => {
   return (
     <>
@@ -38,6 +39,9 @@ const AlmuqtadirCaseStudy = () => {
       </section>
       <section>
         <VideoSection />
+      </section>
+      <section>
+        <Impact/>
       </section>
     </>
   );
