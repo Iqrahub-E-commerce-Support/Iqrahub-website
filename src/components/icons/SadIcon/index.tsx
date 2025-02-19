@@ -21,22 +21,8 @@ const SadIcon = ({
         strokeWidth="6"
         strokeLinecap="round"
       />
-      <rect
-        x="1"
-        y="0.141113"
-        width="8"
-        height="8"
-        rx="4"
-        fill={color}
-      />
-      <rect
-        x="18"
-        y="0.141113"
-        width="8"
-        height="8"
-        rx="4"
-        fill={color}
-      />
+      <rect x="1" y="0.141113" width="8" height="8" rx="4" fill={color} />
+      <rect x="18" y="0.141113" width="8" height="8" rx="4" fill={color} />
     </svg>
   );
 };

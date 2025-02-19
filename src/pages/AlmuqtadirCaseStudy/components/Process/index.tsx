@@ -7,8 +7,16 @@ const Process = () => {
   return (
     <>
       <div className="relative custom-container border-x-2 border-gold-900 ">
-      <img src={PrecessCal} alt="Background" className="absolute top-0 left-[74%] transform -translate-x-1/2 w-full h-full object-cover opacity-60 z-0" />
-        <img src={leftDesign} alt="leftDesign" className="relatvie h-[350px] pt-16" />
+        <img
+          src={PrecessCal}
+          alt="Background"
+          className="absolute top-0 left-[74%] transform -translate-x-1/2 w-full h-full object-cover opacity-60 z-0"
+        />
+        <img
+          src={leftDesign}
+          alt="leftDesign"
+          className="relatvie h-[350px] pt-16"
+        />
         <div className="-mt-[330px]">
           <div className="flex flex-col items-center">
             <CustomizableHeading
@@ -84,7 +92,6 @@ const Process = () => {
           alt="rightDesign"
           className="h-[350px] place-self-end -mt-80"
         />
-       
       </div>
     </>
   );

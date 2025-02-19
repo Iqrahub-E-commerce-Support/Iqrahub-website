@@ -1,4 +1,3 @@
-
 const PenTipIcon = () => {
   return (
     <svg

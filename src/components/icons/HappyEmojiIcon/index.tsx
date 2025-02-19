@@ -21,22 +21,8 @@ const HappyEmojiIcon = ({
         strokeWidth="6"
         strokeLinecap="round"
       />
-      <rect
-        x="1.75"
-        y="0.641113"
-        width="8"
-        height="8"
-        rx="4"
-        fill={color}
-      />
-      <rect
-        x="18.75"
-        y="0.641113"
-        width="8"
-        height="8"
-        rx="4"
-        fill={color}
-      />
+      <rect x="1.75" y="0.641113" width="8" height="8" rx="4" fill={color} />
+      <rect x="18.75" y="0.641113" width="8" height="8" rx="4" fill={color} />
     </svg>
   );
 };

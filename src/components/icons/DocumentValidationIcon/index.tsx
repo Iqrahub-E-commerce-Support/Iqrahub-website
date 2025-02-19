@@ -1,4 +1,3 @@
-
 const DocumentValidationIcon = () => {
   return (
     <svg

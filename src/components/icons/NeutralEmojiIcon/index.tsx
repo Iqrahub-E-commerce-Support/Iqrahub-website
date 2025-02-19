@@ -21,22 +21,8 @@ const NeutralEmojiIcon = ({
         strokeWidth="6"
         strokeLinecap="round"
       />
-      <rect
-        x="1.5"
-        y="0.0961914"
-        width="8"
-        height="8"
-        rx="4"
-        fill={color}
-      />
-      <rect
-        x="18.5"
-        y="0.0961914"
-        width="8"
-        height="8"
-        rx="4"
-        fill={color}
-      />
+      <rect x="1.5" y="0.0961914" width="8" height="8" rx="4" fill={color} />
+      <rect x="18.5" y="0.0961914" width="8" height="8" rx="4" fill={color} />
     </svg>
   );
 };

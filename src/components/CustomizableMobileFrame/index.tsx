@@ -3,20 +3,20 @@ import { BiPlay, BiPause } from "react-icons/bi";
 import mobileFrame from "@/assets/images/mobile-frame.png";
 import sampleVid from "@/assets/images/video/sample_vid.mp4";
 const CustomizableMobileFrame = () => {
-      const videoRef = useRef<HTMLVideoElement | null>(null);
-      const [isPlaying, setIsPlaying] = useState(false);
-    
-      const togglePlayPause = () => {
-        if (videoRef.current) {
-          if (isPlaying) {
-            videoRef.current.pause();
-          } else {
-            videoRef.current.play();
-          }
-          setIsPlaying(!isPlaying);
-        }
-      };
-    
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const togglePlayPause = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+      } else {
+        videoRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
   return (
     <div className="relative xs:h-full sm:h-[100vh] 3xl:h-screen">
       {/* Video Container */}
@@ -57,7 +57,7 @@ const CustomizableMobileFrame = () => {
         className="absolute inset-0   xs:h-[250px] sm:h-[100vh] 3xl:h-screen object-fill z-30 pointer-events-none "
       />
     </div>
-  )
-}
+  );
+};
 
-export default CustomizableMobileFrame
+export default CustomizableMobileFrame;

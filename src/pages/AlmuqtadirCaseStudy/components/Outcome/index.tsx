@@ -3,7 +3,7 @@ import MagicIcon from "@/components/icons/MagicIcon";
 import egpic from "@/assets/images/almuqtadir/egpic.png";
 import PenTipIcon from "@/components/icons/PenTipIcon";
 import IdeaIcon from "@/components/icons/IdeaIcon";
-import gridbg from "@/assets/images/almuqtadir/Outcomegridbg.png"
+import gridbg from "@/assets/images/almuqtadir/Outcomegridbg.png";
 import { MegaphoneIcon } from "lucide-react";
 import DocumentValidationIcon from "@/components/icons/DocumentValidationIcon";
 const Outcome = () => {
@@ -40,42 +40,53 @@ const Outcome = () => {
         </div>
         <div className="grid grid-cols-2 gap-4">
           <div className="grid grid-rows-2 gap-4">
-          <div className="glassy-bg flex flex-col justify-center border-2  rounded-[20px] px-8 ">
-            <PenTipIcon/>
-            <p className="text-[18px] mt-[35px] capitalize ">
-            Designed distinct visual content. Enhanced brand identity.
-            </p>
-            <div className="w-full border-2 mt-[47px]"/>
-            <p className="font-bold text-[18px] uppercase mt-5">Brand Identity</p>
-          </div>
-          <div className="glassy-bg flex flex-col justify-center border-2  rounded-[20px] px-8 ">
-            <IdeaIcon/>
-            <p className="text-[18px] mt-[35px] capitalize ">
-            Optimized digital marketing efforts. Ensured maximum ad performance
-            </p>
-            <div className="w-full border-2 mt-[47px]"/>
-            <p className="font-bold text-[18px] uppercase mt-5">Ad Optimization</p>
-          </div>
+            <div className="glassy-bg flex flex-col justify-center border-2  rounded-[20px] px-8 ">
+              <PenTipIcon />
+              <p className="text-[18px] mt-[35px] capitalize ">
+                Designed distinct visual content. Enhanced brand identity.
+              </p>
+              <div className="w-full border-2 mt-[47px]" />
+              <p className="font-bold text-[18px] uppercase mt-5">
+                Brand Identity
+              </p>
+            </div>
+            <div className="glassy-bg flex flex-col justify-center border-2  rounded-[20px] px-8 ">
+              <IdeaIcon />
+              <p className="text-[18px] mt-[35px] capitalize ">
+                Optimized digital marketing efforts. Ensured maximum ad
+                performance
+              </p>
+              <div className="w-full border-2 mt-[47px]" />
+              <p className="font-bold text-[18px] uppercase mt-5">
+                Ad Optimization
+              </p>
+            </div>
           </div>
           <div className="grid grid-rows-2 gap-4">
-          <div className="glassy-bg flex flex-col justify-center border-2  rounded-[20px] px-8 bg-cover "
-          style={{backgroundImage:`url(${gridbg})`}}
-          >
-            <MegaphoneIcon/>
-            <p className="text-[18px] mt-[35px] capitalize ">
-            Executed micro and macro campaigns. Sustained engagement and growth.
-            </p>
-            <div className="w-full border-2 mt-[47px]"/>
-            <p className="font-bold text-[18px] uppercase mt-5">Campaign Execution</p>
-          </div>
-          <div className="glassy-bg flex flex-col justify-center border-2  rounded-[20px] px-8 ">
-            <DocumentValidationIcon/>
-            <p className="text-[18px] mt-[35px] capitalize ">
-            Consistent brand presentation across all materials.
-            </p>
-            <div className="w-full border-2 mt-[47px]"/>
-            <p className="font-bold text-[18px] uppercase mt-5">Brand Uniformity</p>
-          </div>
+            <div
+              className="glassy-bg flex flex-col justify-center border-2  rounded-[20px] px-8 bg-cover "
+              style={{ backgroundImage: `url(${gridbg})` }}
+            >
+              <MegaphoneIcon />
+              <p className="text-[18px] mt-[35px] capitalize ">
+                Executed micro and macro campaigns. Sustained engagement and
+                growth.
+              </p>
+              <div className="w-full border-2 mt-[47px]" />
+              <p className="font-bold text-[18px] uppercase mt-5">
+                Campaign Execution
+              </p>
+            </div>
+            <div className="glassy-bg flex flex-col justify-center border-2  rounded-[20px] px-8 ">
+              <DocumentValidationIcon />
+              <p className="text-[18px] mt-[35px] capitalize ">
+                Consistent brand presentation across all materials.
+              </p>
+              <div className="w-full border-2 mt-[47px]" />
+              <p className="font-bold text-[18px] uppercase mt-5">
+                Brand Uniformity
+              </p>
+            </div>
           </div>
         </div>
       </div>

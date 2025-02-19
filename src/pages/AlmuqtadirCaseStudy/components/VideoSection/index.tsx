@@ -4,7 +4,11 @@ import CustomizedVideoWithFrame from "@/components/CustomizedVideoWithFrame";
 const VideoSection = () => {
   return (
     <div className="relative custom-container border-x-2 border-gold-900 px-9">
-         <img src={PrecessCal} alt="Background" className="absolute top-0 left-[50%] transform -translate-x-1/2 w-[200%] h-[150%] object-cover opacity-60 z-0 -mt-72" />
+      <img
+        src={PrecessCal}
+        alt="Background"
+        className="absolute top-0 left-[50%] transform -translate-x-1/2 w-[200%] h-[150%] object-cover opacity-60 z-0 -mt-72"
+      />
       <div className="flex flex-col items-center pt-16 z-10">
         <CustomizableHeading
           firstTxt="al muqtadir"
@@ -19,7 +23,7 @@ const VideoSection = () => {
           brand has cemented its position as a market leader.
         </p>
       </div>
-        <CustomizedVideoWithFrame/>
+      <CustomizedVideoWithFrame />
     </div>
   );
 };

@@ -8,6 +8,7 @@ import EcoBg from "@/assets/images/almuqtadir/Ecosystembg.png";
 import Outcome from "./components/Outcome";
 import VideoSection from "./components/VideoSection";
 import Impact from "./components/Impact";
+import OverView from "./components/OverView";
 const AlmuqtadirCaseStudy = () => {
   return (
     <>
@@ -41,7 +42,10 @@ const AlmuqtadirCaseStudy = () => {
         <VideoSection />
       </section>
       <section>
-        <Impact/>
+        <Impact />
+      </section>
+      <section>
+        <OverView />
       </section>
     </>
   );

@@ -1,4 +1,3 @@
-
 const IdeaIcon = () => {
   return (
     <svg
