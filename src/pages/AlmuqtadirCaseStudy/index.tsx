@@ -9,6 +9,7 @@ import Outcome from "./components/Outcome";
 import VideoSection from "./components/VideoSection";
 import Impact from "./components/Impact";
 import OverView from "./components/OverView";
+import CustomerReview from "./components/CustomerReview";
 const AlmuqtadirCaseStudy = () => {
   return (
     <>
@@ -46,6 +47,9 @@ const AlmuqtadirCaseStudy = () => {
       </section>
       <section>
         <OverView />
+      </section>
+      <section>
+        <CustomerReview/>
       </section>
     </>
   );
