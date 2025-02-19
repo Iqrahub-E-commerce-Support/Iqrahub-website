@@ -6,6 +6,7 @@ import DigitalEcosystem from "./components/DigitalEcosystem";
 import Hero from "./components/Hero";
 import EcoBg from "@/assets/images/almuqtadir/Ecosystembg.png";
 import Outcome from "./components/Outcome";
+import VideoSection from "./components/VideoSection";
 const AlmuqtadirCaseStudy = () => {
   return (
     <>
@@ -18,12 +19,7 @@ const AlmuqtadirCaseStudy = () => {
       <section className="h-full bg-cover -mt-16">
         <Challenges />
       </section>
-      <section className="relative">
-        <img
-          src={PrecessCal}
-          alt="Background"
-          className="absolute inset-x-64  h-[700px] w-[2500px] mt-[140px]  object-cover opacity-60  z-0"
-        />
+      <section>
         <Process />
       </section>
       <section
@@ -38,10 +34,10 @@ const AlmuqtadirCaseStudy = () => {
         <DigitalEcosystem />
       </section>
       <section className="">
-        <Outcome/>
+        <Outcome />
       </section>
       <section>
-        
+        <VideoSection />
       </section>
     </>
   );
