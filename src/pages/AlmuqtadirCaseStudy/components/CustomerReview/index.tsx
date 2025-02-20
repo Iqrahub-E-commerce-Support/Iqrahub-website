@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
-import {  Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import sampleImage from "@/assets/images/sampleImage.png";
 
 const reviews = [
@@ -70,7 +70,7 @@ const CustomerReview = () => {
         loop={true}
         autoplay={{ delay: 2500, disableOnInteraction: false }}
         pagination={{ clickable: true }}
-        modules={[ Autoplay]}
+        modules={[Autoplay]}
         breakpoints={{
           320: { slidesPerView: 1 },
           640: { slidesPerView: 2 },
@@ -92,7 +92,9 @@ const CustomerReview = () => {
                 <h6 className="font-bold text-[14px] text-black">
                   {review.name}
                 </h6>
-                <p className="text-[14px] text-black">Title Product Goes Here</p>
+                <p className="text-[14px] text-black">
+                  Title Product Goes Here
+                </p>
               </div>
             </div>
           </SwiperSlide>
