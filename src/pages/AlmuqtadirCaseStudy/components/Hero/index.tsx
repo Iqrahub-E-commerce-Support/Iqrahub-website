@@ -13,7 +13,13 @@ const Hero = () => {
   ];
   return (
     <>
-      <div className="border-2 mt-8 custom-container h-full border-b-0 border-gold-900 rounded-tr-[14px] rounded-tl-[14px]">
+      <div
+        className="border-2 mt-8 custom-container h-full border-b-0 border-gold-900 rounded-tr-[14px] rounded-tl-[14px]"
+        style={{
+          boxShadow:
+            "4px 0px 0px rgba(193,149,53,0.4), -4px 0px 0px rgba(193,149,53,0.4)",
+        }}
+      >
         <div className="flex justify-between items-start mt-7 xs:px-3 sm:px-4 md:px-7 lg:px-14">
           <img src={almuqtadirLogo} alt="logo" className="xs:h-8 sm:h-14" />
           <p className="uppercase font-bold xs:text-[14px] sm:text-[20px] font-thuce -ml-11">

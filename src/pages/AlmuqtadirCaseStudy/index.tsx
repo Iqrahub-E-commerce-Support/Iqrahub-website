@@ -14,12 +14,12 @@ const AlmuqtadirCaseStudy = () => {
   return (
     <>
       <section
-        className="xs:h-full sm:h-full xs:bg-cover sm:bg-cover     xs:pt-[13%] sm:pt-[5%]   "
+        className="xs:h-full sm:h-full xs:bg-cover sm:bg-cover     xs:pt-[13%] sm:pt-[5%] lg:pt-[8%] xl:pt-[5%]  "
         style={{ backgroundImage: `url(${bg})` }}
       >
         <Hero />
       </section>
-      <section className="h-full bg-cover -mt-16">
+      <section className=" lg:-mt-16">
         <Challenges />
       </section>
       <section>
