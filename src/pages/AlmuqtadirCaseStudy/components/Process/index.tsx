@@ -6,7 +6,7 @@ import PrecessCal from "@/assets/images/almuqtadir/ProcessBg.png";
 const Process = () => {
   return (
     <>
-      <div className="relative custom-container border-x-2 border-gold-900 "
+      <div className="relative custom-container border-x-2 border-gold-900  "
       style={{
         boxShadow:
           "4px 0px 0px rgba(193,149,53,0.4), -4px 0px 0px rgba(193,149,53,0.4)",
@@ -30,13 +30,13 @@ const Process = () => {
               MainStyle="text-gold font-black md:text-[48px] xs:text-center "
               SpecialCharacterStyle="font-thin text-white"
             />
-            <p className=" mt-2 sm:w-[720px] text-center text-[18px]">
+            <p className=" mt-2 md:w-[720px] text-center text-[18px]">
               Recognizing that their main customers were wedding buyers
               purchasing over 40 grams of gold in advance, we analyzed their
               sales process and identified key challenges.
             </p>
           </div>
-          <div className="mt-20 grid xs:grid-cols-1 md:grid-cols-[2fr_1.5fr] gap-4  px-10">
+          <div className="mt-20 grid xs:grid-cols-1 md:grid-cols-[2fr_1.5fr] gap-4  xs:px-4 sm:px-9 ">
             <div className="grid grid-row-3 gap-4">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="glassy-bg flex flex-col justify-center border-2 border-gold rounded-[20px] px-8 ">

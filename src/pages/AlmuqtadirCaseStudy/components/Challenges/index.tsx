@@ -19,13 +19,13 @@ const challengeData = [
 const Challenges = () => {
   return (
     <div
-      className="grid xs:grid-cols-1 md:grid-cols-[1fr_1fr]  gap-6 border-x-2 custom-container border-gold-900 xs:pt-6 sm:pt-20 xl:pt-0 xs:px-4 ;g:px-0"
+      className="grid xs:grid-cols-1 md:grid-cols-[1fr_1fr]  gap-6 border-x-2 custom-container border-gold-900 xs:pt-6 sm:pt-20 xl:pt-0 xs:px-4 lg:px-0"
       style={{
         boxShadow:
           "4px 0px 0px rgba(193,149,53,0.4), -4px 0px 0px rgba(193,149,53,0.4)",
       }}
     >
-      <img src={challengesPic} alt="challengepic" className="" />
+      <img src={challengesPic} alt="challengepic" className="xs:hidden md:block" />
       {/* <img src={challengesPic} alt="challengepic" className="md:h-[350px]  lg:h-full" /> */}
       <div className="flex flex-col justify-center md:mt-11 xl:mt-0">
         {challengeData.map((challenge, index) => (
@@ -45,6 +45,7 @@ const Challenges = () => {
           </div>
         ))}
       </div>
+      <img src={challengesPic} alt="challengepic" className="xs:block md:hidden" />
     </div>
   );
 };
