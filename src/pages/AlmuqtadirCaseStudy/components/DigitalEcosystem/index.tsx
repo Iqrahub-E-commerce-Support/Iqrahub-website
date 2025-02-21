@@ -8,7 +8,7 @@ import PrecessCal from "@/assets/images/almuqtadir/ProcessBg.png";
 const DigitalEcosystem = () => {
   return (
     <div
-      className="relative bg-cover custom-container border-x-2 border-gold-900 xs:px-4 sm:px-9 xs:-mt-[110px]"
+      className="relative bg-cover custom-container border-x-2 border-gold-900 xs:px-4 sm:px-9 xs:-mt-[110px] 2xl:mt-0"
       style={{
         backgroundImage: `url(${EcoBg})`,
         boxShadow:

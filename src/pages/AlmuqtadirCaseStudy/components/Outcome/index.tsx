@@ -6,13 +6,44 @@ import IdeaIcon from "@/components/icons/IdeaIcon";
 import gridbg from "@/assets/images/almuqtadir/Outcomegridbg.png";
 import { MegaphoneIcon } from "lucide-react";
 import DocumentValidationIcon from "@/components/icons/DocumentValidationIcon";
+
+const outcomeData = [
+  {
+    id: 1,
+    icon: <PenTipIcon />,
+    description: "Designed distinct visual content. Enhanced brand identity.",
+    title: "Brand Identity",
+  },
+  {
+    id: 2,
+    icon: <IdeaIcon />,
+    description:
+      "Optimized digital marketing efforts. Ensured maximum ad performance.",
+    title: "Ad Optimization",
+  },
+  {
+    id: 3,
+    icon: <MegaphoneIcon />,
+    description:
+      "Executed micro and macro campaigns. Sustained engagement and growth.",
+    title: "Campaign Execution",
+    bgImage: gridbg,
+  },
+  {
+    id: 4,
+    icon: <DocumentValidationIcon />,
+    description: "Consistent brand presentation across all materials.",
+    title: "Brand Uniformity",
+  },
+];
+
 const Outcome = () => {
   return (
-    <div className="custom-container border-x-2 border-gold-900 px-9">
-      <div className="grid grid-cols-2 gap-4">
-        <div className="grid grid-rows-[1fr_2fr] ">
-          <div>
-            <div className="flex gap-3">
+    <div className="custom-container border-x-2 border-gold-900 px-4 sm:px-9 2xl:-mt-[120px]">
+      <div className="grid xs:grid-cols-1 lg:grid-cols-2 gap-4">
+        <div className="grid  grid-rows-[1fr_2fr]">
+          <div className="xs:-mt-[190px] sm:-mt-[180px] lg:mt-12 z-20">
+            <div className="flex xs:justify-center md:justify-start  gap-3">
               <CustomizableHeading
                 firstTxt="the"
                 secondTxt="outcome"
@@ -21,12 +52,13 @@ const Outcome = () => {
               />
               <MagicIcon height={40} width={40} />
             </div>
-            <p className=" mt-2   text-[20px]">
+            <p className="mt-2 xs:text-center md:text-start text-[20px]">
               Over five years, Al Muqtadir Jewellery underwent a complete
               digital transformation
             </p>
           </div>
-          <div className="glassy-bg flex flex-col justify-center items-center border-2  rounded-[20px] px-8 py-12 ">
+
+          <div className="glassy-bg flex flex-col justify-center items-center border-2 rounded-[20px] px-8 py-12 xs:-mt-[170px] lg:-mt-0">
             <img src={egpic} alt="egpic" className="h-40 w-40" />
             <p className="text-[18px] mt-[35px] capitalize text-center">
               Nibh elit lacus mi elit, dui maecenas vestibulum cursus. Aliquet
@@ -38,56 +70,28 @@ const Outcome = () => {
             <p>CEO Zoomer</p>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-4">
-          <div className="grid grid-rows-2 gap-4">
-            <div className="glassy-bg flex flex-col justify-center border-2  rounded-[20px] px-8 ">
-              <PenTipIcon />
-              <p className="text-[18px] mt-[35px] capitalize ">
-                Designed distinct visual content. Enhanced brand identity.
-              </p>
-              <div className="w-full border-2 mt-[47px]" />
-              <p className="font-bold text-[18px] uppercase mt-5">
-                Brand Identity
-              </p>
-            </div>
-            <div className="glassy-bg flex flex-col justify-center border-2  rounded-[20px] px-8 ">
-              <IdeaIcon />
-              <p className="text-[18px] mt-[35px] capitalize ">
-                Optimized digital marketing efforts. Ensured maximum ad
-                performance
-              </p>
-              <div className="w-full border-2 mt-[47px]" />
-              <p className="font-bold text-[18px] uppercase mt-5">
-                Ad Optimization
-              </p>
-            </div>
-          </div>
-          <div className="grid grid-rows-2 gap-4">
+
+        <div className="grid xs:grid-cols-1 sm:grid-cols-2 gap-4">
+          {outcomeData.map((item) => (
             <div
-              className="glassy-bg flex flex-col justify-center border-2  rounded-[20px] px-8 bg-cover "
-              style={{ backgroundImage: `url(${gridbg})` }}
+              key={item.id}
+              className={`glassy-bg flex flex-col justify-center border-2 rounded-[20px] px-8 xs:py-8  ${
+                item.bgImage ? "bg-cover" : ""
+              }`}
+              style={
+                item.bgImage ? { backgroundImage: `url(${item.bgImage})` } : {}
+              }
             >
-              <MegaphoneIcon />
-              <p className="text-[18px] mt-[35px] capitalize ">
-                Executed micro and macro campaigns. Sustained engagement and
-                growth.
+              {item.icon}
+              <p className="text-[18px] mt-[35px] capitalize">
+                {item.description}
               </p>
               <div className="w-full border-2 mt-[47px]" />
               <p className="font-bold text-[18px] uppercase mt-5">
-                Campaign Execution
+                {item.title}
               </p>
             </div>
-            <div className="glassy-bg flex flex-col justify-center border-2  rounded-[20px] px-8 ">
-              <DocumentValidationIcon />
-              <p className="text-[18px] mt-[35px] capitalize ">
-                Consistent brand presentation across all materials.
-              </p>
-              <div className="w-full border-2 mt-[47px]" />
-              <p className="font-bold text-[18px] uppercase mt-5">
-                Brand Uniformity
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
