@@ -4,13 +4,13 @@ import TabletFrame from "@/components/TabletFrame";
 const OverView = () => {
   return (
     <div
-      className="custom-container border-x-2 border-gold-900 px-4 sm:px-9 xs:pt-[10px] sm:pt-[95px]"
+      className="custom-container border-x-2 border-gold-900 px-4 sm:px-9 xs:pt-[10px] sm:pt-[55px] md:pt-[95px]"
       style={{
         boxShadow:
           "4px 0px 0px rgba(193,149,53,0.4), -4px 0px 0px rgba(193,149,53,0.4)",
       }}
     >
-        <div className="flex flex-col justify-end lg:hidden">
+        <div className="flex flex-col justify-end xs:hidden md:block lg:hidden">
             <CustomizableHeading
               firstTxt="major"
               secondTxt="overview"
@@ -24,7 +24,7 @@ const OverView = () => {
           </div>
       <div className="grid xs:grid-cols-1 md:grid-cols-[1.5fr_2fr] gap-8">
         <div className="grid grid-rows-[1fr_1fr_1fr] gap-3">
-          <div className="flex flex-col justify-end md:hidden xl:block">
+          <div className="flex flex-col justify-end md:hidden xl:block 2xl:place-self-end">
             <CustomizableHeading
               firstTxt="major"
               secondTxt="overview"

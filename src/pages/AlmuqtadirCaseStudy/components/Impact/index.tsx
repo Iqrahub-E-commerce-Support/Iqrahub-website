@@ -36,7 +36,7 @@ const Impact = () => {
   ];
   return (
     <div
-      className="relative custom-container border-x-2 border-gold-900 px-4 sm:px-9 xs:pt-[300px] sm:pt-[380px] md:pt-[400px]  lg:pt-11 "
+      className="relative custom-container border-x-2 border-gold-900 px-4 sm:px-9 xs:pt-[320px] sm:pt-[400px]   lg:pt-11 xl:pt-16  3xl:pt-28 "
       style={{
         boxShadow:
           "4px 0px 0px rgba(193,149,53,0.4), -4px 0px 0px rgba(193,149,53,0.4)",

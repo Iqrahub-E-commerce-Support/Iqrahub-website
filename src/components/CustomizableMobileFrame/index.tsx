@@ -21,12 +21,12 @@ const CustomizableMobileFrame = () => {
   return (
     <div className="relative flex justify-center items-center xs:h-[360px] sm:h-[750px] 3xl:h-screen overflow-hidden">
       {/* Grouped Container */}
-      <div className="relative flex justify-center items-center xs:w-[240px] sm:w-[98.8%] xs:h-[355px] sm:h-[750px] md:h-[99vh] 3xl:h-screen">
+      <div className="relative flex justify-center items-center xs:w-[240px] sm:w-[98.8%] xs:h-[355px] sm:h-[750px] md:h-[600px] xl:h-full  ">
         {/* Video */}
         <video
           ref={videoRef}
           src={sampleVid}
-          className="absolute inset-0 object-cover xs:w-full xs:h-full sm:w-full sm:h-full rounded-[20px] z-10"
+          className="absolute inset-0 object-cover xs:w-full xs:h-full sm:w-full sm:h-full rounded-[20px] z-10 xs:px-[3px] "
           muted
           loop
           playsInline
@@ -34,7 +34,7 @@ const CustomizableMobileFrame = () => {
 
         {/* Play/Pause Overlay */}
         <div
-          className={`absolute flex justify-center items-center xs:w-full xs:h-full sm:w-full sm:h-full bg-black ${
+          className={`absolute flex justify-center items-center xs:w-full xs:h-full sm:w-full sm:h-full bg-black rounded-[20px]  ${
             isPlaying ? "bg-opacity-40 opacity-0 hover:opacity-100" : "bg-opacity-50"
           } transition-all duration-300 z-20`}
         >

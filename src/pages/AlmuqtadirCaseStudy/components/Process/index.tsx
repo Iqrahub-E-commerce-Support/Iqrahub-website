@@ -22,7 +22,7 @@ const Process = () => {
           alt="leftDesign"
           className="relatvie xs:h-[450px] sm:h-[350px] xs:pt-60 sm:pt-16"
         />
-        <div className="xs:-mt-[380px] sm:-mt-[330px]">
+        <div className="xs:-mt-[410px] sm:-mt-[330px]">
           <div className="flex flex-col sm:items-center xs:px-3">
             <CustomizableHeading
               firstTxt="THE PROCESS"
@@ -39,7 +39,7 @@ const Process = () => {
           <div className="mt-20 grid xs:grid-cols-1 md:grid-cols-[2fr_1.5fr] gap-4  xs:px-4 sm:px-9 ">
             <div className="grid grid-row-3 gap-4">
               <div className="grid sm:grid-cols-2 gap-4">
-                <div className="glassy-bg flex flex-col justify-center border-2 border-gold rounded-[20px] px-8 ">
+                <div className="glassy-bg flex flex-col justify-center border-2 border-gold rounded-[20px] px-8 xs:py-2 ">
                   <h6 className="font-black text-gold text-[20px] capitalize ">
                     Complex decision-making: 
                   </h6>
@@ -48,7 +48,7 @@ const Process = () => {
                     purchase.
                   </p>
                 </div>
-                <div className="glassy-bg flex flex-col justify-center border-2 border-gold rounded-[20px] px-8 ">
+                <div className="glassy-bg flex flex-col justify-center border-2 border-gold rounded-[20px] px-8 xs:py-2 ">
                   <h6 className="font-black text-gold text-[20px] capitalize">
                     Overwhelmed sales staff: 
                   </h6>
@@ -59,7 +59,7 @@ const Process = () => {
                 </div>
               </div>
               <div className="grid sm:grid-cols-2 gap-4">
-                <div className="glassy-bg flex flex-col justify-center border-2 border-gold rounded-[20px] px-8 ">
+                <div className="glassy-bg flex flex-col justify-center border-2 border-gold rounded-[20px] px-8 xs:py-2 ">
                   <h6 className="font-black text-gold text-[20px] capitalize">
                     No digital engagement:
                   </h6>
@@ -68,7 +68,7 @@ const Process = () => {
                     interact with the Brand.
                   </p>
                 </div>
-                <div className="glassy-bg flex flex-col justify-center border-2 border-gold rounded-[20px] px-8 ">
+                <div className="glassy-bg flex flex-col justify-center border-2 border-gold rounded-[20px] px-8 xs:py-2 ">
                   <h6 className="font-black text-gold text-[20px] capitalize">
                     Expensive, untrack able ads: 
                   </h6>
@@ -78,7 +78,7 @@ const Process = () => {
                   </p>
                 </div>
               </div>
-              <div className="glassy-bg flex flex-col justify-center border-2 border-gold rounded-[20px] px-8 ">
+              <div className="glassy-bg flex flex-col justify-center border-2 border-gold rounded-[20px] px-8 xs:py-2 ">
                 <h6 className="font-black text-gold text-[20px] capitalize">
                   Inconsistent branding: 
                 </h6>

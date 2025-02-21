@@ -8,7 +8,7 @@ import PrecessCal from "@/assets/images/almuqtadir/ProcessBg.png";
 const DigitalEcosystem = () => {
   return (
     <div
-      className="relative bg-cover custom-container border-x-2 border-gold-900 xs:px-4 sm:px-9 xs:-mt-[110px] 2xl:mt-0"
+      className="relative bg-cover custom-container border-x-2 border-gold-900 xs:px-4 sm:px-9 xs:-mt-[110px] sm:-mt-[60px]  md:mt-0 2xl:pt-4"
       style={{
         backgroundImage: `url(${EcoBg})`,
         boxShadow:
@@ -33,7 +33,7 @@ const DigitalEcosystem = () => {
           marketing efforts.
         </p>
       </div>
-      <div className="grid xs:grid-cols-1 md:grid-cols-3 mt-11 gap-4">
+      <div className="grid xs:grid-cols-1 md:grid-cols-3 xs:mt-11 2xl:mt-16 gap-4">
         <div className="grid grid-rows-[1fr_1fr_1.3fr] gap-4">
           <div className="glassy-bg flex flex-col justify-center items-center border-2 border-gold rounded-[20px] px-8 py-4">
             <h6 className="font-black text-gold text-[20px] capitalize ">

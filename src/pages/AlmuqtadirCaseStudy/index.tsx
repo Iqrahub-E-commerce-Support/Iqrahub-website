@@ -18,7 +18,7 @@ const AlmuqtadirCaseStudy = () => {
       >
         <Hero />
       </section>
-      <section className=" lg:-mt-16">
+      <section className=" lg:-mt-16 3xl:-mt-24">
         <Challenges />
       </section>
       <section>

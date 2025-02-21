@@ -19,7 +19,7 @@ const challengeData = [
 const Challenges = () => {
   return (
     <div
-      className="grid xs:grid-cols-1 md:grid-cols-[1fr_1fr]  gap-6 border-x-2 custom-container border-gold-900 xs:pt-6 sm:pt-20 xl:pt-0 xs:px-4 lg:px-0"
+      className="grid xs:grid-cols-1 md:grid-cols-[1fr_1fr]  gap-6 border-x-2 custom-container border-gold-900 xs:pt-12 sm:pt-20 md:pt-12 xl:pt-0 xs:px-4 lg:px-0"
       style={{
         boxShadow:
           "4px 0px 0px rgba(193,149,53,0.4), -4px 0px 0px rgba(193,149,53,0.4)",

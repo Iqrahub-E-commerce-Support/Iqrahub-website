@@ -16,19 +16,20 @@ const outcomeData = [
   },
   {
     id: 2,
-    icon: <IdeaIcon />,
-    description:
-      "Optimized digital marketing efforts. Ensured maximum ad performance.",
-    title: "Ad Optimization",
-  },
-  {
-    id: 3,
     icon: <MegaphoneIcon />,
     description:
       "Executed micro and macro campaigns. Sustained engagement and growth.",
     title: "Campaign Execution",
     bgImage: gridbg,
   },
+  {
+    id: 3,
+    icon: <IdeaIcon />,
+    description:
+      "Optimized digital marketing efforts. Ensured maximum ad performance.",
+    title: "Ad Optimization",
+  },
+  
   {
     id: 4,
     icon: <DocumentValidationIcon />,
@@ -39,20 +40,20 @@ const outcomeData = [
 
 const Outcome = () => {
   return (
-    <div className="custom-container border-x-2 border-gold-900 px-4 sm:px-9 2xl:-mt-[120px]">
-      <div className="grid xs:grid-cols-1 lg:grid-cols-2 gap-4">
-        <div className="grid  grid-rows-[1fr_2fr]">
-          <div className="xs:-mt-[190px] sm:-mt-[180px] lg:mt-12 z-20">
-            <div className="flex xs:justify-center md:justify-start  gap-3">
+    <div className="custom-container border-x-2 border-gold-900 px-4 sm:px-9  md:pt-0 2xl:-mt-[120px] 3xl:-mt-[90px]">
+      <div className="grid xs:grid-cols-1 lg:grid-cols-2  gap-4">
+        <div className="grid  grid-rows-[1fr_2fr] ">
+          <div className="xs:-mt-[190px] sm:-mt-[180px] md:-mt-[155px] lg:mt-12 z-20">
+            <div className="flex xs:justify-center lg:justify-start  gap-3">
               <CustomizableHeading
                 firstTxt="the"
                 secondTxt="outcome"
-                MainStyle="font-thin uppercase md:text-[48px]"
+                MainStyle="font-thin uppercase md:text-[48px] "
                 SpecialCharacterStyle="font-black text-gold"
               />
               <MagicIcon height={40} width={40} />
             </div>
-            <p className="mt-2 xs:text-center md:text-start text-[20px]">
+            <p className="mt-2 xs:text-center lg:text-start text-[20px]">
               Over five years, Al Muqtadir Jewellery underwent a complete
               digital transformation
             </p>
