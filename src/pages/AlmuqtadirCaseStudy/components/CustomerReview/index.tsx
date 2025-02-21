@@ -47,7 +47,7 @@ const reviews = [
 const CustomerReview = () => {
   return (
     <div
-      className="custom-container border-x-2 border-gold-900 px-9 pt-[100px] pb-10 mb-[60px]"
+      className="custom-container border-x-2 border-gold-900 px-9 pt-[100px] md:pt-0 lg:pt-[100px] lg:[pt-100px] pb-10 mb-[60px]"
       style={{
         boxShadow:
           "4px 0px 0px rgba(193,149,53,0.4), -4px 0px 0px rgba(193,149,53,0.4)",

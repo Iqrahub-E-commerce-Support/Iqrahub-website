@@ -4,22 +4,34 @@ import TabletFrame from "@/components/TabletFrame";
 const OverView = () => {
   return (
     <div
-      className="custom-container border-x-2 border-gold-900 px-9 pt-[95px]"
+      className="custom-container border-x-2 border-gold-900 px-4 sm:px-9 xs:pt-[10px] sm:pt-[95px]"
       style={{
         boxShadow:
           "4px 0px 0px rgba(193,149,53,0.4), -4px 0px 0px rgba(193,149,53,0.4)",
       }}
     >
-      <div className="grid grid-cols-[1.5fr_2fr] gap-8">
-        <div className="grid grid-rows-[1fr_1fr_1fr] gap-3">
-          <div className="flex flex-col justify-end">
+        <div className="flex flex-col justify-end lg:hidden">
             <CustomizableHeading
               firstTxt="major"
               secondTxt="overview"
-              MainStyle="uppercase md:text-[48px] text-gold"
+              MainStyle="uppercase md:text-[48px] text-gold text-center "
               SpecialCharacterStyle="font-thin text-white"
             />
-            <p className=" mt-2  capitalize text-[18px] z-10 mb-8">
+            <p className=" mt-2  capitalize text-[18px] z-10 mb-8 text-center ">
+              A detailed account of Al Muqtadir Jewellery's growth and digital
+              transformation.
+            </p>
+          </div>
+      <div className="grid xs:grid-cols-1 md:grid-cols-[1.5fr_2fr] gap-8">
+        <div className="grid grid-rows-[1fr_1fr_1fr] gap-3">
+          <div className="flex flex-col justify-end md:hidden xl:block">
+            <CustomizableHeading
+              firstTxt="major"
+              secondTxt="overview"
+              MainStyle="uppercase md:text-[48px] text-gold text-center md:text-start"
+              SpecialCharacterStyle="font-thin text-white"
+            />
+            <p className=" mt-2  capitalize text-[18px] z-10 mb-8 text-center md:text-start">
               A detailed account of Al Muqtadir Jewellery's growth and digital
               transformation.
             </p>
@@ -47,7 +59,9 @@ const OverView = () => {
             </p>
           </div>
         </div>
+        <div className="flex flex-col justify-start md:pt-9 lg:pt-0 ">
         <TabletFrame />
+        </div>
       </div>
     </div>
   );
