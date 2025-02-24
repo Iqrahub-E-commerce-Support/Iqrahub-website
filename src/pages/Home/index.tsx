@@ -65,7 +65,7 @@ const Home = () => {
       <section className="mt-16  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
         <OurSuccess />
       </section>
-      <section className="mt-16 xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
+      <section className="mt-16  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
         <Faq />
       </section>
     </>

@@ -18,7 +18,7 @@ const TechSerivces = () => {
       <section className="mt-[120px]  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
         <VideoSection />
       </section>
-      <section className=" xs:pt-[320px] sm:pt-[120px] xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto">
+      <section className=" xs:pt-[320px] sm:pt-[120px] xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
         <Projects />
       </section>
     </>

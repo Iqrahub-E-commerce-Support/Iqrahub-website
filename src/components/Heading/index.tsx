@@ -14,10 +14,12 @@ const Heading = ({
   specialTextClassName = "text-yellow", // Default class for special text
 }: HeadingProps) => {
   return (
-    <h3 className={`font-black xs:text-4xl md:text-5xl ${className}`}>
-      {normalText} <span className={specialTextClassName}>{specialText}</span>
-      {optionalNormalText}
-    </h3>
+    <h3
+    className={`font-black xs:text-4xl md:text-[56px] md:leading-[0.9] ${className}`}
+  >
+    {normalText} <span className={specialTextClassName}>{specialText}</span>
+    {optionalNormalText}
+  </h3>
   );
 };
 

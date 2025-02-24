@@ -4,7 +4,7 @@ import { MdArrowForward } from "react-icons/md";
 import GradientButton from "@/components/GradientButton";
 import Heading from "@/components/Heading";
 import StarIcon from "@/components/icons/StarIcon";
-
+import sampleVideo from '@/assets/images/video/sample_vid.mp4'
 const WayOfExecution = () => {
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
   const [playingIndex, setPlayingIndex] = useState<number | null>(null);
@@ -62,7 +62,7 @@ const WayOfExecution = () => {
             >
               <video
                 ref={(el) => (videoRefs.current[index] = el)}
-                src="https://www.w3schools.com/html/mov_bbb.mp4"
+                src={sampleVideo}
                 className="absolute inset-0 w-full h-full object-cover rounded-lg"
                 loop
                 muted
