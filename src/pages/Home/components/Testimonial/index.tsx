@@ -110,18 +110,12 @@ const Testimonial = () => {
       margin-left:10px;
     }
   }
-  //         @media (max-width: 1280px) {
-  //   .testimonial-swiper {
-  //     padding-bottom: 140px;
-  //     padding-left: 40px;
-  //     margin-left:10px;
-  //   }
-  // }
+
           @media (min-width: 1280px) {
     .testimonial-swiper {
       padding-bottom: 140px;
-      padding-left: 85px;
-      margin-left:10px;
+      padding-left: 0px;
+      margin-left:0px;
     }
   }
 

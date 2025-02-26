@@ -1,4 +1,4 @@
-import bg from "@/assets/images/caligraphy.png";
+import bg from "@/assets/images/homecal.png";
 import Hero from "./components/Hero";
 import { MdArrowForward } from "react-icons/md";
 import { MdPlayArrow } from "react-icons/md";
@@ -13,16 +13,16 @@ import cali from "@/assets/images/cal.png";
 import Testimonial from "./components/Testimonial";
 import OurSuccess from "./components/OurSuccess";
 import Faq from "@/components/Faq";
-
+import caligraphy2 from "@/assets/images/calligraphy2.png";
 const Home = () => {
   return (
     <>
       <section
-        className="h-[550px] bg-center  flex flex-col justify-center items-center gap-9  xs:pt-[15.2rem] sm:pt-[5%]  3xl:container 3xl:mx-auto "
-        style={{ backgroundImage: `url(${bg}) ` }}
+        className="w-full h-full bg-cover bg-center flex flex-col justify-center items-center gap-9 xs:pt-[7.5rem] md:pt-[15%] lg:pt-[13%] 2xl:pt-[8%] xs:px-5 3xl:container 3xl:mx-auto"
+        style={{ backgroundImage: `url(${bg})` }}
       >
         <Hero />
-        <div className="flex xs:flex-col sm:flex-row gap-5 items-center">
+        <div className="flex  sm:flex-row gap-5 items-center">
           <GradientButton>
             Get in Touch <MdArrowForward />
           </GradientButton>
@@ -30,42 +30,47 @@ const Home = () => {
             <GradientButton>
               <MdPlayArrow size={30} />
             </GradientButton>
-            <p>How it work</p>
+            <p>How it works</p>
           </div>
         </div>
       </section>
-      <section className="xs:mt-[220px] sm:mt-0 lg:mt-4">
-        <div className="block -z-50">
-          <AreaOfExpertise />
-        </div>
+      <section className="xs:mt-[81px]">
+        {/* <div className="block -z-50"> */}
+        <AreaOfExpertise />
+        {/* </div> */}
         {/* <div className="xs:block md:hidden">
           <AreaOfExpertiseSmallScreen />
         </div> */}
       </section>
-      <section>
+      <section className="xs:mt-[50px] sm:mt-[65px] md:mt-[70px] ">
         <Clients />
       </section>
-      <section className="pt-12 mt-12  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto bg-cover relative">
+      <section className="relative xs:pt-8 md:pt-16 lg:pt-24 xl:pt-[76px] xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto bg-cover ">
+        <img
+          src={caligraphy2}
+          alt="Background"
+          className="absolute top-0 left-[90%] transform -translate-x-1/2 w-[150%] h-[150%] object-contain opacity-30 z-0 "
+        />
         <FeaturedService />
       </section>
-      <section className="xs:mt-14 md:mt-20 xs:mx-6  sm:mx-7 md:mx-0 3xl:container 3xl:mx-auto">
+      <section className="xs:pt-0 sm:pt-4 md:pt-[76px] xs:mx-6  sm:mx-7 md:mx-0 ">
         <WayOfExecution />
       </section>
-      <section className="xs:mt-6 sm:mt-16 xs:mx-6 sm:mx-7   md:mx-16 3xl:container 3xl:mx-auto">
+      <section className="xs:mt-6 md:mt-16 lg:mt-28 xl:mt-20 xs:mx-6 sm:mx-7   md:mx-16 3xl:container 3xl:mx-auto">
         <Form />
       </section>
-      <section className="relative mt-16  xs:mx-6 sm:mx-7 md:mx-0 lg:mr-10 3xl:container 3xl:mx-auto ">
+      <section className="relative mt-16 lg:mt-20  xs:mx-6 sm:mx-7 md:mx-0 lg:mr-10 3xl:container 3xl:mx-auto ">
         <img
           src={cali}
           alt="Background"
-          className="absolute inset-x-1/4 h-96  object-cotain opacity-75"
+          className="absolute inset-x-[30%] h-96  object-cotain opacity-75"
         />
         <Testimonial />
       </section>
-      <section className="mt-16  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
+      <section className="xs:mt-20 md:mt-16 lg:mt-20  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
         <OurSuccess />
       </section>
-      <section className="mt-16 xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
+      <section className="xs:mt-14 sm:mt-20 md:mt-16 lg:mt-20  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
         <Faq />
       </section>
     </>

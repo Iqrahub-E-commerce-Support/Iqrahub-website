@@ -7,6 +7,7 @@ export default {
     extend: {
       fontFamily: {
         gabarito: ["Gabarito", "sans-serif"],
+        thunder:["Thunder"]
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -91,8 +92,12 @@ export default {
       offWhite: "#eeeeee",
       black: "#000000",
       grey:"#202020",
+      gold:"#FFD475",
+      "gold-900":"#C19535",
       "yellow-opacity": "rgba(255, 197, 6, 0.4)",
+      "yellow-opacity0.8": "rgba(255, 197, 6, 0.8)",
       "yellow-opacity0.2": "rgba(255, 197, 6, 0.2)",
+      "red-opacity0.2":"rgba(197, 38, 31, 0.6)"
     },
     screens: {
       xs: "0px",

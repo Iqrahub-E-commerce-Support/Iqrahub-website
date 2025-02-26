@@ -46,7 +46,7 @@ const RenderFields = ({ formFields, control, errors }: RenderFieldProps) => {
     return (
       <div
         key={rowIndex}
-        className={`grid xs:grid-cols-${fieldsInRow[0].size.xs} sm:grid-cols-${fieldsInRow[0].size.sm} md:grid-cols-${fieldsInRow[0].size.md} lg:grid-cols-${fieldsInRow[0].size.lg} gap-5`}
+        className={`grid xs:grid-cols-${fieldsInRow[0].size.xs} sm:grid-cols-${fieldsInRow[0].size.sm} md:grid-cols-${fieldsInRow[0].size.md} lg:grid-cols-${fieldsInRow[0].size.lg} xs:gap-2 sm:gap-5`}
       >
         {fieldsInRow.map((field) => (
           <div key={field.name} className="w-full">
@@ -116,7 +116,7 @@ const RenderFields = ({ formFields, control, errors }: RenderFieldProps) => {
             control={control}
             rules={validationRules}
             render={({ field: controllerField }) => (
-              <div className="mb-5">
+              <div className="sm:mb-5">
                 <p className="ml-2 mb-2 xs:text-[14px] lg:text-[16px]">
                   {field?.label}
                 </p>
@@ -169,7 +169,7 @@ const RenderFields = ({ formFields, control, errors }: RenderFieldProps) => {
     }
   };
 
-  return <div className="grid gap-2">{renderFields(formFields, control)}</div>;
+  return <div className="grid  gap-2">{renderFields(formFields, control)}</div>;
 };
 
 export default RenderFields;

@@ -5,6 +5,7 @@ export const ROUTES = {
   webdesign: "/web-design",
   appDevelopment: "/app-development",
   caseStudy: "/case-study",
+  almuqtadirCaseStudy: "/almuqtadir-case-study",
 };
 
 export const pathname = {

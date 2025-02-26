@@ -102,7 +102,7 @@ const Form = () => {
           },
         ])
         .select();
-        console.log(data,"whtat")
+      console.log(data, "whtat");
       if (error) {
         console.error("Supabase error:", error);
         alert(`Error submitting form: ${error.message}`);
@@ -153,7 +153,7 @@ const Form = () => {
                 errors={errors}
               /> */}
 
-              <div className="grid grid-cols-2">
+              <div className="grid sm:grid-cols-2">
                 <Controller
                   name="quality"
                   control={control}
@@ -195,7 +195,7 @@ const Form = () => {
                 />
               </div>
             </div>
-            <div className="xs:block sm:flex md:block lg:flex  justify-between items-center border rounded-[8px] xs:p-5 md:p-4 lg:p-5 ">
+            <div className="xs:block sm:flex md:block xl:flex  justify-between items-center border rounded-[8px] xs:p-5 md:p-4 lg:p-5 ">
               <div>
                 <div className="flex items-center">
                   <Radio
@@ -211,8 +211,11 @@ const Form = () => {
                 )}
               </div>
 
-              <div className="xs:flex sm:block md:flex lg:block justify-end">
-                <GradientButton type="submit" className="mt-3">
+              <div className="xs:flex sm:block md:flex lg:block sm:justify-end ">
+                <GradientButton
+                  type="submit"
+                  className="xs:mt-6 sm:mt-0 lg:mt-6 xl:mt-0"
+                >
                   Send Enquiry <MdArrowForward />
                 </GradientButton>
               </div>

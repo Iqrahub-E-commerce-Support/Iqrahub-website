@@ -26,7 +26,7 @@ const OurSuccess = () => {
     },
   ];
   return (
-    <div className="grid  xs:grid-cols-1 md:grid-cols-2 gap-14">
+    <div className="grid  xs:grid-cols-1 md:grid-cols-2 xs:gap-6 sm:gap-14">
       <div className="flex flex-col gap-4">
         <ImgIcon />
         <Heading normalText="Numbers That Showcase Our" specialText="Success" />

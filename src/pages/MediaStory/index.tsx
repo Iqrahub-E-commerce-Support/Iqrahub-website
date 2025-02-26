@@ -18,7 +18,7 @@ const MediaStory = () => {
       <section className="xs:mt-[100%] sm:mt-[121px]   xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto">
         <StorySection />
       </section>
-      <section className="mt-[75px] xs:mt-14 md:mt-20 xs:mx-6  sm:mx-7 md:ml-16 3xl:container 3xl:mx-auto ">
+      <section className="mt-[75px] xs:mt-14 md:mt-20 xs:mx-6  sm:mx-7 md:ml-16 3xl:container 3xl:mx-auto mb-20 ">
         <VideoSection />
       </section>
     </>

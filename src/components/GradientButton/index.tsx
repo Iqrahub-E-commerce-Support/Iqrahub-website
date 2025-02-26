@@ -10,9 +10,9 @@ const GradientButton = (props: GradientButtonProps) => {
   return (
     <button
       type={type}
-      className={`transition group inline-flex items-center justify-center rounded-full bg-gradient-to-r from-red via-yellow to-red p-[2.5px] text-white duration-300 hover:scale-105 hover:shadow-lg hover:shadow-yellow-400/50 hover:bg-gradient-to-r hover:from-yellow hover:via-brown hover:to-red ${className}`}
+      className={`group inline-flex items-center justify-center rounded-full bg-gradient-to-r from-red  via-brown  to-yellow p-[2.5px] text-white transition-all duration-500 hover:scale-105 hover:shadow-lg hover:shadow-yellow-400/50 hover:bg-gradient-to-r hover:from-yellow hover:via-brown hover:to-red ${className}`}
     >
-      <div className="flex h-full items-center justify-center rounded-full bg-black   px-3 py-3 transition duration-300 ease-in-out ">
+      <div className="flex h-full items-center justify-center rounded-full bg-black   px-3 py-3 transition duration-500 ease-in-out ">
         {children}
       </div>
     </button>

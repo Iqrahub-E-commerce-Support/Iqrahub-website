@@ -1,9 +1,11 @@
 const DisappointmentEmojiIcon = ({
   width = 29,
   height = 27,
+  color = "currentColor",
 }: {
   width?: any;
   height?: any;
+  color?: string;
 }) => {
   return (
     <svg
@@ -15,26 +17,12 @@ const DisappointmentEmojiIcon = ({
     >
       <path
         d="M3.25 23.1411L13.25 20.6411L25.75 17.6411"
-        stroke="currentColor"
+        stroke={color}
         strokeWidth="6"
         strokeLinecap="round"
       />
-      <rect
-        x="1.25"
-        y="0.141113"
-        width="8"
-        height="8"
-        rx="4"
-        fill="currentColor"
-      />
-      <rect
-        x="18.25"
-        y="0.141113"
-        width="8"
-        height="8"
-        rx="4"
-        fill="currentColor"
-      />
+      <rect x="1.25" y="0.141113" width="8" height="8" rx="4" fill={color} />
+      <rect x="18.25" y="0.141113" width="8" height="8" rx="4" fill={color} />
     </svg>
   );
 };

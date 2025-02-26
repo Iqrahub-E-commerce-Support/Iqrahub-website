@@ -16,7 +16,7 @@ const Clients = () => {
   const items = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
   return (
     <>
-      <div className="flex flex-col items-center mt-10 gap-7">
+      <div className="flex flex-col items-center mt-10 gap-8">
         <div className="flex justify-center items-center gap-3 bg-yellow bg-opacity-15 py-1 px-3 rounded-full ">
           <AsterRiskIcon />
           <p className="text-yellow">Award Winning Agency</p>
@@ -30,7 +30,7 @@ const Clients = () => {
               className="border-2 border-[#1B1B1B] transform transition-all duration-300 hover:border-yellow py-2 px-10 scroll-py-1  rounded-full mr-5 hover:bg-gradient-to-l hover:from-yellow-opacity hover:to-transparent hover:scale-105"
             >
               <img
-                className="h-[50px] w-[140px] object-contain transition-all duration-300 "
+                className="xs:h-[30px] md:h-[50px] xs:w-[120px] md:w-[140px] object-contain transition-all duration-300 "
                 src={item}
                 alt="img"
               />

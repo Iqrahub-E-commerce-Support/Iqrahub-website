@@ -7,16 +7,16 @@ import { Link } from "react-router-dom";
 const FeaturedService = () => {
   const services = [
     {
-      icon: <CameraIcon />,
+      icon: <CameraIcon width={55} height={55} />,
       heading: "Story Media Services",
       subHeading:
         "We’re a small but passionate team with a broad range of skills and experience. We believe in the power of creativity to solve complex problems.",
     },
     {
-      icon: <ServiceIcon />,
-      heading: "Story Media Services",
+      icon: <ServiceIcon width={55} height={55} />,
+      heading: "Tech Services",
       subHeading:
-        "We’re a small but passionate team with a broad range of skills and experience. We believe in the power of creativity to solve complex problems.",
+        "Physical, digital, meta-physical – We’ll find a creative solution for all your business problems.",
     },
   ];
   return (
@@ -30,18 +30,21 @@ const FeaturedService = () => {
       <div className="mt-8 ">
         <div className="grid xs:grid-cols-1 sm:grid-cols-2  gap-4">
           {services.map((service, index) => (
-            <>
-              <div className="flex flex-col gap-10 border-2 rounded-xl cursor-pointer p-4">
-                <div className="flex justify-between ">
-                  {service.icon}
-                  <ArrowIcon />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-lg">{service.heading}</h4>
-                  <p className="font-thin text-sm">{service.subHeading}</p>
-                </div>
+            <div
+              key={index}
+              className="glassy-bg flex flex-col justify-between gap-10 border-2 rounded-xl cursor-pointer px-6 py-5 hover:bg-gradient-to-tl hover:from-yellow-opacity0.2 via-red hover:to-transparent"
+            >
+              <div className="flex justify-between ">
+                {service.icon}
+                <ArrowIcon />
               </div>
-            </>
+              <div>
+                <h4 className="font-semibold text-[24px]">{service.heading}</h4>
+                <p className="font-thin text-[16px] xs:mt-[6px] sm:mt-0">
+                  {service.subHeading}
+                </p>
+              </div>
+            </div>
           ))}
         </div>
       </div>
