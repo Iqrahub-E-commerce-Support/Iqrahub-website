@@ -212,7 +212,10 @@ const Form = () => {
               </div>
 
               <div className="xs:flex sm:block md:flex lg:block sm:justify-end ">
-                <GradientButton type="submit" className="xs:mt-6 sm:mt-0 lg:mt-6 xl:mt-0">
+                <GradientButton
+                  type="submit"
+                  className="xs:mt-6 sm:mt-0 lg:mt-6 xl:mt-0"
+                >
                   Send Enquiry <MdArrowForward />
                 </GradientButton>
               </div>

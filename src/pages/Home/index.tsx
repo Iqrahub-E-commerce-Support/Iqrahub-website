@@ -13,7 +13,7 @@ import cali from "@/assets/images/cal.png";
 import Testimonial from "./components/Testimonial";
 import OurSuccess from "./components/OurSuccess";
 import Faq from "@/components/Faq";
-
+import caligraphy2 from "@/assets/images/calligraphy2.png";
 const Home = () => {
   return (
     <>
@@ -36,7 +36,7 @@ const Home = () => {
       </section>
       <section className="xs:mt-[81px]">
         {/* <div className="block -z-50"> */}
-          <AreaOfExpertise />
+        <AreaOfExpertise />
         {/* </div> */}
         {/* <div className="xs:block md:hidden">
           <AreaOfExpertiseSmallScreen />
@@ -45,7 +45,12 @@ const Home = () => {
       <section className="xs:mt-[50px] sm:mt-[65px] md:mt-[70px] ">
         <Clients />
       </section>
-      <section className="xs:pt-8 md:pt-16 lg:pt-24 xl:pt-[76px] xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto bg-cover relative">
+      <section className="relative xs:pt-8 md:pt-16 lg:pt-24 xl:pt-[76px] xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto bg-cover ">
+        <img
+          src={caligraphy2}
+          alt="Background"
+          className="absolute top-0 left-[90%] transform -translate-x-1/2 w-[150%] h-[150%] object-contain opacity-30 z-0 "
+        />
         <FeaturedService />
       </section>
       <section className="xs:pt-0 sm:pt-4 md:pt-[76px] xs:mx-6  sm:mx-7 md:mx-0 ">
@@ -58,7 +63,7 @@ const Home = () => {
         <img
           src={cali}
           alt="Background"
-          className="absolute inset-x-1/4 h-96  object-cotain opacity-75"
+          className="absolute inset-x-[30%] h-96  object-cotain opacity-75"
         />
         <Testimonial />
       </section>

@@ -7,7 +7,7 @@ const VideoSection = () => {
       <img
         src={PrecessCal}
         alt="Background"
-        className="absolute top-0 left-[50%] transform -translate-x-1/2 w-[200%] h-[150%] object-cover opacity-60 z-0 sm:-mt-72"
+        className="absolute top-0 left-[50%] transform -translate-x-1/2 w-full h-full object-cover opacity-60 z-0 sm:-mt-72"
       />
       <div className="flex flex-col items-center pt-16 z-10 2xl:pb-5">
         <CustomizableHeading

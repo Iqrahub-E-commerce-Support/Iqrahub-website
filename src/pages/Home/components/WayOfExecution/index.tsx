@@ -243,7 +243,7 @@ const WayOfExecution = () => {
           // Simple Swiper for mobile without animations
           <Swiper
             spaceBetween={10}
-          slidesPerView={1}
+            slidesPerView={1}
             className="w-full"
             modules={[Autoplay]}
             autoplay={{
@@ -272,8 +272,8 @@ const WayOfExecution = () => {
               spaceBetween={25}
               breakpoints={{
                 886: { slidesPerView: 1.9 },
-                924:{slidesPerView:1.98},
-                965:{slidesPerView:2.08},
+                924: { slidesPerView: 1.98 },
+                965: { slidesPerView: 2.08 },
                 1010: { slidesPerView: 2.17 },
                 1024: { slidesPerView: 2.36 },
                 1062: { slidesPerView: 2.45 },

@@ -30,20 +30,21 @@ const FeaturedService = () => {
       <div className="mt-8 ">
         <div className="grid xs:grid-cols-1 sm:grid-cols-2  gap-4">
           {services.map((service, index) => (
-            <>
-              <div className="flex flex-col gap-10 border-2 rounded-xl cursor-pointer p-4">
-                <div className="flex justify-between ">
-                  {service.icon}
-                  <ArrowIcon />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-lg">{service.heading}</h4>
-                  <p className="font-thin text-sm xs:mt-[6px] sm:mt-0">
-                    {service.subHeading}
-                  </p>
-                </div>
+            <div
+              key={index}
+              className="glassy-bg flex flex-col justify-between gap-10 border-2 rounded-xl cursor-pointer px-6 py-5 hover:bg-gradient-to-tl hover:from-yellow-opacity0.2 via-red hover:to-transparent"
+            >
+              <div className="flex justify-between ">
+                {service.icon}
+                <ArrowIcon />
               </div>
-            </>
+              <div>
+                <h4 className="font-semibold text-[24px]">{service.heading}</h4>
+                <p className="font-thin text-[16px] xs:mt-[6px] sm:mt-0">
+                  {service.subHeading}
+                </p>
+              </div>
+            </div>
           ))}
         </div>
       </div>
