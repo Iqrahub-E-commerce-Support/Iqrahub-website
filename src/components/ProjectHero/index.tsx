@@ -26,7 +26,7 @@ const ProjectHero = (props: ProjectHeroProps) => {
           normalText="TECH"
           specialText="SERVICES"
         />
-        <p className="text-[17px]">Creative solutions for modern brands</p>
+        <p className="text-[18px]">Creative solutions for modern brands</p>
         <div className="glassy-bg flex xs:justify-start justify-between items-center xs:gap-4 gap-12   border rounded-full xs:px-2 md:px-5 xs:py-2 md:py-2 xs:mx-8 sm:mx-0 ">
           <Link to={`${ROUTES.techServices}${ROUTES.webdesign}`}>
             <div className="flex items-center xs:gap-2 sm:gap-[15px] cursor-pointer">

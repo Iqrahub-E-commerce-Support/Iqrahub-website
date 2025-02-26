@@ -46,7 +46,8 @@ const AreaOfExpertise = () => {
           style={{
             backgroundImage: `url(${card.bgimage})`,
             backgroundSize: "cover",
-            backgroundPosition: "center",
+            backgroundPosition: "center", 
+            
           }}
           className="absolute border rounded-[12px] w-[300px] h-[400px]"
           initial="pos1"

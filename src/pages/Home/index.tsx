@@ -1,4 +1,4 @@
-import bg from "@/assets/images/caligraphy.png";
+import bg from "@/assets/images/homecal.png";
 import Hero from "./components/Hero";
 import { MdArrowForward } from "react-icons/md";
 import { MdPlayArrow } from "react-icons/md";
@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <>
       <section
-        className="h-[550px] bg-center  flex flex-col justify-center items-center gap-9  xs:pt-[15.2rem] sm:pt-[5%]  3xl:container 3xl:mx-auto "
+        className="h-[550px] bg-cover  flex flex-col justify-center items-center gap-9  xs:pt-[15.2rem] sm:pt-[8%]  3xl:container 3xl:mx-auto"
         style={{ backgroundImage: `url(${bg}) ` }}
       >
         <Hero />
@@ -45,13 +45,13 @@ const Home = () => {
       <section>
         <Clients />
       </section>
-      <section className="pt-12 mt-12  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto bg-cover relative">
+      <section className="pt-16 mt-12  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto bg-cover relative">
         <FeaturedService />
       </section>
-      <section className="xs:mt-14 md:mt-20 xs:mx-6  sm:mx-7 md:mx-0 3xl:container 3xl:mx-auto">
+      <section className="xs:pt-14 md:pt-20 xs:mx-6  sm:mx-7 md:mx-0 ">
         <WayOfExecution />
       </section>
-      <section className="xs:mt-6 sm:mt-16 xs:mx-6 sm:mx-7   md:mx-16 3xl:container 3xl:mx-auto">
+      <section className="xs:mt-6 sm:mt-16 xl:mt-20 xs:mx-6 sm:mx-7   md:mx-16 3xl:container 3xl:mx-auto">
         <Form />
       </section>
       <section className="relative mt-16  xs:mx-6 sm:mx-7 md:mx-0 lg:mr-10 3xl:container 3xl:mx-auto ">
