@@ -35,7 +35,9 @@ const CustomizableMobileFrame = () => {
         {/* Play/Pause Overlay */}
         <div
           className={`absolute flex justify-center items-center xs:w-full xs:h-full sm:w-full sm:h-full bg-black rounded-[20px]  ${
-            isPlaying ? "bg-opacity-40 opacity-0 hover:opacity-100" : "bg-opacity-50"
+            isPlaying
+              ? "bg-opacity-40 opacity-0 hover:opacity-100"
+              : "bg-opacity-50"
           } transition-all duration-300 z-20`}
         >
           <button onClick={togglePlayPause} className="relative z-30">

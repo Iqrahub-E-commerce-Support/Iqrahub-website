@@ -7,16 +7,16 @@ import { Link } from "react-router-dom";
 const FeaturedService = () => {
   const services = [
     {
-      icon: <CameraIcon />,
+      icon: <CameraIcon width={55} height={55} />,
       heading: "Story Media Services",
       subHeading:
         "We’re a small but passionate team with a broad range of skills and experience. We believe in the power of creativity to solve complex problems.",
     },
     {
-      icon: <ServiceIcon />,
-      heading: "Story Media Services",
+      icon: <ServiceIcon width={55} height={55} />,
+      heading: "Tech Services",
       subHeading:
-        "We’re a small but passionate team with a broad range of skills and experience. We believe in the power of creativity to solve complex problems.",
+        "Physical, digital, meta-physical – We’ll find a creative solution for all your business problems.",
     },
   ];
   return (
@@ -38,7 +38,9 @@ const FeaturedService = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg">{service.heading}</h4>
-                  <p className="font-thin text-sm">{service.subHeading}</p>
+                  <p className="font-thin text-sm xs:mt-[6px] sm:mt-0">
+                    {service.subHeading}
+                  </p>
                 </div>
               </div>
             </>

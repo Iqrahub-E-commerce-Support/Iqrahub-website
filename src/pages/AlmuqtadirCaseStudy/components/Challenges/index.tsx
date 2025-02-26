@@ -25,7 +25,11 @@ const Challenges = () => {
           "4px 0px 0px rgba(193,149,53,0.4), -4px 0px 0px rgba(193,149,53,0.4)",
       }}
     >
-      <img src={challengesPic} alt="challengepic" className="xs:hidden md:block" />
+      <img
+        src={challengesPic}
+        alt="challengepic"
+        className="xs:hidden md:block"
+      />
       {/* <img src={challengesPic} alt="challengepic" className="md:h-[350px]  lg:h-full" /> */}
       <div className="flex flex-col justify-center md:mt-11 xl:mt-0">
         {challengeData.map((challenge, index) => (
@@ -45,7 +49,11 @@ const Challenges = () => {
           </div>
         ))}
       </div>
-      <img src={challengesPic} alt="challengepic" className="xs:block md:hidden" />
+      <img
+        src={challengesPic}
+        alt="challengepic"
+        className="xs:block md:hidden"
+      />
     </div>
   );
 };

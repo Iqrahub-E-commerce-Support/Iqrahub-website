@@ -59,11 +59,8 @@ const Impact = () => {
         </p>
       </div>
       <div className="grid xs:grid-cols-1 md:grid-cols-[1fr_1fr] lg:grid-cols-[1fr_1.5fr] gap-4 md:-mt-14 lg:mt-0">
-    
-          <CustomizableMobileFrame />
-   
-      
-       
+        <CustomizableMobileFrame />
+
         <div className="">
           <img
             src={rightDesign}

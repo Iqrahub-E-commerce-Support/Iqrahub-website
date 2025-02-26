@@ -10,18 +10,18 @@ const OverView = () => {
           "4px 0px 0px rgba(193,149,53,0.4), -4px 0px 0px rgba(193,149,53,0.4)",
       }}
     >
-        <div className="flex flex-col justify-end xs:hidden md:block lg:hidden">
-            <CustomizableHeading
-              firstTxt="major"
-              secondTxt="overview"
-              MainStyle="uppercase md:text-[48px] text-gold text-center "
-              SpecialCharacterStyle="font-thin text-white"
-            />
-            <p className=" mt-2  capitalize text-[18px] z-10 mb-8 text-center ">
-              A detailed account of Al Muqtadir Jewellery's growth and digital
-              transformation.
-            </p>
-          </div>
+      <div className="flex flex-col justify-end xs:hidden md:block lg:hidden">
+        <CustomizableHeading
+          firstTxt="major"
+          secondTxt="overview"
+          MainStyle="uppercase md:text-[48px] text-gold text-center "
+          SpecialCharacterStyle="font-thin text-white"
+        />
+        <p className=" mt-2  capitalize text-[18px] z-10 mb-8 text-center ">
+          A detailed account of Al Muqtadir Jewellery's growth and digital
+          transformation.
+        </p>
+      </div>
       <div className="grid xs:grid-cols-1 md:grid-cols-[1.5fr_2fr] gap-8">
         <div className="grid grid-rows-[1fr_1fr_1fr] gap-3">
           <div className="flex flex-col justify-end md:hidden xl:block 2xl:place-self-end">
@@ -60,7 +60,7 @@ const OverView = () => {
           </div>
         </div>
         <div className="flex flex-col justify-start md:pt-9 lg:pt-0 ">
-        <TabletFrame />
+          <TabletFrame />
         </div>
       </div>
     </div>

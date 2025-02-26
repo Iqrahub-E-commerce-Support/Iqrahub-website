@@ -6,11 +6,12 @@ import PrecessCal from "@/assets/images/almuqtadir/ProcessBg.png";
 const Process = () => {
   return (
     <>
-      <div className="relative custom-container border-x-2 border-gold-900  "
-      style={{
-        boxShadow:
-          "4px 0px 0px rgba(193,149,53,0.4), -4px 0px 0px rgba(193,149,53,0.4)",
-      }}
+      <div
+        className="relative custom-container border-x-2 border-gold-900  "
+        style={{
+          boxShadow:
+            "4px 0px 0px rgba(193,149,53,0.4), -4px 0px 0px rgba(193,149,53,0.4)",
+        }}
       >
         <img
           src={PrecessCal}
@@ -89,7 +90,11 @@ const Process = () => {
               </div>
             </div>
 
-            <img src={process} alt="process" className="xs:-mt-8 sm:-mt-16 md:mt-[30px] lg:-mt-16 z-10 xs:h-[400px] sm:h-full md:h-[90%] lg:h-full  xs:object-cover sm:object-cover  " />
+            <img
+              src={process}
+              alt="process"
+              className="xs:-mt-8 sm:-mt-16 md:mt-[30px] lg:-mt-16 z-10 xs:h-[400px] sm:h-full md:h-[90%] lg:h-full  xs:object-cover sm:object-cover  "
+            />
           </div>
         </div>
         <img

@@ -30,7 +30,7 @@ const Clients = () => {
               className="border-2 border-[#1B1B1B] transform transition-all duration-300 hover:border-yellow py-2 px-10 scroll-py-1  rounded-full mr-5 hover:bg-gradient-to-l hover:from-yellow-opacity hover:to-transparent hover:scale-105"
             >
               <img
-                className="h-[50px] w-[140px] object-contain transition-all duration-300 "
+                className="xs:h-[30px] md:h-[50px] xs:w-[120px] md:w-[140px] object-contain transition-all duration-300 "
                 src={item}
                 alt="img"
               />

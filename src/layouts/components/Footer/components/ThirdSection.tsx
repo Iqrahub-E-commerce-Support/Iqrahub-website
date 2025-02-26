@@ -9,7 +9,9 @@ const ThirdSection = () => {
         <EmailIcon />
         <div>
           <h5>Email:</h5>
-          <a href="mailto:contact@Iqrahub.com" target="_blank">contact@Iqrahub.com</a>
+          <a href="mailto:contact@Iqrahub.com" target="_blank">
+            contact@Iqrahub.com
+          </a>
         </div>
       </div>
       <div className="flex gap-4 -ml-1">

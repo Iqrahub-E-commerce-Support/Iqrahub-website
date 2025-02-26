@@ -8,11 +8,7 @@ import YoutubeIcon from "@/components/icons/YoutubeIcon";
 const FirstSection = () => {
   return (
     <div className="flex flex-col gap-6 items-start">
-      <img
-        src={Icon}
-        alt="icon"
-        className="object-contain  xs:h-4 sm:h-3 md:h-10"
-      />
+      <img src={Icon} alt="icon" className="xs:h-8  md:h-10" />
       <p className="w-[290px]">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, amet,
         quod sequi

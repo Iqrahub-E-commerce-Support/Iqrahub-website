@@ -29,7 +29,7 @@ const outcomeData = [
       "Optimized digital marketing efforts. Ensured maximum ad performance.",
     title: "Ad Optimization",
   },
-  
+
   {
     id: 4,
     icon: <DocumentValidationIcon />,

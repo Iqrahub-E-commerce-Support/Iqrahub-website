@@ -1,11 +1,12 @@
 import FirstSection from "./components/FirstSection";
 import SecondSection from "./components/SecondSection";
 import ThirdSection from "./components/ThirdSection";
-import footerbg from "@/assets/images/footerbg.png"
+import footerbg from "@/assets/images/footerbg.png";
 const Footer = () => {
   return (
-    <div className="bg-cover h-[100%] opacity-100"
-    style={{ backgroundImage: `url(${footerbg}) ` }}
+    <div
+      className="bg-cover h-[100%] opacity-100"
+      style={{ backgroundImage: `url(${footerbg}) ` }}
     >
       {/* <img
         src={footerbg}

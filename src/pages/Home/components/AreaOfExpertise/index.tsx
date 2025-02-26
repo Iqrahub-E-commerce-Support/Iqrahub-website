@@ -39,15 +39,14 @@ const AreaOfExpertise = () => {
   };
 
   return (
-    <div className="flex items-center flex-col justify-start bg-black xs:h-[70vh] sm:h-[60vh] relative overflow-hidden">
+    <div className="flex items-center flex-col justify-start bg-black h-[400px]  relative overflow-hidden">
       {cards.map((card, index) => (
         <motion.div
           key={index}
           style={{
             backgroundImage: `url(${card.bgimage})`,
             backgroundSize: "cover",
-            backgroundPosition: "center", 
-            
+            backgroundPosition: "center",
           }}
           className="absolute border rounded-[12px] w-[300px] h-[400px]"
           initial="pos1"

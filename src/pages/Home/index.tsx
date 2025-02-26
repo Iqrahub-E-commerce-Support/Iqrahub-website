@@ -18,11 +18,11 @@ const Home = () => {
   return (
     <>
       <section
-        className="h-[550px] bg-cover  flex flex-col justify-center items-center gap-9  xs:pt-[15.2rem] sm:pt-[8%]  3xl:container 3xl:mx-auto"
-        style={{ backgroundImage: `url(${bg}) ` }}
+        className="w-full h-full bg-cover bg-center flex flex-col justify-center items-center gap-9 xs:pt-[7.5rem] md:pt-[15%] lg:pt-[13%] 2xl:pt-[8%] xs:px-5 3xl:container 3xl:mx-auto"
+        style={{ backgroundImage: `url(${bg})` }}
       >
         <Hero />
-        <div className="flex xs:flex-col sm:flex-row gap-5 items-center">
+        <div className="flex  sm:flex-row gap-5 items-center">
           <GradientButton>
             Get in Touch <MdArrowForward />
           </GradientButton>
@@ -30,31 +30,31 @@ const Home = () => {
             <GradientButton>
               <MdPlayArrow size={30} />
             </GradientButton>
-            <p>How it work</p>
+            <p>How it works</p>
           </div>
         </div>
       </section>
-      <section className="xs:mt-[220px] sm:mt-0 lg:mt-4">
-        <div className="block -z-50">
+      <section className="xs:mt-[81px]">
+        {/* <div className="block -z-50"> */}
           <AreaOfExpertise />
-        </div>
+        {/* </div> */}
         {/* <div className="xs:block md:hidden">
           <AreaOfExpertiseSmallScreen />
         </div> */}
       </section>
-      <section>
+      <section className="xs:mt-[50px] sm:mt-[65px] md:mt-[70px] ">
         <Clients />
       </section>
-      <section className="pt-16 mt-12  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto bg-cover relative">
+      <section className="xs:pt-8 md:pt-16 lg:pt-24 xl:pt-[76px] xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto bg-cover relative">
         <FeaturedService />
       </section>
-      <section className="xs:pt-14 md:pt-20 xs:mx-6  sm:mx-7 md:mx-0 ">
+      <section className="xs:pt-0 sm:pt-4 md:pt-[76px] xs:mx-6  sm:mx-7 md:mx-0 ">
         <WayOfExecution />
       </section>
-      <section className="xs:mt-6 sm:mt-16 xl:mt-20 xs:mx-6 sm:mx-7   md:mx-16 3xl:container 3xl:mx-auto">
+      <section className="xs:mt-6 md:mt-16 lg:mt-28 xl:mt-20 xs:mx-6 sm:mx-7   md:mx-16 3xl:container 3xl:mx-auto">
         <Form />
       </section>
-      <section className="relative mt-16  xs:mx-6 sm:mx-7 md:mx-0 lg:mr-10 3xl:container 3xl:mx-auto ">
+      <section className="relative mt-16 lg:mt-20  xs:mx-6 sm:mx-7 md:mx-0 lg:mr-10 3xl:container 3xl:mx-auto ">
         <img
           src={cali}
           alt="Background"
@@ -62,10 +62,10 @@ const Home = () => {
         />
         <Testimonial />
       </section>
-      <section className="mt-16  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
+      <section className="xs:mt-20 md:mt-16 lg:mt-20  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
         <OurSuccess />
       </section>
-      <section className="mt-16  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
+      <section className="xs:mt-14 sm:mt-20 md:mt-16 lg:mt-20  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
         <Faq />
       </section>
     </>

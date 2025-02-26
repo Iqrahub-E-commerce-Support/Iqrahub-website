@@ -34,7 +34,9 @@ const TabletFrame = () => {
         {/* Play/Pause Overlay */}
         <div
           className={`absolute inset-0 flex justify-center items-center bg-black ${
-            isPlaying ? "bg-opacity-40 opacity-0 hover:opacity-100" : "bg-opacity-50"
+            isPlaying
+              ? "bg-opacity-40 opacity-0 hover:opacity-100"
+              : "bg-opacity-50"
           } transition-opacity duration-300 z-20 rounded-lg`}
         >
           <button onClick={togglePlayPause} className="relative z-30">
