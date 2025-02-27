@@ -8,8 +8,9 @@ const Processes = () => {
         <CustomizableHeading
           firstTxt="WEBSITE"
           secondTxt="Design & Development"
+          MainStyle="xs:text-center sm:text-start"
         />
-        <p className="sm:w-[500px] mt-2  sm:text-center text-offWhite">
+        <p className="sm:w-[500px] mt-2  text-center text-offWhite">
           We design and develop interactive digital experiences that delight
           your audiences and boost engagement
         </p>
