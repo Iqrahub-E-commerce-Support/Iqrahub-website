@@ -11,7 +11,7 @@ const Detials = () => {
         loop
         muted
         src={vionex}
-        className="max-w-full w-full md:w-auto"
+        className=" xs:w-full md:w-[640px] md:h-[100%] object-cover"
       ></video>
 
       {/* Content Section */}

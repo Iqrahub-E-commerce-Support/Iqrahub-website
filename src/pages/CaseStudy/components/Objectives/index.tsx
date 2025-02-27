@@ -13,7 +13,7 @@ const Objectives = () => {
         <h6 className="font-bold xs:mt-3 md:mt-0 xs:text-[29px] sm:text-[32px] md:text-[36px] text-yellow">
           Elevating Parcel Delivery
         </h6>
-        <h3 className="xs:mt-3 md:mt-[20px] xs:text-[40px] sm:text-[52px] md:text-[64px] font-bold xs:leading-[50px] sm:leading-[60px]  md:leading-[45px]">
+        <h3 className="xs:mt-4 md:mt-[20px] xs:text-[40px] sm:text-[52px] md:text-[64px] font-bold xs:leading-[45px] sm:leading-[60px]  lg:leading-[45px]">
           How Drones Are
           <span className="xs:hidden  lg:block">
             {"  "}
@@ -21,17 +21,21 @@ const Objectives = () => {
           </span>{" "}
           Transforming Logistics
         </h3>
-        <h6 className="xs:mt-3 md:mt-[24px] lg:mt-[18px] xs:text-[29px] sm:text-[32px] md:text-[36px] font-medium">
+        <h6 className="xs:mt-6 md:mt-[24px] lg:mt-[18px] xs:text-[29px] sm:text-[32px] md:text-[36px] font-medium">
           OBJECTIVE
         </h6>
         <p className="mt-[18px] text-[18px] xs:mr-0 sm:mr-[59px]">
-          The goal of the SkySwift project was to create a strong brand identity
+          The goal of the SkySwift project was to create a{" "}
+          <span className="font-bold">strong brand identity</span>
           for a cutting-edge drone delivery system. We aimed to position
-          SkySwift as an innovative, high-tech solution that could redefine
-          efficiency in delivery services, particularly within the UK market. By
-          combining futuristic visuals and compelling storytelling, we sought to
-          demonstrate how drones could solve logistical challenges and set a new
-          standard for delivery systems.  
+          SkySwift as an{" "}
+          <span className="font-bold">innovative, high-tech solution</span> that
+          could redefine efficiency in delivery services, particularly within
+          the UK market. By combining{" "}
+          <span className="font-bold">futuristic visuals</span> and{" "}
+          <span className="font-bold">compelling storytelling</span>, we sought
+          to demonstrate how drones could solve logistical challenges and set a
+          new standard for delivery systems.  
         </p>
       </div>
     </div>

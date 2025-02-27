@@ -23,7 +23,7 @@ const Conclusion = () => {
 
       <CustomizableHeading
         firstTxt="Conclusion"
-        MainStyle="text-3xl sm:text-4xl md:text-[54px] text-yellow mt-2 sm:mt-4"
+        MainStyle="xs:text-[35px] sm:text-[45px] md:text-[64px] text-yellow xs:mt-0 sm:mt-4 md:mt-0"
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-6 sm:mt-8 md:mt-10 gap-4 sm:gap-6">

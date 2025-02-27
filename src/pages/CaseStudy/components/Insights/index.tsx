@@ -30,8 +30,8 @@ const Insights = () => {
       <div className="flex flex-col gap-5 items-center xs:mt-10 sm:mt-0 xs:leading-10 sm:leading-0 ">
         <CustomizableHeading
           firstTxt="SKYSWIFT DRONE"
-          secondTxt="SPECIALITIES"
-          MainStyle="xs:text-[35px] xs:text-center sm:'text-start md:text-[45px] text-yellow  font-black"
+          secondTxt="IN ACTION"
+          MainStyle="xs:text-[35px] sm:text-[45px] md:text-[64px] xs:text-center lg:text-start  text-yellow  font-black md:leading-[55px]"
           SpecialCharacterStyle="text-white font-thin"
         />
         <p className="w-full max-w-2xl text-center text-sm md:text-base">
