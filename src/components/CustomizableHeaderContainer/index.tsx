@@ -20,7 +20,7 @@ const CustomizableHeaderContainer = (
           <CustomizableHeading
             firstTxt={heading1 && heading1}
             secondTxt={heading2}
-            MainStyle="text-3xl font-bold text-yellow"
+            MainStyle="md:text-[48px] font-black text-yellow"
             SpecialCharacterStyle="text-white font-thin"
           />
           <p className="sm:w-[460px] mt-2  text-offWhite">{subHeading}</p>
