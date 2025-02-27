@@ -7,6 +7,7 @@ import "swiper/css";
 import { motion, AnimatePresence } from "framer-motion";
 import sampleVideo from "@/assets/images/video/sample_vid.mp4";
 import CustomizableHeaderContainer from "@/components/CustomizableHeaderContainer";
+import ArrowIcon from "@/components/icons/ArrowIcon";
 // Sample videos (Replace with actual URLs)
 const videoList = [
   { url: sampleVideo },
@@ -70,6 +71,7 @@ const VideoSection = () => {
       height: isCurrent ? 385 : 385,
       opacity: isCurrent ? 1 : 0.7,
       scale: isCurrent ? 1 : 0.95,
+      isCurrent
     };
   };
 
@@ -87,18 +89,31 @@ const VideoSection = () => {
       <Swiper
         spaceBetween={25} // Add some spacing
         breakpoints={{
-         0:{slidesPerView:1},
-         888:{slidesPerView:2.3},
-         900:{slidesPerView:2.4},
-         955:{slidesPerView:2.5},
-         988:{slidesPerView:2.6},
-         1016:{slidesPerView:2.7},
-         1046:{slidesPerView:2.8},
-         1088:{slidesPerView:2.9},
-         1117:{slidesPerView:3},
-         1152:{slidesPerView:3.1},
-         1206:{slidesPerView:3.2},
-         1226:{slidesPerView:3.3},
+          0: { slidesPerView: 1 },
+          888: { slidesPerView: 2.3 },
+          900: { slidesPerView: 2.4 },
+          955: { slidesPerView: 2.5 },
+          988: { slidesPerView: 2.6 },
+          1016: { slidesPerView: 2.7 },
+          1046: { slidesPerView: 2.8 },
+          1088: { slidesPerView: 2.9 },
+          1117: { slidesPerView: 3 },
+          1152: { slidesPerView: 3.1 },
+          1206: { slidesPerView: 3.2 },
+          1226: { slidesPerView: 3.3 },
+          1250: { slidesPerView: 3.4 },
+          1300: { slidesPerView: 3.5 },
+          1340: { slidesPerView: 3.6 },
+          1370: { slidesPerView: 3.7 },
+          1410: { slidesPerView: 3.8 },
+          1445: { slidesPerView: 3.9 },
+          1485: { slidesPerView: 4 },
+          1520: { slidesPerView: 4.1 },
+          1555: { slidesPerView: 4.2 },
+          1595: { slidesPerView: 4.3 },
+          1630: { slidesPerView: 4.4 },
+          1665: { slidesPerView: 4.5 },
+          1700: { slidesPerView: 4.8 },
         }}
         // slidesPerView={isMobileView ? 1 : 4.3}
         loop={true}
@@ -114,7 +129,11 @@ const VideoSection = () => {
         {videoList.map((videoItem, index) => {
           const size = getSlideSize(index);
           return (
-            <SwiperSlide key={index} style={{width:size.width}} className="flex justify-center flex-shrink-0 ">
+            <SwiperSlide
+              key={index}
+              style={{ width: size.width }}
+              className="flex justify-center flex-shrink-0 "
+            >
               <motion.div
                 className="relative border-2 rounded-lg  flex-shrink-0"
                 style={{
@@ -133,17 +152,30 @@ const VideoSection = () => {
                   muted
                   playsInline
                 />
+                <div className="absolute inset-0 flex items-start justify-between text-white z-30 p-4 h-0">
+                  <button className="bg-white text-black px-3 py-1 rounded-full cursor-pointer">
+                    View Project
+                  </button>
+                  <div className="cursor-pointer">
+                    <ArrowIcon />
+                  </div>
+                </div>
+                <div className="absolute bottom-0 flex items-end justify-between text-white z-30 p-4  h-0">
+                 <p className="text-[22px] font-bold">Project Name</p>
+                </div>
                 <motion.button
                   onClick={() => togglePlayPause(index)}
                   className={`absolute inset-0 flex items-center justify-center bg-black ${
                     playingIndex === index ? "bg-opacity-30" : "bg-opacity-50"
                   } rounded-lg`}
                   whileHover={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }}
+                  style={{ pointerEvents: "none" }} // Prevents blocking the text click
                 >
                   <motion.div
-                    className="flex border-4 rounded-full items-center justify-center"
+                    className={`flex border-4 ${size.isCurrent ? "border-yellow":""} rounded-full items-center justify-center`}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
+                    style={{ pointerEvents: "auto" }} // Allows clicking the play/pause button
                   >
                     <AnimatePresence mode="wait">
                       <motion.div
@@ -154,9 +186,12 @@ const VideoSection = () => {
                         transition={{ duration: 0.2 }}
                       >
                         {playingIndex === index ? (
-                          <BiPause size={60} className="text-white" />
+                          <BiPause 
+                          size={60} 
+                          className={`${size.isCurrent ? 'text-yellow' : 'text-white'}`} 
+                        />
                         ) : (
-                          <BiPlay size={60} className="text-white" />
+                          <BiPlay size={60} className={`${size.isCurrent?" text-yellow ": "text-white"}`} />
                         )}
                       </motion.div>
                     </AnimatePresence>
@@ -167,10 +202,8 @@ const VideoSection = () => {
           );
         })}
       </Swiper>
-     
     </div>
   );
 };
 
 export default VideoSection;
-

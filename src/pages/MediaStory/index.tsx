@@ -7,18 +7,18 @@ const MediaStory = () => {
   return (
     <>
       <section
-        className="h-[450px] bg-cover flex flex-col justify-center items-center gap-9 xs:px-6 sm:px-7 md:px-16     3xl:container 3xl:mx-auto "
+        className="h-[450px] bg-cover flex flex-col justify-center items-center gap-9 xs:px-6 sm:px-7 md:px-16      "
         style={{ backgroundImage: `url(${bg}) ` }}
       >
         <Hero />
       </section>
-      <section className=" xs:-mt-[150px] sm:-mt-[130px] md:-mt-[90px] lg:mt-[5px]  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
+      <section className=" xs:-mt-[150px] sm:-mt-[130px] md:-mt-[90px]   xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
         <CustomizedVideoWithFrame />
       </section>
-      <section className="xs:mt-[80%] sm:mt-[50px] md:mt-[70px] lg:mt-[121px]   xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto">
+      <section className="xs:mt-[70%] sm:mt-[80%] md:mt-[70px] lg:mt-[121px]   xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto">
         <StorySection />
       </section>
-      <section className="sm:mt-[75px] xs:mt-14 md:mt-20 xs:mx-6  sm:mx-7 md:ml-16 3xl:container 3xl:mx-auto md:mb-20 ">
+      <section className="sm:mt-[75px] xs:mt-14 md:mt-20 xl:mt-24 xs:mx-6  sm:mx-7 md:ml-16 3xl:container 3xl:mx-auto md:mb-20 ">
         <VideoSection />
       </section>
     </>

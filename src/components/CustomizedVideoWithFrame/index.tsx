@@ -18,13 +18,13 @@ const CustomizedVideoWithFrame = () => {
   };
 
   return (
-    <div className="relative w-full xs:h-full sm:h-[90vh] 3xl:h-screen ">
+    <div className="relative w-full xs:h-full md:h-[90vh] 3xl:h-screen ">
       {/* Video Container */}
       <div className="relative flex-shrink-0 ">
         <video
           ref={videoRef}
           src={sampleVid}
-          className="absolute inset-0 w-full  xs:h-[247px] sm:h-[89vh] 3xl:h-screen xs:pt-1 sm:pt-3 3xl:pt-[17px] sm:pb-1 3xl:pb-4 xs:px-[2px] sm:px-2 3xl:px-[13px] object-fill xs:rounded-[10px] sm:rounded-[28px] 3xl:rounded-[40px] z-10"
+          className="absolute inset-0 w-full  xs:h-[247px] sm:h-[500px] md:h-[89vh] 3xl:h-screen xs:pt-1 sm:pt-2 3xl:pt-[17px] sm:pb-2 3xl:pb-4 xs:px-[2px] sm:px-1 3xl:px-[13px] object-fill xs:rounded-[10px] sm:rounded-[22px] 3xl:rounded-[40px] z-10"
           muted
           loop
           playsInline
@@ -32,7 +32,7 @@ const CustomizedVideoWithFrame = () => {
 
         {/* Play/Pause Overlay */}
         <div
-          className={`absolute flex justify-center items-center w-full  xs:h-[250px]  sm:h-[89vh] 3xl:h-screen xs:pt-1 sm:pt-3 3xl:pt-[17px] sm:pb-1 3xl:pb-4 xs:px-[2px] sm:px-2 3xl:px-[13px] object-fill xs:rounded-[10px] sm:rounded-[28px] 3xl:rounded-[40px] bg-black ${
+          className={`absolute flex justify-center items-center w-full  xs:h-[250px] sm:h-[500px] md:h-[89vh] 3xl:h-screen xs:pt-1 sm:pt-2 3xl:pt-[17px] sm:pb-1 3xl:pb-4 xs:px-[2px] sm:px-1 3xl:px-[13px] object-fill xs:rounded-[10px] sm:rounded-[22px] 3xl:rounded-[40px] bg-black ${
             isPlaying
               ? "bg-opacity-40 opacity-0 hover:opacity-100"
               : "bg-opacity-50"
@@ -54,7 +54,7 @@ const CustomizedVideoWithFrame = () => {
       <img
         src={VideoFrame}
         alt="Video Frame"
-        className="absolute inset-0 w-full  xs:h-[250px] sm:h-[90vh] 3xl:h-screen object-fill z-30 pointer-events-none "
+        className="absolute inset-0 w-full  xs:h-[250px] sm:h-[500px] md:h-[90vh] 3xl:h-screen object-fill z-30 pointer-events-none "
       />
     </div>
   );
