@@ -50,9 +50,9 @@ const Process = () => {
         <CustomizableHeading
           firstTxt="UI/UX DESIGNING"
           secondTxt="PROCESS"
-          MainStyle="text-[56px] "
+          MainStyle="xs:text-[40px] sm:text-[48px] md:text-[56px] font-black xs:leading-[50px] "
         />
-        <p className="text-center mb-12">
+        <p className="md:text-center mb-12">
           We create and refine visual identity systems that provide you with a
           unique positioning and personality
         </p>
