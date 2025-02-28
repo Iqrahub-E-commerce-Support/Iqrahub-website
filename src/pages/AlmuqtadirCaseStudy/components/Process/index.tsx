@@ -37,7 +37,7 @@ const Process = () => {
               sales process and identified key challenges.
             </p>
           </div>
-          <div className="mt-20 grid xs:grid-cols-1 md:grid-cols-[2fr_1.5fr] gap-4  xs:px-4 sm:px-9 ">
+          <div className="xs:mt-8 sm:mt-20 grid xs:grid-cols-1 md:grid-cols-[2fr_1.5fr] gap-4  xs:px-4 sm:px-9 ">
             <div className="grid grid-row-3 gap-4">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="glassy-bg flex flex-col justify-center border-2 border-gold rounded-[20px] px-8 xs:py-2 ">

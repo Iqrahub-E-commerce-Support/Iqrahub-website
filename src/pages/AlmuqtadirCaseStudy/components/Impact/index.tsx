@@ -36,7 +36,7 @@ const Impact = () => {
   ];
   return (
     <div
-      className="relative custom-container border-x-2 border-gold-900 px-4 sm:px-9 xs:pt-[320px] sm:pt-[400px]   lg:pt-11 xl:pt-16  3xl:pt-28 "
+      className="relative custom-container border-x-2 border-gold-900 px-4 sm:px-9 xs:pt-[320px] sm:pt-[880px] md:pt-[400px]   lg:pt-11 xl:pt-16  3xl:pt-28 "
       style={{
         boxShadow:
           "4px 0px 0px rgba(193,149,53,0.4), -4px 0px 0px rgba(193,149,53,0.4)",
@@ -105,15 +105,16 @@ const Impact = () => {
               in revenue from the initial campaign
             </p>
           </div>
-          <div className="grid  xs:grid-cols-5 md:grid-cols-3 lg:grid-cols-5 gap-3  sm:gap-4 md:gap-12 mt-[36px]">
+          {/* <div className="grid  xs:grid-cols-5 md:grid-cols-3 lg:grid-cols-5 gap-3  sm:gap-4 md:gap-12 mt-[36px]"> */}
+          <div className="xs:flex flex-wrap md:grid md:grid-cols-4 lg:grid-cols-5 gap-3 justify-center  sm:gap-4 md:gap-12 mt-[36px]">
             {emojiStats.map((emoji, index) => (
               <div
                 key={index}
-                className={`xs:h-[50px] sm:h-[90px] lg:h-[120px] aspect-square rounded-[10px] sm:rounded-[20px] flex flex-col gap-2 sm:gap-3 lg:gap-7 justify-center items-center xs:py-8 sm:py-0 md:py-6 border-2 border-gold ${
+                className={`xs:h-[50px] sm:h-[90px] md:h-[100px] xl:h-[120px] aspect-square rounded-[10px] sm:rounded-[20px] flex flex-col gap-2 sm:gap-3 lg:gap-7 justify-center items-center xs:py-8 sm:py-0 md:py-6 xl:py-12 border-2 border-gold ${
                   emoji.highlight ? "bg-gold" : "glassy-bg"
                 }`}
               >
-                <div className="w-6 sm:w-8 lg:w-10">{emoji.icon}</div>
+                <div className="w-6 sm:w-8 xl:w-10">{emoji.icon}</div>
                 <p
                   className={`text-sm sm:text-base md:text-[24px] 2xl:text-[30px] font-regular ${emoji.highlight ? "text-black" : ""}`}
                 >

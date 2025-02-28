@@ -27,13 +27,13 @@ const AlmuqtadirCaseStudy = () => {
       <section>
         <DigitalEcosystem />
       </section>
-      <section className="">
+      <section>
         <Outcome />
       </section>
       <section>
         <VideoSection />
       </section>
-      <section>
+      <section >
         <Impact />
       </section>
       <section>

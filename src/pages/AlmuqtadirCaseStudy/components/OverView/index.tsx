@@ -4,7 +4,7 @@ import TabletFrame from "@/components/TabletFrame";
 const OverView = () => {
   return (
     <div
-      className="custom-container border-x-2 border-gold-900 px-4 sm:px-9 xs:pt-[10px] sm:pt-[55px] md:pt-[95px]"
+      className="custom-container border-x-2 border-gold-900 px-4 sm:px-9 xs:pt-[0px] sm:pt-[55px] md:pt-[95px]"
       style={{
         boxShadow:
           "4px 0px 0px rgba(193,149,53,0.4), -4px 0px 0px rgba(193,149,53,0.4)",
