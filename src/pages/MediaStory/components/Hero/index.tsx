@@ -3,7 +3,7 @@ import CameraIcon from "@/components/icons/CameraIcon";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center mt-[85px] gap-3">
+    <div className="flex flex-col items-center xs:-mt-[85px] sm:-mt-[65px] md:mt-0 gap-3">
       <div className="flex gap-[25px] items-center">
         <p className="font-thin xs:text-[15px] sm:text-[18px]">Precision</p>
         <CameraIcon width={38} height={38} />
@@ -12,7 +12,7 @@ const Hero = () => {
         </p>
       </div>
       <Heading
-        className="md:text-[55px]"
+        className="md:text-[80px]"
         normalText="MEDIA"
         specialText="STORY"
       />

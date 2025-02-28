@@ -48,7 +48,7 @@ const KeyInsights = () => {
         <CustomizableHeading
           firstTxt="KEY INSIGHTS"
           secondTxt="From Research"
-          MainStyle="mt-10 mb-5 md:text-[50px] text-yellow"
+          MainStyle="mt-10 mb-5 xs:text-[35px] sm:text-[45px] md:text-[64px] text-yellow xs:leading-[40px] md:leading-[55px]"
           SpecialCharacterStyle="font-thin text-white"
         />
         <p>

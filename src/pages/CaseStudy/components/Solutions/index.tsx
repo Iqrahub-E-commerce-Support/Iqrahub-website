@@ -38,13 +38,13 @@ const sustainabilityCard = {
 const Solutions = () => {
   return (
     <>
-      <p className="font-bold text-base sm:text-lg md:text-[20px]">
+      <p className="font-bold text-base text-[20px]">
         Through Extensive Research
       </p>
       <CustomizableHeading
         firstTxt="Conclusion"
         secondTxt="And Solutions"
-        MainStyle="text-3xl sm:text-4xl md:text-[54px] text-yellow mt-2 sm:mt-4"
+        MainStyle="xs:text-[35px] sm:text-[45px] md:text-[64px] text-yellow mt-2 sm:mt-4  xs:leading-[40px]"
         SpecialCharacterStyle="font-thin text-white"
       />
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-6 sm:mt-8 md:mt-10 gap-4 sm:gap-5">

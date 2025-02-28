@@ -8,7 +8,7 @@ const Challenges = () => {
           With Iqrahub Story Media
         </p>
       </div>
-      <div className="xs:px-6 sm:px-7 md:px-16 sm:flex flex-col justify-center h-full items-center">
+      <div className="xs:px-6 sm:px-7 md:px-16 flex flex-col justify-center h-full items-center xs:-mt-[40px] lg:mt-0">
         <h2 className="font-black text-yellow xs:text-[48px] text-center sm:text-[56px] md:text-[60px]">
           CHALLENGES
         </h2>

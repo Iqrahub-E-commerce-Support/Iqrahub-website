@@ -86,7 +86,7 @@ const Hero = () => {
             </div>
           ))}
         </div>
-        <p className="text-center xs:px-6 md:px-24 lg:px-32  text-sm md:text-base">
+        <p className="text-center xs:px-6 md:px-24 xl:px-32 xs:text-[16px] sm:text-[18px] lg:text-[24px]">
           <span className="font-bold">Vionex </span>
           is a pioneering research and development company specializing in
           aerospace technologies. Known for pushing the boundaries of innovation

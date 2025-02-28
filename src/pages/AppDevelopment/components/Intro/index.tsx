@@ -5,16 +5,16 @@ import { MdArrowForward } from "react-icons/md";
 
 const Intro = () => {
   return (
-    <div className="flex flex-wrap items-center justify-between h-auto md:h-screen px-6 md:px-12 py-10">
+    <div className="flex flex-wrap items-center justify-between h-auto md:h-screen ">
       {/* Left Content */}
       <div className="w-full md:w-[50%] text-center md:text-left">
-        <h3 className="text-2xl md:text-[24px] font-bold mb-6">
+        <h3 className="xs:text-[14px] md:text-[24px] font-bold xs:mb-2 ">
           YOUR VISION, OUR DESIGN PERFECTLY CRAFTED
         </h3>
         <CustomizableHeading
           firstTxt="MOBILE"
           secondTxt="EXPERIENCES"
-          MainStyle="text-4xl md:text-[57px] font-black -mt-2"
+          MainStyle="xs:text-[40px] sm:text-[48px] md:text-[57px] font-black xs:leading-[50px]  "
           SpecialCharacterStyle="font-black text-yellow"
         />
         <p className="w-full md:w-[70%] mt-6 font-extralight text-sm md:text-base mx-auto md:mx-0">
@@ -34,7 +34,7 @@ const Intro = () => {
         <img
           src={AppDevelopment}
           alt="mobile"
-          className="w-[80%] md:w-auto max-w-xs md:max-w-md object-cover"
+          className="w-[80%] md:w-[100%] xl:w-[90%]  object-cover"
         />
       </div>
     </div>
