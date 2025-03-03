@@ -12,13 +12,13 @@ const MediaStory = () => {
       >
         <Hero />
       </section>
-      <section className=" xs:-mt-[150px] sm:-mt-[130px] md:-mt-[90px]   xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
+      <section className=" xs:-mt-[150px] sm:-mt-[130px] md:-mt-[90px]   xs:mx-6 sm::mx-[26px] 3xl:container 3xl:mx-auto ">
         <CustomizedVideoWithFrame />
       </section>
-      <section className="xs:mt-[70%] sm:mt-[80%] md:mt-[70px] lg:mt-[121px]   xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto">
+      <section className="xs:mt-[70%] sm:mt-[80%] md:mt-[171px]   xs:mx-6 sm:mx-7 md:mx-[100px] 3xl:container 3xl:mx-auto">
         <StorySection />
       </section>
-      <section className="sm:mt-[75px] xs:mt-14 md:mt-20 xl:mt-24 xs:mx-6  sm:mx-7 md:ml-16 3xl:container 3xl:mx-auto md:mb-20 ">
+      <section className="sm:mt-[75px] xs:mt-14 md:mt-20 xl:mt-24 xs:mx-6  sm:mx-7 md:ml-[97px] 3xl:container 3xl:mx-auto md:mb-20 ">
         <VideoSection />
       </section>
     </>

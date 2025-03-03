@@ -15,7 +15,7 @@ const AppDevelopment = () => {
       <section className="xs:-mt-[7rem] sm:-mt-[210px] md:-mt-[350px] lg:-mt-[200px]  xl:-mt-[140px] xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto">
         <Intro />
       </section>
-      <section className="xs:mt-[20px] sm:mt-[40px] md:-mt-[70px] xl:-mt-[50px] 2xl:mt-[20px] 3xl:mt-[20px]  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
+      <section className="xs:mt-[20px] sm:mt-[40px] md:-mt-[70px] xl:-mt-[50px] 2xl:mt-[20px] 3xl:mt-[20px]  xs:mx-6 sm:mx-7 md:mx-[100px] 3xl:container 3xl:mx-auto ">
         <Process />
       </section>
       <section className="xs:mt-[80px] sm:mt-[60px] lg:mt-[71px] xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">

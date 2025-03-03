@@ -4,6 +4,7 @@ import CustomizedVideoWithFrame from "@/components/CustomizedVideoWithFrame";
 const VideoSection = () => {
   return (
     <>
+    <div className="mx-[75px]">
       <CustomizableHeaderContainer
         heading1="DISCOVER"
         heading2="YOUR BRAND'S STORY"
@@ -11,6 +12,7 @@ const VideoSection = () => {
             and agencies that strive for ownable originality."
         button="Get Started Today"
       />
+    </div>
       <div className="mt-12">
         <CustomizedVideoWithFrame />
       </div>

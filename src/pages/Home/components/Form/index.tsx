@@ -8,7 +8,7 @@ import React from "react";
 import GradientButton from "@/components/GradientButton";
 import { MdArrowForward } from "react-icons/md";
 import Switch from "@/components/Switch";
-import { supabase } from "@/lib/supabase";
+import { supabase } from "@/pages/AlmuqtadirCaseStudy/lib/supabase";
 
 const Form = () => {
   const {

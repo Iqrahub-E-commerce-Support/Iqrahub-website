@@ -13,10 +13,10 @@ const TechSerivces = () => {
       >
         <ProjectHero />
       </section>
-      <section className="xs:-mt-7  md:-mt-[130px] xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto">
+      <section className="xs:-mt-7  md:-mt-[130px] xs:mx-6 sm:mx-7 md:mx-[25px] 3xl:container 3xl:mx-auto">
         <Processes />
       </section>
-      <section className="relative xs:mt-[60px] sm:mt-[70px] md:mt-[120px]  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
+      <section className="relative xs:mt-[60px] sm:mt-[70px] md:mt-[150px]  xs:mx-6 sm:mx-7 md:mx-[25px] 3xl:container 3xl:mx-auto ">
       <img
           src={caligraphy2}
           alt="Background"
@@ -24,7 +24,7 @@ const TechSerivces = () => {
         />
         <VideoSection />
       </section>
-      <section className=" xs:pt-[320px] sm:pt-[580px] md:pt-[120px] xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto xl:pb-[120px]">
+      <section className=" xs:pt-[320px] sm:pt-[580px] md:pt-[120px] xs:mx-6 sm:mx-7 md:mx-[100px] 3xl:container 3xl:mx-auto xl:pb-[120px]">
         <Projects />
       </section>
     </>
