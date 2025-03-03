@@ -210,9 +210,9 @@ const WayOfExecution = () => {
   };
 
   return (
-    <div className="my-14 xs:block md:grid md:grid-cols-[1.5fr_2fr] lg:grid-cols-[1fr_2fr] gap-4">
+    <div className="my-14 xs:block md:grid md:grid-cols-[1.5fr_2fr] lg:grid-cols-[1fr_2fr] gap-[132px]">
       {/* Left Section */}
-      <div className="md:ml-16 ">
+      <div className="md:ml-[100px] ">
         <div className="flex gap-2 mb-6 transition-transform duration-300 hover:scale-105">
           {[...Array(5)].map((_, index) => (
             <StarIcon
@@ -242,7 +242,7 @@ const WayOfExecution = () => {
         {isMobileView ? (
           // Simple Swiper for mobile without animations
           <Swiper
-            spaceBetween={10}
+            spaceBetween={5}
             slidesPerView={1}
             className="w-full"
             modules={[Autoplay]}
@@ -269,22 +269,34 @@ const WayOfExecution = () => {
             className="w-full"
           >
             <Swiper
-              spaceBetween={25}
+              spaceBetween={20}
               breakpoints={{
-                886: { slidesPerView: 1.9 },
-                924: { slidesPerView: 1.98 },
-                965: { slidesPerView: 2.08 },
-                1010: { slidesPerView: 2.17 },
-                1024: { slidesPerView: 2.36 },
-                1062: { slidesPerView: 2.45 },
-                1110: { slidesPerView: 2.57 },
-                1158: { slidesPerView: 2.67 },
-                1211: { slidesPerView: 2.8 },
-                1280: { slidesPerView: 2.8 },
-                1368: { slidesPerView: 2.9 },
-                1422: { slidesPerView: 3.3 },
-                1622: { slidesPerView: 3.5 },
-                1750: { slidesPerView: 4.3 },
+                886: { slidesPerView: 1.53 },
+                924: { slidesPerView: 1.68 },
+                965: { slidesPerView: 1.77 },
+                1010: { slidesPerView: 1.86 },
+                1024: { slidesPerView: 1.95 },
+                1040: { slidesPerView: 2.01 },
+                1067: { slidesPerView: 2.1 },
+                1088: { slidesPerView: 2.15 },
+                1109: { slidesPerView: 2.26 },
+                1133: { slidesPerView: 2.34 },
+                1159: { slidesPerView: 2.43 },
+                1209: { slidesPerView: 2.58 },
+                1267: { slidesPerView: 2.67 },
+                1313: { slidesPerView: 2.57 },
+                1361: { slidesPerView: 2.65 },
+                1396: { slidesPerView: 2.75 },
+                1442: { slidesPerView: 2.85 },
+                1490: { slidesPerView: 2.95 },
+                1538: { slidesPerView: 3.1 },
+                1613: { slidesPerView: 3.2 },
+                1665: { slidesPerView: 3.3 },
+                1712: { slidesPerView: 3.4 },
+                1760: { slidesPerView: 3.5 },
+                1807: { slidesPerView: 3.6 },
+                1857: { slidesPerView: 3.7 },
+                1900: { slidesPerView: 3.8 },
               }}
               className="w-full"
               wrapperClass="items-end"

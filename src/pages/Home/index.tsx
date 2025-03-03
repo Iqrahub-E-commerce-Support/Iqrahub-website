@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <>
       <section
-        className="w-full h-full bg-cover bg-center flex flex-col justify-center items-center gap-9 xs:pt-[7.5rem] md:pt-[15%] lg:pt-[13%] 2xl:pt-[8%] xs:px-5 3xl:container 3xl:mx-auto"
+        className="w-full h-full bg-cover bg-center flex flex-col justify-start items-center gap-9 xs:pt-[7.5rem] md:pt-[15%] lg:pt-[13%] 2xl:pt-[8%] xs:px-5 3xl:container 3xl:mx-auto"
         style={{ backgroundImage: `url(${bg})` }}
       >
         <Hero />
@@ -33,19 +33,15 @@ const Home = () => {
             <p>How it works</p>
           </div>
         </div>
-      </section>
-      <section className="xs:mt-[81px]">
-        {/* <div className="block -z-50"> */}
+        <div className="mt-[61px]">
         <AreaOfExpertise />
-        {/* </div> */}
-        {/* <div className="xs:block md:hidden">
-          <AreaOfExpertiseSmallScreen />
-        </div> */}
+        </div>
       </section>
-      <section className="xs:mt-[50px] sm:mt-[65px] md:mt-[70px] ">
+      
+      <section className="xs:mt-[50px] sm:mt-[65px] md:mt-[491px] ">
         <Clients />
       </section>
-      <section className="relative xs:pt-8 md:pt-16 lg:pt-24 xl:pt-[76px] xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto bg-cover ">
+      <section className="relative xs:pt-8 md:pt-16 lg:pt-24 xl:pt-[140px] xs:mx-6 sm:mx-7 md:mx-[100px]  bg-cover ">
         <img
           src={caligraphy2}
           alt="Background"
@@ -53,13 +49,13 @@ const Home = () => {
         />
         <FeaturedService />
       </section>
-      <section className="xs:pt-0 sm:pt-4 md:pt-[76px] xs:mx-6  sm:mx-7 md:mx-0 ">
+      <section className="xs:pt-0 sm:pt-4 md:pt-[102px] xs:mx-6  sm:mx-7 md:mx-0 ">
         <WayOfExecution />
       </section>
-      <section className="xs:mt-6 md:mt-16 lg:mt-28 xl:mt-20 xs:mx-6 sm:mx-7   md:mx-16 3xl:container 3xl:mx-auto">
+      <section className="xs:mt-6 md:mt-16 lg:mt-28 xl:mt-[120px] xs:mx-6 sm:mx-7   md:mx-[100px] 3xl:container 3xl:mx-auto">
         <Form />
       </section>
-      <section className="relative mt-16 lg:mt-20  xs:mx-6 sm:mx-7 md:mx-0 lg:mr-10 3xl:container 3xl:mx-auto ">
+      <section className="relative mt-16 lg:mt-20  xs:mx-6 sm:mx-7 md:mx-0 lg:mr-[100px] 3xl:container 3xl:mx-auto ">
         <img
           src={cali}
           alt="Background"
@@ -67,10 +63,10 @@ const Home = () => {
         />
         <Testimonial />
       </section>
-      <section className="xs:mt-20 md:mt-16 lg:mt-20  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
+      <section className="xs:mt-20 md:mt-16 lg:mt-20  xs:mx-6 sm:mx-7 md:mx-[100px] 3xl:container 3xl:mx-auto ">
         <OurSuccess />
       </section>
-      <section className="xs:mt-14 sm:mt-20 md:mt-16 lg:mt-20  xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
+      <section className="xs:mt-14 sm:mt-20 md:mt-16 lg:mt-20  xs:mx-6 sm:mx-7 md:mx-[100px] 3xl:container 3xl:mx-auto ">
         <Faq />
       </section>
     </>
