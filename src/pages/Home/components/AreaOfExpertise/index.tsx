@@ -39,7 +39,7 @@ const AreaOfExpertise = () => {
   };
 
   return (
-    <div className="flex items-center flex-col justify-start bg-black h-[400px]  relative overflow-hidden">
+    <div className="flex items-center flex-col justify-start bg-black h-full  overflow-hidden">
       {cards.map((card, index) => (
         <motion.div
           key={index}
