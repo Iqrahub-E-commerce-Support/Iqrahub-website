@@ -40,8 +40,7 @@
     "swiper": "^11.2.1",
     "tailwind-merge": "^3.0.1",
     "tailwind-scrollbar": "^3.1.0",
-    "tailwindcss-animate": "^1.0.7",
-    "xlsx": "^0.18.5"
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
