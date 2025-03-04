@@ -13,7 +13,7 @@ const Footer = () => {
         alt="Background"
         className="absolute top-0 xs:left-[50%] :left-[34%] transform -translate-x-1/2 w-full h-[140%] -mt-36 object-cover opacity-100 z-0"
       /> */}
-      <div className="flex flex-wrap justify-between gap-6 border-b pb-[40px] xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto z-30">
+      <div className="flex flex-wrap justify-between gap-6 border-b pb-[40px] xs:mx-6 sm:mx-7 md:mx-16 lg:mx-[100px] 3xl:container 3xl:mx-auto z-30">
         <FirstSection />
         <SecondSection />
         <ThirdSection />

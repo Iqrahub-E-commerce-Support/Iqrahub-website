@@ -46,7 +46,7 @@ const CaseStudy = () => {
       <section className="custom-container xs:mt-16 mt-20">
         <Solutions />
       </section>
-      <section className="custom-container mt-20">
+      <section className="xs:mx-6  3xl:container 3xl:mx-auto mt-20">
         <VideoSection />
       </section>
       <section className="custom-container xs:mt-[350px] sm:mt-20 mb-16">
