@@ -8,7 +8,7 @@ import React from "react";
 import GradientButton from "@/components/GradientButton";
 import { MdArrowForward } from "react-icons/md";
 import Switch from "@/components/Switch";
-import { supabase } from "@/pages/AlmuqtadirCaseStudy/lib/supabase";
+import axios from "axios";
 
 const Form = () => {
   const {
@@ -30,7 +30,7 @@ const Form = () => {
   // Handle switch changes with relationships
   const handleSwitchChange = (
     name: "quality" | "deadline" | "cost",
-    newValue: boolean,
+    newValue: boolean
   ) => {
     setValue(name, newValue);
 
@@ -80,34 +80,65 @@ const Form = () => {
 
     try {
       console.log("Submitting form data:", value); // Debug log
+      const data = {
+        Name: value.name,
+        Email: value.email,
+        Phone: value.phone,
+        Company: value.company,
+        Budget: value.budget,
+        Message: value.message,
+        Branding: value.brand ? "Yes" : "No",
+        Website: value.website ? "Yes" : "No",
+        Design_Support: value.support ? "Yes" : "No",
+        Website_Development: value.websiteDevelopment ? "Yes" : "No",
+        Video_Shooting: value.video ? "Yes" : "No",
+        Something_else: value.extra ? "Yes" : "No",
+        Highest_Quality: value.quality ? "Yes" : "No",
+        Tight_Deadline: value.deadline ? "Yes" : "No",
+        Low_Cost: value.cost ? "Yes" : "No",
+      };
+      axios({
+        url: "https://nocodeform.io/f/67c6c86d319c4131e3bf918c",
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        data: data,
+      })
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
 
-      const { data, error } = await supabase
-        .from("form")
-        .insert([
-          {
-            submitted_at: new Date().toISOString(),
-            name: value.name || "",
-            email: value.email || "",
-            company: value.company || "",
-            phone: value.phone || "",
-            brand: Boolean(value.brand),
-            website_design: Boolean(value.website),
-            design_support: Boolean(value.support),
-            website_development: Boolean(value.websiteDevelopment),
-            video_shooting: Boolean(value.video),
-            quality: Boolean(value.quality),
-            deadline: Boolean(value.deadline),
-            cost: Boolean(value.cost),
-            // agreement: Boolean(isChecked),
-          },
-        ])
-        .select();
-      console.log(data, "whtat");
-      if (error) {
-        console.error("Supabase error:", error);
-        alert(`Error submitting form: ${error.message}`);
-        return;
-      }
+      // const { data, error } = await supabase
+      //   .from("form")
+      //   .insert([
+      //     {
+      //       submitted_at: new Date().toISOString(),
+      //       name: value.name || "",
+      //       email: value.email || "",
+      //       company: value.company || "",
+      //       phone: value.phone || "",
+      //       brand: Boolean(value.brand),
+      //       website_design: Boolean(value.website),
+      //       design_support: Boolean(value.support),
+      //       website_development: Boolean(value.websiteDevelopment),
+      //       video_shooting: Boolean(value.video),
+      //       quality: Boolean(value.quality),
+      //       deadline: Boolean(value.deadline),
+      //       cost: Boolean(value.cost),
+      //       // agreement: Boolean(isChecked),
+      //     },
+      //   ])
+      //   .select();
+      // console.log(data, "whtat");
+      // if (error) {
+      //   console.error("Supabase error:", error);
+      //   alert(`Error submitting form: ${error.message}`);
+      //   return;
+      // }
 
       // console.log("Submission successful:", data);
       // alert("Form submitted successfully!");

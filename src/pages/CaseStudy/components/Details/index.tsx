@@ -3,7 +3,7 @@ import logo from "@/assets/images/vionex/logo.png";
 
 const Detials = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-[0.9fr_2fr] gap-8 xs:mr-0  lg:mr-8">
+    <div className="grid grid-cols-1 md:grid-cols-[0.9fr_2fr] gap-[67px] xs:mr-0  lg:mr-8">
       {/* Image Section */}
 
       <video
@@ -15,7 +15,7 @@ const Detials = () => {
       ></video>
 
       {/* Content Section */}
-      <div className="grid grid-rows-[auto_auto_auto_auto] gap-5 md:mr-10">
+      <div className="grid grid-rows-[auto_auto_auto_auto] gap-[17px] md:mr-10">
         {/* Logo */}
         <div className="flex justify-center md:justify-start">
           <img
