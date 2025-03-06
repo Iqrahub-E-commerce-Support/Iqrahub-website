@@ -49,7 +49,7 @@ const Header = () => {
       path: `${ROUTES.techServices}${ROUTES.webdesign}`,
       isMenu: true,
     },
-    { name: "About Us", path: "#", isMenu: false },
+    { name: "About Us", path: ROUTES.aboutus, isMenu: false },
   ];
   const itemVariants = {
     initial: {
