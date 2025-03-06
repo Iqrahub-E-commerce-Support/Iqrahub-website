@@ -9,11 +9,7 @@ const HeroSection = () => {
         <NanoTechnologyIcon />
         <p className="font-medium text-[18px]">Showcase</p>
       </div>
-      <Heading
-        className="md:text-[80px]"
-        normalText="ABOUT"
-        specialText="US"
-      />
+      <Heading className="md:text-[80px]" normalText="ABOUT" specialText="US" />
       <p className="text-[18px]">Creative solutions for modern brands</p>
     </div>
   );

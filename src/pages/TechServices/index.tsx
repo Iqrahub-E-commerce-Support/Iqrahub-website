@@ -17,7 +17,7 @@ const TechSerivces = () => {
         <Processes />
       </section>
       <section className="relative xs:mt-[60px] sm:mt-[70px] md:mt-[150px]  xs:mx-6 sm:mx-7 md:mx-[25px] 3xl:container 3xl:mx-auto ">
-      <img
+        <img
           src={caligraphy2}
           alt="Background"
           className="absolute top-0 left-[50%] transform -translate-x-1/2 xs:w-[80%] md:w-[120%] xl:w-[70%] md:h-[100%] object-cover opacity-100 z-0  xs:mt-[80px] md:mt-[50px] lg:mt-[10px] "

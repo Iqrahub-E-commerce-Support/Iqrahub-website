@@ -6,13 +6,23 @@ import almuqtadir from "@/assets/images/aboutus/almuqtadir.png";
 import Projects from "./components/Projects";
 
 const AboutUs = () => {
-  const [firstRef, firstInView] = useInView({ triggerOnce: false, threshold: 0.2 });
-  const [secondRef, secondInView] = useInView({ triggerOnce: false, threshold: 0.1 });
+  const [firstRef, firstInView] = useInView({
+    triggerOnce: false,
+    threshold: 0.2,
+  });
+  const [secondRef, secondInView] = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
 
   // Strong swipe-up animation with a quick exit
   const sectionVariants = {
     hidden: { opacity: 0, y: 100 }, // Start from below
-    visible: { opacity: 1, y: 0, transition: { duration: 0.3, ease: "easeOut" } }, // Quick smooth enter
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.3, ease: "easeOut" },
+    }, // Quick smooth enter
     exit: { opacity: 0, y: -150, transition: { duration: 0, ease: "easeIn" } }, // Strong & fast swipe-up exit
   };
 
@@ -47,9 +57,7 @@ const AboutUs = () => {
       {/* <section className="">
         <Projects/>
       </section> */}
-    <section>
-      
-    </section>
+      <section></section>
     </>
   );
 };

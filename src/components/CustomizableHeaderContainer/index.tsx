@@ -23,7 +23,9 @@ const CustomizableHeaderContainer = (
             MainStyle="xs:text-center sm:text-start md:text-[48px] font-black text-yellow"
             SpecialCharacterStyle="text-white font-thin"
           />
-          <p className="sm:w-[460px] mt-2  text-offWhite text-center sm:text-start">{subHeading}</p>
+          <p className="sm:w-[460px] mt-2  text-offWhite text-center sm:text-start">
+            {subHeading}
+          </p>
         </div>
         <Button style="xs:mt-8  xl:mt-0 " variant="contained">
           {button} <ArrowRight />

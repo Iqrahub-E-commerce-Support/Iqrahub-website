@@ -40,8 +40,8 @@ const router = createBrowserRouter(
         />
         <Route path={ROUTES.aboutus} element={<AboutUs />} />
       </Route>
-    </Route>
-  )
+    </Route>,
+  ),
 );
 
 const Routing = () => {

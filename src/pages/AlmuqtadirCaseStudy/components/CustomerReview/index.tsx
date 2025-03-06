@@ -69,7 +69,6 @@ const CustomerReview = () => {
           delay: 2500,
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
-          
         }}
         pagination={{ clickable: true }}
         modules={[Autoplay]}

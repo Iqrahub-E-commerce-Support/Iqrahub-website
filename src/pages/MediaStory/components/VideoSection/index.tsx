@@ -71,7 +71,7 @@ const VideoSection = () => {
       height: isCurrent ? 385 : 385,
       opacity: isCurrent ? 1 : 0.7,
       scale: isCurrent ? 1 : 0.95,
-      isCurrent
+      isCurrent,
     };
   };
 
@@ -161,7 +161,7 @@ const VideoSection = () => {
                   </div>
                 </div>
                 <div className="absolute bottom-0 flex items-end justify-between text-white z-30 p-4  h-0">
-                 <p className="text-[22px] font-bold">Project Name</p>
+                  <p className="text-[22px] font-bold">Project Name</p>
                 </div>
                 <motion.button
                   onClick={() => togglePlayPause(index)}
@@ -172,7 +172,7 @@ const VideoSection = () => {
                   style={{ pointerEvents: "none" }} // Prevents blocking the text click
                 >
                   <motion.div
-                    className={`flex border-4 ${size.isCurrent ? "border-yellow":""} rounded-full items-center justify-center`}
+                    className={`flex border-4 ${size.isCurrent ? "border-yellow" : ""} rounded-full items-center justify-center`}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                     style={{ pointerEvents: "auto" }} // Allows clicking the play/pause button
@@ -186,12 +186,15 @@ const VideoSection = () => {
                         transition={{ duration: 0.2 }}
                       >
                         {playingIndex === index ? (
-                          <BiPause 
-                          size={60} 
-                          className={`${size.isCurrent ? 'text-yellow' : 'text-white'}`} 
-                        />
+                          <BiPause
+                            size={60}
+                            className={`${size.isCurrent ? "text-yellow" : "text-white"}`}
+                          />
                         ) : (
-                          <BiPlay size={60} className={`${size.isCurrent?" text-yellow ": "text-white"}`} />
+                          <BiPlay
+                            size={60}
+                            className={`${size.isCurrent ? " text-yellow " : "text-white"}`}
+                          />
                         )}
                       </motion.div>
                     </AnimatePresence>

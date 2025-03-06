@@ -34,10 +34,10 @@ const Home = () => {
           </div>
         </div>
         <div className="mt-[61px]">
-        <AreaOfExpertise />
+          <AreaOfExpertise />
         </div>
       </section>
-      
+
       <section className="xs:mt-[50px] sm:mt-[65px] md:mt-[491px] ">
         <Clients />
       </section>

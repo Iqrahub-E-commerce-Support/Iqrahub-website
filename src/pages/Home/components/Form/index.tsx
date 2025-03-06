@@ -30,7 +30,7 @@ const Form = () => {
   // Handle switch changes with relationships
   const handleSwitchChange = (
     name: "quality" | "deadline" | "cost",
-    newValue: boolean
+    newValue: boolean,
   ) => {
     setValue(name, newValue);
 

@@ -85,8 +85,8 @@ const Almuqtadir = () => {
         </div>
       </div>
       <div className="flex justify-end mt-[37px]">
-            <p className="font-black text-[24px]">2023-2024</p>
-        </div>
+        <p className="font-black text-[24px]">2023-2024</p>
+      </div>
     </>
   );
 };

@@ -33,7 +33,7 @@ const AlmuqtadirCaseStudy = () => {
       <section>
         <VideoSection />
       </section>
-      <section >
+      <section>
         <Impact />
       </section>
       <section>
