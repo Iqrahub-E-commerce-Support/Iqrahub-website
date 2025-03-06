@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import IqrahubStory from "./components/IqrahubStory";
 import Almuqtadir from "./components/Almuqtadir";
 import almuqtadir from "@/assets/images/aboutus/almuqtadir.png";
+import Projects from "./components/Projects";
 
 const AboutUs = () => {
   const [firstRef, firstInView] = useInView({ triggerOnce: false, threshold: 0.2 });
@@ -18,7 +19,7 @@ const AboutUs = () => {
   return (
     <>
       {/* First Section */}
-      <motion.section
+      {/* <motion.section
         ref={firstRef}
         className="custom-container -mt-[52px]"
         initial="hidden"
@@ -26,10 +27,10 @@ const AboutUs = () => {
         variants={sectionVariants}
       >
         <IqrahubStory />
-      </motion.section>
+      </motion.section> */}
 
       {/* Second Section */}
-      <motion.section
+      {/* <motion.section
         ref={secondRef}
         className={`custom-container relative ${secondInView ? "top-0":""}`}
         initial="hidden"
@@ -39,10 +40,16 @@ const AboutUs = () => {
         <img
           src={almuqtadir}
           alt="Background"
-          className="absolute h-[728px] w-[971px] z-0 -right-[120px] top-0 mt-[450px]"
+          className="absolute h-[728px] w-[971px] z-0 -right-[140px] top-0 mt-[450px]"
         />
         <Almuqtadir />
-      </motion.section>
+      </motion.section> */}
+      {/* <section className="">
+        <Projects/>
+      </section> */}
+    <section>
+      
+    </section>
     </>
   );
 };

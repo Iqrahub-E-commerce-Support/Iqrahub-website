@@ -14,6 +14,9 @@ const content = [
   { backgroundImg: sample1, title: "Meedgo.com", link: "" },
   { backgroundImg: sample2, title: "GES Solution", link: "" },
   { backgroundImg: sample3, title: "SP-Travel Website", link: "" },
+  { backgroundImg: sample1, title: "Meedgo.com", link: "" },
+  { backgroundImg: sample2, title: "GES Solution", link: "" },
+  { backgroundImg: sample3, title: "SP-Travel Website", link: "" },
 ];
 
 const RelatedWorks = () => {
@@ -56,8 +59,29 @@ const RelatedWorks = () => {
         breakpoints={{
           0: { slidesPerView: 1 },
           888: { slidesPerView: 2.3 },
-          1200: { slidesPerView: 3.5 },
-          1440: { slidesPerView: 4 },
+          900: { slidesPerView: 2.4 },
+          955: { slidesPerView: 2.5 },
+          988: { slidesPerView: 2.6 },
+          1016: { slidesPerView: 2.7 },
+          1046: { slidesPerView: 2.8 },
+          1088: { slidesPerView: 2.9 },
+          1117: { slidesPerView: 3 },
+          1152: { slidesPerView: 3.1 },
+          1206: { slidesPerView: 3.2 },
+          1226: { slidesPerView: 3.3 },
+          1250: { slidesPerView: 3.4 },
+          1300: { slidesPerView: 3.5 },
+          1340: { slidesPerView: 3.6 },
+          1370: { slidesPerView: 3.7 },
+          1410: { slidesPerView: 3.8 },
+          1445: { slidesPerView: 3.9 },
+          1485: { slidesPerView: 4 },
+          1520: { slidesPerView: 4.1 },
+          1555: { slidesPerView: 4.2 },
+          1595: { slidesPerView: 4.3 },
+          1630: { slidesPerView: 4.4 },
+          1665: { slidesPerView: 4.5 },
+          1700: { slidesPerView: 4.8 },
         }}
         loop={true}
         autoplay={{
