@@ -42,15 +42,14 @@ const Almuqtadir = () => {
             making charge and advance booking offers drew crowds.
           </p>
         </div>
-        <div className="-mt-[39px]">
-          <p className="text-end text-[24px] font-black mb-[39px]">2019</p>
-          <CustomizableHeading
-            firstTxt="2019-2022"
-            secondTxt=""
-            MainStyle="md:text-[48px] text-yellow uppercase"
-            SpecialCharacterStyle="text-white font-thin"
-          />
-        </div>
+
+        {/* <p className="text-end text-[24px] font-black mb-[39px]">2019</p> */}
+        <CustomizableHeading
+          firstTxt="2019-2022"
+          secondTxt=""
+          MainStyle="md:text-[48px] text-yellow uppercase"
+          SpecialCharacterStyle="text-white font-thin"
+        />
       </div>
       <div className="flex justify-start mt-[77px] gap-[33px]">
         <div className="z-30">
@@ -68,15 +67,15 @@ const Almuqtadir = () => {
             </div>
           ))} */}
           <div className="flex gap-[34px] items-center mt-[23px]">
-            <div className="h-[100px] w-[384px] bg-gradient-to-r from-yellow via-yellow-opacity0.8 to-red"/>
+            <div className="h-[100px] w-[384px] bg-gradient-to-r from-yellow via-yellow-opacity0.8 to-red" />
             <p className="text-[36px]">90 %</p>
           </div>
           <div className="flex gap-[34px] items-center mt-[23px] opacity-80">
-            <div className="h-[100px] w-[252px] bg-gradient-to-r from-yellow via-yellow-opacity0.8 to-red"/>
+            <div className="h-[100px] w-[252px] bg-gradient-to-r from-yellow via-yellow-opacity0.8 to-red" />
             <p className="text-[36px]">42 %</p>
           </div>
           <div className="flex gap-[34px] items-center mt-[23px] opacity-40">
-            <div className="h-[100px] w-[138px] bg-gradient-to-r from-yellow via-yellow-opacity0.8 to-red"/>
+            <div className="h-[100px] w-[138px] bg-gradient-to-r from-yellow via-yellow-opacity0.8 to-red" />
             <p className="text-[36px]">12 %</p>
           </div>
         </div>
@@ -94,9 +93,9 @@ const Almuqtadir = () => {
           ))}
         </div>
       </div>
-      <div className="flex justify-end mt-[37px]">
+      {/* <div className="flex justify-end mt-[37px]">
         <p className="font-black text-[24px]">2023-2024</p>
-      </div>
+      </div> */}
     </>
   );
 };

@@ -68,15 +68,14 @@ const Projects = () => {
             making charge and advance booking offers drew crowds.
           </p>
         </div>
-        <div className="-mt-[39px]">
-          <p className="text-end text-[24px] font-black mb-[39px]">2020-2022</p>
-          <CustomizableHeading
-            firstTxt="2023-2024"
-            secondTxt=""
-            MainStyle="md:text-[48px] text-yellow uppercase"
-            SpecialCharacterStyle="text-white font-thin"
-          />
-        </div>
+
+        {/* <p className="text-end text-[24px] font-black mb-[39px]">2020-2022</p> */}
+        <CustomizableHeading
+          firstTxt="2023-2024"
+          secondTxt=""
+          MainStyle="md:text-[48px] text-yellow uppercase"
+          SpecialCharacterStyle="text-white font-thin"
+        />
       </div>
       <div className="pl-[90px]">
         <Swiper
@@ -152,9 +151,9 @@ const Projects = () => {
           })}
         </Swiper>
       </div>
-      <div className="flex justify-end mt-[112px] mr-[100px]">
+      {/* <div className="flex justify-end mt-[112px] mr-[100px]">
         <p className="font-black text-[24px]">2025</p>
-      </div>
+      </div> */}
     </>
   );
 };

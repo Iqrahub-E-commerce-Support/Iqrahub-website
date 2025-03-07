@@ -50,9 +50,9 @@ const IqrahubStory = () => {
           <AboutMail />
           <Aboutlinkedin />
         </div>
-        <div className="flex justify-end">
+        {/* <div className="flex justify-end">
           <p className="font-black text-[24px]">2020-2022</p>
-        </div>
+        </div> */}
       </div>
     </>
   );

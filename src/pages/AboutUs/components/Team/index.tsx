@@ -37,15 +37,14 @@ const Team = () => {
             making charge and advance booking offers drew crowds.
           </p>
         </div>
-        <div className="-mt-[39px]">
-          <p className="text-end text-[24px] font-black mb-[39px]">2023-2024</p>
-          <CustomizableHeading
-            firstTxt="2025"
-            secondTxt=""
-            MainStyle="md:text-[48px] text-yellow uppercase"
-            SpecialCharacterStyle="text-white font-thin"
-          />
-        </div>
+
+        {/* <p className="text-end text-[24px] font-black mb-[39px]">2023-2024</p> */}
+        <CustomizableHeading
+          firstTxt="2025"
+          secondTxt=""
+          MainStyle="md:text-[48px] text-yellow uppercase"
+          SpecialCharacterStyle="text-white font-thin"
+        />
       </div>
       <div className=" grid gap-[16px] mt-[80px]">
         <div className="grid grid-cols-2 gap-[16px]">
