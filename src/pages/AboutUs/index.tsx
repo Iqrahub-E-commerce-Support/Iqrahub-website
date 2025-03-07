@@ -7,58 +7,36 @@ import Projects from "./components/Projects";
 import Team from "./components/Team";
 
 const AboutUs = () => {
-  const [firstRef, firstInView] = useInView({
-    triggerOnce: false,
-    threshold: 0.2,
-  });
-  const [secondRef, secondInView] = useInView({
-    triggerOnce: false,
-    threshold: 0.3,
-  });
-  const [thirdRef, thirdInView] = useInView({
-    triggerOnce: false,
-    threshold: 0.1,
-  });
-  const [fourthRef, fourthInView] = useInView({
-    triggerOnce: false,
-    threshold: 0.1,
-  });
+  const [firstRef, firstInView] = useInView({ threshold: 0.1, triggerOnce: false });
+  const [secondRef, secondInView] = useInView({ threshold: 0.2, triggerOnce: false });
+  const [thirdRef, thirdInView] = useInView({ threshold: 0.2, triggerOnce: false });
+  const [fourthRef, fourthInView] = useInView({ threshold: 0.2, triggerOnce: false });
 
   const sectionVariants = {
     hidden: { opacity: 0, y: 100, scale: 0.9 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      transition: { duration: 0.5, ease: "easeOut" },
-    },
-    exit: {
-      opacity: 0,
-      y: 0,
-      scale: 0.9,
-      transition: { duration: 0.3, ease: "easeIn" },
-    },
+    visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: "easeOut" } },
+    exit: { opacity: 0, y: -100, scale: 0.9, transition: { duration: 0.3, ease: "easeIn" } },
   };
 
   return (
     <>
-      {/* First Section */}
+      {/* First Section - Hide when second section appears */}
       <motion.section
         ref={firstRef}
         className="-mt-[52px]"
         initial="hidden"
-        animate={firstInView ? "visible" : secondInView ? "exit" : "hidden"}
+        animate={firstInView && !secondInView ? "visible" : "hidden"}
         variants={sectionVariants}
       >
         <IqrahubStory />
       </motion.section>
 
-      {/* Second Section */}
+      {/* Second Section - Hide when third section appears */}
       <motion.section
         ref={secondRef}
-        className={`custom-container relative`}
+        className="custom-container relative"
         initial="hidden"
-        animate={secondInView ? "visible" : thirdInView ? "exit" : "hidden"}
+        animate={secondInView && !thirdInView ? "visible" : "hidden"}
         variants={sectionVariants}
       >
         <img
@@ -69,22 +47,22 @@ const AboutUs = () => {
         <Almuqtadir />
       </motion.section>
 
-      {/* Third Section */}
+      {/* Third Section - Hide when fourth section appears */}
       <motion.section
         ref={thirdRef}
-        initial="hidden"
         className="pt-[50px]"
-        animate={thirdInView ? "visible" : fourthInView ? "exit" : "hidden"}
+        initial="hidden"
+        animate={thirdInView && !fourthInView ? "visible" : "hidden"}
         variants={sectionVariants}
       >
         <Projects />
       </motion.section>
 
-      {/* Fourth Section */}
+      {/* Fourth Section - Always visible when scrolled to */}
       <motion.section
         ref={fourthRef}
         className="custom-container pt-[50px]"
-        initial="hidden "
+        initial="hidden"
         animate={fourthInView ? "visible" : "hidden"}
         variants={sectionVariants}
       >
