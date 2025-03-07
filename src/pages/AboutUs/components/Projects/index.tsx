@@ -1,6 +1,6 @@
 import CustomizableHeading from "@/components/CustomizableHeading";
-import HeroSection from "../HeroSection";
-import bg from "@/assets/images/aboutus/aboutusCal.png";
+// import HeroSection from "../HeroSection";
+// import bg from "@/assets/images/aboutus/aboutusCal.png";
 import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -48,12 +48,12 @@ const Projects = () => {
   };
   return (
     <>
-      <section
+      {/* <section
         className="w-full h-full xl:h-[400px] bg-cover bg-center flex flex-col justify-start items-center gap-9 xs:pt-[7.5rem] md:pt-[15%] lg:pt-[13%] 2xl:pt-[6%] xs:px-5 3xl:container 3xl:mx-auto"
         style={{ backgroundImage: `url(${bg})` }}
       >
         <HeroSection />
-      </section>
+      </section> */}
       <div className="relative z-20 flex justify-between items-center custom-container">
         <div>
           <CustomizableHeading

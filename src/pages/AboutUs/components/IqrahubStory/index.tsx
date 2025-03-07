@@ -5,17 +5,22 @@ import Abouttwitter from "@/components/icons/Abouttwitter";
 import AboutMail from "@/components/icons/AboutMail";
 import Aboutlinkedin from "@/components/icons/Aboutlinkedin";
 import HeroSection from "../HeroSection";
-import bg from "@/assets/images/aboutus/aboutusCal.png";
+import bg2 from "@/assets/images/aboutus/aboutuscal2.png";
 const IqrahubStory = () => {
   return (
     <>
       <section
-        className="w-full h-full xl:h-[400px] bg-cover bg-center flex flex-col justify-start items-center gap-9 xs:pt-[7.5rem] md:pt-[15%] lg:pt-[13%] 2xl:pt-[12%] xs:px-5 3xl:container 3xl:mx-auto"
-        style={{ backgroundImage: `url(${bg})` }}
+        className="w-screen h-screen 3xl:h-[978px] bg-cover flex flex-col justify-start items-center gap-9 xs:pt-[7.5rem] md:pt-[15%] lg:pt-[13%] 2xl:pt-[171px]"
+        style={{
+          backgroundImage: `url(${bg2})`,
+          // backgroundSize: "cover", // Ensures the whole image fits within the screen
+          // backgroundPosition: "center", // Centers the image
+          backgroundRepeat: "no-repeat", // Prevents tiling
+        }}
       >
         <HeroSection />
       </section>
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center custom-container 2xl:-mt-[322px]  3xl:-mt-[587px]">
         <div>
           <CustomizableHeading
             firstTxt="Establish"
@@ -37,7 +42,7 @@ const IqrahubStory = () => {
           />
         </div>
       </div>
-      <div className="-mt-[50px]">
+      <div className="-mt-[50px] custom-container">
         <img src={firoz} alt="story" className="h-full w-full" />
         <div className="flex justify-center gap-[12px]">
           <Aboutinstagram />
