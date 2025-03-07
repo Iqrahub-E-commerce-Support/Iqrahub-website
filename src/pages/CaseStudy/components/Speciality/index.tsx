@@ -44,7 +44,7 @@ const Speciality = () => {
             <CustomizableHeading
               firstTxt="SwiftMini"
               secondTxt="Drone"
-               MainStyle="text-yellow xs:text-[35px] sm:text-[45px] md:text-[64px] md:leading-[55px]"
+              MainStyle="text-yellow xs:text-[35px] sm:text-[45px] md:text-[64px] md:leading-[55px]"
               SpecialCharacterStyle="text-white"
             />
             <p className="text-center w-full max-w-lg mt-4 text-[18px]">

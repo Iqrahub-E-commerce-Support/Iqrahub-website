@@ -3,16 +3,17 @@ import PrecessCal from "@/assets/images/almuqtadir/ProcessBg.png";
 import CustomizedVideoWithFrame from "@/components/CustomizedVideoWithFrame";
 const VideoSection = () => {
   return (
-    <div className="relative custom-container border-x-2 border-gold-900 px-4 sm:px-9 sm:pt-3 md:pt-0 2xl:pt-8 3xl:pt-11"
-    style={{
-      boxShadow:
-        "4px 0px 0px rgba(193,149,53,0.4), -4px 0px 0px rgba(193,149,53,0.4)",
-    }}
+    <div
+      className="relative custom-container border-x-2 border-gold-900 px-4 sm:px-9 sm:pt-3 md:pt-0 2xl:pt-8 3xl:pt-11"
+      style={{
+        boxShadow:
+          "4px 0px 0px rgba(193,149,53,0.4), -4px 0px 0px rgba(193,149,53,0.4)",
+      }}
     >
       <img
         src={PrecessCal}
         alt="Background"
-        className="absolute top-0 left-[50%] transform -translate-x-1/2 w-full h-full object-cover opacity-60 z-0 sm:-mt-72"
+        className="absolute top-0 left-[50%] transform -translate-x-1/2 w-full h-full object-cover opacity-60 z-0 sm:-mt-[40px]"
       />
       <div className="flex flex-col items-center pt-16 z-10 2xl:pb-5">
         <CustomizableHeading

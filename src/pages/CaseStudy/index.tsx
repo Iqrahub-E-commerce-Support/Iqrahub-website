@@ -34,22 +34,22 @@ const CaseStudy = () => {
       <section className="xs:mx-4 sm:mx-0">
         <Detials />
       </section>
-      <section className="xs:mt-[80px] sm:mt-14 xs:mx-4 sm:mx-0">
+      <section className="xs:mt-[80px] sm:mt-14 md:mt-[70px] xs:mx-4 sm:mx-0">
         <Speciality />
       </section>
-      <section className="custom-container mt-16">
+      <section className="custom-container mt-16 md:mt-[70px]">
         <Insights />
       </section>
-      <section className="custom-container xs:mt-16 sm:mt-28">
+      <section className="custom-container xs:mt-16 sm:mt-28 md:mt-[70px]">
         <KeyInsights />
       </section>
-      <section className="custom-container xs:mt-16 mt-20">
+      <section className="custom-container xs:mt-16 mt-20 md:mt-[70px]">
         <Solutions />
       </section>
-      <section className="xs:mx-6  3xl:container 3xl:mx-auto mt-20">
+      <section className="xs:mx-6  3xl:container 3xl:mx-auto mt-20 md:mt-[70px]v">
         <VideoSection />
       </section>
-      <section className="custom-container xs:mt-[350px] sm:mt-20 mb-16">
+      <section className="custom-container xs:mt-[350px] sm:mt-20 md:mt-[70px] mb-[70px]">
         <Conclusion />
       </section>
     </>

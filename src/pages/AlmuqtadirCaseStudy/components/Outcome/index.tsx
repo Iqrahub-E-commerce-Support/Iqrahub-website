@@ -40,11 +40,12 @@ const outcomeData = [
 
 const Outcome = () => {
   return (
-    <div className="custom-container border-x-2 border-gold-900 px-4 sm:px-9  lg:-mt-[130px] 2xl:-mt-[120px] 3xl:-mt-[90px]"
-    style={{
-      boxShadow:
-        "4px 0px 0px rgba(193,149,53,0.4), -4px 0px 0px rgba(193,149,53,0.4)",
-    }}
+    <div
+      className="custom-container border-x-2 border-gold-900 px-4 sm:px-9  lg:-mt-[130px] 2xl:-mt-[120px] 3xl:-mt-[90px]"
+      style={{
+        boxShadow:
+          "4px 0px 0px rgba(193,149,53,0.4), -4px 0px 0px rgba(193,149,53,0.4)",
+      }}
     >
       <div className="grid xs:grid-cols-1 lg:grid-cols-2  gap-4">
         <div className="grid  grid-rows-[1fr_2fr] ">

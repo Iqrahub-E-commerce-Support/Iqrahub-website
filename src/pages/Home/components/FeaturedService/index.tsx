@@ -30,23 +30,21 @@ const FeaturedService = () => {
       <div className="mt-8 ">
         <div className="grid xs:grid-cols-1 sm:grid-cols-2  gap-[40px] ">
           {services.map((service, index) => (
-           <div
-           key={index}
-           className="glassy-bg flex flex-col justify-between gap-10 border-2 transform transition-all duration-300 rounded-xl cursor-pointer px-6 py-[30px] relative overflow-hidden hover:bg-gradient-to-tl from-yellow-opacity0.2 to-transparent  "
-         >
-        
-         
-           <div className="flex justify-between relative z-10 ">
-             {service.icon}
-             <ArrowIcon />
-           </div>
-           <div className="relative z-10 mt-[24px]">
-             <h4 className="font-semibold text-[24px]">{service.heading}</h4>
-             <p className="font-thin text-[16px] xs:mt-[6px] sm:mt-0">
-               {service.subHeading}
-             </p>
-           </div>
-         </div>
+            <div
+              key={index}
+              className="glassy-bg flex flex-col justify-between gap-10 border-2 transform transition-all duration-300 rounded-xl cursor-pointer px-6 py-[30px] relative overflow-hidden hover:bg-gradient-to-tl from-yellow-opacity0.2 to-transparent  "
+            >
+              <div className="flex justify-between relative z-10 ">
+                {service.icon}
+                <ArrowIcon />
+              </div>
+              <div className="relative z-10 mt-[24px]">
+                <h4 className="font-semibold text-[24px]">{service.heading}</h4>
+                <p className="font-thin text-[16px] xs:mt-[6px] sm:mt-0">
+                  {service.subHeading}
+                </p>
+              </div>
+            </div>
           ))}
         </div>
       </div>

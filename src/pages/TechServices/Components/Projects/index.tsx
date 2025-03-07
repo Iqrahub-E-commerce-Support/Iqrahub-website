@@ -111,7 +111,9 @@ const Projects = () => {
   return (
     <>
       <div className="sm:flex flex-col xs:items-start sm:items-center">
-        <p className="xs:text-[14px] sm:text-[18px] text-center">Web Development Projects</p>
+        <p className="xs:text-[14px] sm:text-[18px] text-center">
+          Web Development Projects
+        </p>
         <CustomizableHeading
           firstTxt="WE BUILD"
           secondTxt="EXPERIENCES"
