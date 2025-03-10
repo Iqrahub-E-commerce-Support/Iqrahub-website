@@ -33,12 +33,12 @@ const Almuqtadir = () => {
           <CustomizableHeading
             firstTxt="Muqtadir"
             secondTxt="Jewelry"
-            MainStyle="md:text-[48px] text-yellow uppercase z-20"
+            MainStyle="md:text-[48px] text-yellow uppercase md:leading-[48px]  z-20"
             SpecialCharacterStyle="text-white font-thin"
           />
-          <p className="text-[18px] mt-[10px]">
+          <p className="xs:text-[14px] text-[18px] mt-[10px] sm:w-[400px] md:w-full">
             Al Muqtadir Jewelry grew from one to seven showrooms (2020–2022),
-            building a strong market <br /> presence and loyal customers. Its 0%
+            building a strong market <br  className="xs:hidden md:block" /> presence and loyal customers. Its 0%
             making charge and advance booking offers drew crowds.
           </p>
         </div>
@@ -51,7 +51,7 @@ const Almuqtadir = () => {
           SpecialCharacterStyle="text-white font-thin"
         />
       </div>
-      <div className="flex justify-start mt-[77px] gap-[33px]">
+      <div className=" md:flex justify-start xs:mt-[50px]  md:mt-[77px] gap-[33px]">
         <div className="z-30">
           <p className="text-24px">Market Insight</p>
           <div className="border-yellow border-2 w-[200px] mt-[15px] " />
@@ -79,11 +79,11 @@ const Almuqtadir = () => {
             <p className="text-[36px]">12 %</p>
           </div>
         </div>
-        <div className="grid grid-rows-2 gap-[16px] z-30">
+        <div className="grid grid-rows-2 gap-[16px] z-30 xs:mt-[23px] md:mt-0">
           {revenueData.map(({ amount, description }, index) => (
             <div
               key={index}
-              className="glassy-bg flex flex-col justify-center items-center border-2 rounded-[20px] p-[28px] w-[345px]"
+              className="glassy-bg flex flex-col justify-center items-center border-2 rounded-[20px] p-[28px] md:w-[345px] 2xl:w-[445px]"
             >
               <h6 className="font-black text-[104px] capitalize">{amount}</h6>
               <p className="text-[16px] text-[#979797] capitalize text-center">

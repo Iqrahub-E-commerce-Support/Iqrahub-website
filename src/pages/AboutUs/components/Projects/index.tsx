@@ -59,12 +59,12 @@ const Projects = () => {
           <CustomizableHeading
             firstTxt="our recent"
             secondTxt="projects"
-            MainStyle="md:text-[48px] text-yellow uppercase z-20"
+            MainStyle="md:text-[48px] text-yellow uppercase md:leading-[48px]  z-20"
             SpecialCharacterStyle="text-white font-thin"
           />
-          <p className="text-[18px] mt-[10px]">
+          <p className="xs:text-[14px] text-[18px] mt-[10px] sm:w-[400px] md:w-full">
             Al Muqtadir Jewelry grew from one to seven showrooms (2020–2022),
-            building a strong market presence <br /> and loyal customers. Its 0%
+            building a strong market presence <br className="xs:hidden lg:block"/> and loyal customers. Its 0%
             making charge and advance booking offers drew crowds.
           </p>
         </div>
@@ -77,7 +77,7 @@ const Projects = () => {
           SpecialCharacterStyle="text-white font-thin"
         />
       </div>
-      <div className="pl-[90px]">
+      <div className=" xs:mx-6 sm:mx-7 md:mx-0 md:pl-[90px]">
         <Swiper
           spaceBetween={20}
           breakpoints={{

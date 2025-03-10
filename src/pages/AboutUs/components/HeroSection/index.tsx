@@ -10,7 +10,7 @@ const HeroSection = () => {
         <p className="font-medium text-[18px]">Showcase</p>
       </div>
       <Heading className="md:text-[80px]" normalText="ABOUT" specialText="US" />
-      <p className="text-[18px]">Creative solutions for modern brands</p>
+      <p className="xs:text-[14px] sm:text-[18px] text-center">Creative solutions for modern brands</p>
     </div>
   );
 };
