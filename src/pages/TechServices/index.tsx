@@ -20,11 +20,11 @@ const TechSerivces = () => {
         <img
           src={caligraphy2}
           alt="Background"
-          className="absolute top-0 left-[50%] transform -translate-x-1/2 xs:w-[80%] md:w-[120%] xl:w-[70%] md:h-[100%] object-cover opacity-100 z-0  xs:mt-[80px] md:mt-[50px] lg:mt-[10px] "
+          className="absolute top-0 left-[50%] transform -translate-x-1/2 xs:w-[80%] md:w-[120%] xl:w-[70%] md:h-[100%] object-cover opacity-100 z-0  xs:mt-[80px] md:mt-[50px] lg:mt-[10px]  xs:mx-6 sm::mx-[26px] 4xl:container 4xl:mx-auto"
         />
         <VideoSection />
       </section>
-      <section className=" xs:pt-[320px] sm:pt-[580px] md:pt-[120px] xs:mx-6 sm:mx-7 md:mx-[100px] 3xl:container 3xl:mx-auto xl:pb-[120px]">
+      <section className=" xs:pt-[320px] sm:pt-[580px] md:pt-[120px] xs:mx-6 sm:mx-7 md:mx-[100px] 4xl:container 4xl:mx-auto xl:pb-[120px]">
         <Projects />
       </section>
     </>

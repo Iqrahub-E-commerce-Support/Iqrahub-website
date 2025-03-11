@@ -5,7 +5,7 @@ import { MdArrowForward } from "react-icons/md";
 
 const Intro = () => {
   return (
-    <div className="flex flex-wrap items-center justify-between h-auto md:h-screen ">
+    <div className="flex flex-wrap items-center justify-between h-auto md:h-full ">
       {/* Left Content */}
       <div className="w-full md:w-[50%] text-center md:text-left">
         <h3 className="xs:text-[14px] md:text-[24px] font-bold xs:mb-2 ">

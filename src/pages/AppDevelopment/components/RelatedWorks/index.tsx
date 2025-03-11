@@ -48,26 +48,28 @@ const RelatedWorks = () => {
 
   return (
     <>
+    <div className="xs:mx-6 sm:mx-7 md:mr-[100px] 4xl:container 4xl:mx-auto">
       <CustomizableHeaderContainer
         heading1="RELATED WORK"
         heading2="APP DESIGN & BUILD"
         subHeading="We artfully design and build unique, custom apps for brands and agencies that seek innovative and original solutions."
         button="All Projects"
       />
+    </div>
       <Swiper
         spaceBetween={20}
         breakpoints={{
           0: { slidesPerView: 1 },
           888: { slidesPerView: 2.3 },
-          900: { slidesPerView: 2.4 },
-          955: { slidesPerView: 2.5 },
+          900: { slidesPerView: 2.4},
+          928: { slidesPerView: 2.5 },
           988: { slidesPerView: 2.6 },
           1016: { slidesPerView: 2.7 },
-          1046: { slidesPerView: 2.8 },
-          1088: { slidesPerView: 2.9 },
-          1117: { slidesPerView: 3 },
-          1152: { slidesPerView: 3.1 },
-          1206: { slidesPerView: 3.2 },
+          1060: { slidesPerView: 2.8 },
+          1097: { slidesPerView: 2.9 },
+          1134: { slidesPerView: 3 },
+          1166: { slidesPerView: 3.1 },
+          1197: { slidesPerView: 3.2 },
           1226: { slidesPerView: 3.3 },
           1250: { slidesPerView: 3.4 },
           1300: { slidesPerView: 3.5 },
@@ -81,7 +83,12 @@ const RelatedWorks = () => {
           1595: { slidesPerView: 4.3 },
           1630: { slidesPerView: 4.4 },
           1665: { slidesPerView: 4.5 },
+          1678: { slidesPerView: 4.6 },
           1700: { slidesPerView: 4.8 },
+          1776: { slidesPerView: 4.9 },
+          1809: { slidesPerView: 5 },
+          1850: { slidesPerView: 5.1 },
+          // 1700: { slidesPerView: 5.1 },
         }}
         loop={true}
         autoplay={{
