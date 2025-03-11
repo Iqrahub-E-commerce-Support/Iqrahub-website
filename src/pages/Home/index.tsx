@@ -41,7 +41,7 @@ const Home = () => {
       <section className="xs:mt-[50px] sm:mt-[65px] md:mt-[491px] ">
         <Clients />
       </section>
-      <section className="relative xs:pt-8 md:pt-16 lg:pt-24 xl:pt-[140px] xs:mx-6 sm:mx-7 md:mx-[100px]  bg-cover ">
+      <section className="relative xs:pt-8 md:pt-16 lg:pt-24 xl:pt-[140px] xs:mx-6 sm:mx-7 md:mx-[100px] 4xl:container 4xl:mx-auto bg-cover ">
         <img
           src={caligraphy2}
           alt="Background"
@@ -49,13 +49,13 @@ const Home = () => {
         />
         <FeaturedService />
       </section>
-      <section className="xs:pt-0 sm:pt-4 md:pt-[102px] xs:mx-6  sm:mx-7 md:mx-0 ">
+      <section className="xs:pt-0 sm:pt-4 md:pt-[102px] xs:mx-6  4xl:container 4xl:mx-auto bg-cover">
         <WayOfExecution />
       </section>
-      <section className="xs:mt-6 md:mt-16 lg:mt-28 xl:mt-[120px] xs:mx-6 sm:mx-7   md:mx-[100px] 3xl:container 3xl:mx-auto">
+      <section className="xs:mt-6 md:mt-16 lg:mt-28 xl:mt-[120px] xs:mx-6 sm:mx-7   md:mx-[100px] 4xl:container 4xl:mx-auto">
         <Form />
       </section>
-      <section className="relative mt-16 lg:mt-20  xs:mx-6 sm:mx-7 md:mx-0 lg:mr-[100px] 3xl:container 3xl:mx-auto ">
+      <section className="relative mt-16 lg:mt-20  xs:mx-6 sm:mx-7 md:mx-0 lg:mr-[100px] 4xl:container 4xl:mx-auto ">
         <img
           src={cali}
           alt="Background"
@@ -63,10 +63,10 @@ const Home = () => {
         />
         <Testimonial />
       </section>
-      <section className="xs:mt-20 md:mt-16 lg:mt-20  xs:mx-6 sm:mx-7 md:mx-[100px] 3xl:container 3xl:mx-auto ">
+      <section className="xs:mt-20 md:mt-16 lg:mt-20  xs:mx-6 sm:mx-7 md:mx-[100px] 4xl:container 4xl:mx-auto ">
         <OurSuccess />
       </section>
-      <section className="xs:mt-14 sm:mt-20 md:mt-16 lg:mt-20  xs:mx-6 sm:mx-7 md:mx-[100px] 3xl:container 3xl:mx-auto ">
+      <section className="xs:mt-14 sm:mt-20 md:mt-16 lg:mt-20  xs:mx-6 sm:mx-7 md:mx-[100px] 4xl:container 4xl:mx-auto ">
         <Faq />
       </section>
     </>

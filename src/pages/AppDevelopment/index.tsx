@@ -12,13 +12,13 @@ const AppDevelopment = () => {
       >
         <ProjectHero />
       </section>
-      <section className="xs:-mt-[240px] sm:-mt-[260px] md:-mt-[420px] lg:-mt-[410px]  xl:-mt-[340px] 3xl:-mt-[280px] xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto">
+      <section className="xs:-mt-[240px] sm:-mt-[260px] md:-mt-[250px]  xs:mx-6 sm:mx-7 md:mx-[80px] lg:mx-[100px] 4xl:container 4xl:mx-auto">
         <Intro />
       </section>
-      <section className="xs:mt-[20px] sm:mt-[40px] md:-mt-[70px] xl:-mt-[50px] 2xl:mt-[20px] 3xl:mt-[20px]  xs:mx-6 sm:mx-7 md:mx-[100px] 3xl:container 3xl:mx-auto ">
+      <section className="xs:pt-[135px] sm:mt-[40px] md:-mt-[70px] xl:-mt-[50px] 2xl:mt-[20px] 3xl:mt-[20px]  xs:mx-6 sm:mx-7 md:mx-[100px] 4xl:container 4xl:mx-auto ">
         <Process />
       </section>
-      <section className="xs:mt-[80px] sm:mt-[60px] lg:mt-[71px] xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto ">
+      <section className="xs:pt-[0px] sm:mt-[60px] lg:mt-[71px] xs:mx-6 sm:mx-7 md:mx-0 md:ml-[100px] 4xl:container 4xl:mx-auto ">
         <RelatedWorks />
       </section>
     </>

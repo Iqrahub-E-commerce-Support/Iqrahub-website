@@ -8,21 +8,23 @@ import { motion, AnimatePresence } from "framer-motion";
 import sampleVideo from "@/assets/images/video/sample_vid.mp4";
 import CustomizableHeaderContainer from "@/components/CustomizableHeaderContainer";
 import ArrowIcon from "@/components/icons/ArrowIcon";
+import { ROUTES } from "@/app/resources/routes-constants";
+import { useNavigate } from "react-router-dom";
 // Sample videos (Replace with actual URLs)
 const videoList = [
-  { url: sampleVideo },
+  { url: sampleVideo,link:ROUTES.caseStudy },
   {
-    url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", link:ROUTES.almuqtadirCaseStudy
   },
-  { url: sampleVideo },
+  { url: sampleVideo,link:ROUTES.caseStudy },
   {
-    url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", link:ROUTES.almuqtadirCaseStudy
   },
-  { url: sampleVideo },
-
+  { url: sampleVideo,link:ROUTES.caseStudy },
   {
-    url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", link:ROUTES.almuqtadirCaseStudy
   },
+ 
 ];
 
 const VideoSection = () => {
@@ -30,7 +32,7 @@ const VideoSection = () => {
   const [playingIndex, setPlayingIndex] = useState<number | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const [isMobileView, setIsMobileView] = useState(false);
-
+  const navigate = useNavigate()
   // Detect screen size changes
   useEffect(() => {
     const checkScreenSize = () => setIsMobileView(window.innerWidth < 886);
@@ -77,7 +79,7 @@ const VideoSection = () => {
 
   return (
     <div className="relative w-full overflow-hidden my-10">
-      <div className="mr-16 mb-8">
+      <div className="mr-16 mb-8 ">
         <CustomizableHeaderContainer
           heading1="DISCOVER"
           heading2={`YOUR BRAND'S STORY`}
@@ -113,7 +115,7 @@ const VideoSection = () => {
           1595: { slidesPerView: 4.3 },
           1630: { slidesPerView: 4.4 },
           1665: { slidesPerView: 4.5 },
-          1700: { slidesPerView: 4.8 },
+          1700: { slidesPerView: 5.05},
         }}
         // slidesPerView={isMobileView ? 1 : 4.3}
         loop={true}
@@ -124,7 +126,7 @@ const VideoSection = () => {
         }}
         onSlideChange={handleSlideChange}
         modules={[Autoplay]}
-        className="w-full"
+        className="w-full "
       >
         {videoList.map((videoItem, index) => {
           const size = getSlideSize(index);
@@ -132,7 +134,7 @@ const VideoSection = () => {
             <SwiperSlide
               key={index}
               style={{ width: size.width }}
-              className="flex justify-center flex-shrink-0 "
+              className="flex justify-center flex-shrink-0  "
             >
               <motion.div
                 className="relative border-2 rounded-lg  flex-shrink-0"
@@ -153,10 +155,10 @@ const VideoSection = () => {
                   playsInline
                 />
                 <div className="absolute inset-0 flex items-start justify-between text-white z-30 p-4 h-0">
-                  <button className="bg-white text-black px-3 py-1 rounded-full cursor-pointer">
+                  <button onClick={()=>navigate(videoItem.link)} className="bg-white text-black px-3 py-1 rounded-full cursor-pointer">
                     View Project
                   </button>
-                  <div className="cursor-pointer">
+                  <div onClick={()=>navigate(videoItem.link)} className="cursor-pointer">
                     <ArrowIcon />
                   </div>
                 </div>
