@@ -8,12 +8,12 @@ const TechSerivces = () => {
   return (
     <>
       <section
-        className="xs:h-[380px] md:h-[550px] bg-center  flex flex-col xs:justify-start sm:justify-start items-center gap-9 xs:pt-[11%]  sm:pt-[5%]"
+        className="xs:h-[380px] md:h-[550px] 3xl:h-[630px] xs:bg-top sm:bg-center bg-no-repeat  flex flex-col xs:justify-start sm:justify-start items-center gap-9 xs:pt-[11%]  sm:pt-[5%]"
         style={{ backgroundImage: `url(${bg}) ` }}
       >
         <ProjectHero />
       </section>
-      <section className="xs:-mt-7  md:-mt-[130px] xs:mx-6 sm:mx-7 md:mx-[25px] 3xl:container 3xl:mx-auto">
+      <section className="xs:-mt-7  md:-mt-[130px] 3xl:-mt-[150px] xs:mx-6 sm:mx-7 md:mx-[25px] 3xl:container 3xl:mx-auto">
         <Processes />
       </section>
       <section className="relative xs:mt-[60px] sm:mt-[70px] md:mt-[150px]  xs:mx-6 sm:mx-7 md:mx-[25px] 3xl:container 3xl:mx-auto ">

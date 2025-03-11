@@ -8,6 +8,9 @@ import projectimg from "@/assets/images/Projects/Projects1.png";
 import employee1 from "@/assets/images/Projects/employee1.png";
 import employee2 from "@/assets/images/Projects/employee2.png";
 import employee3 from "@/assets/images/Projects/employee3.png";
+import { ROUTES } from "@/app/resources/routes-constants";
+import Button from "@/components/Button";
+import { useNavigate } from "react-router-dom";
 
 const Projects = () => {
   // Array of objects to hold the dynamic data for projects
@@ -19,6 +22,7 @@ const Projects = () => {
         {
           projectImg: projectimg,
           category: "Production House",
+          link: ROUTES.almuqtadirCaseStudy,
           heading: {
             first: "IQRAHUB",
             second: "MEDIA STORY",
@@ -43,33 +47,33 @@ const Projects = () => {
             },
           ],
         },
-        {
-          projectImg: projectimg,
-          category: "Production House",
-          heading: {
-            first: "IQRAHUB",
-            second: "MEDIA STORY",
-          },
-          description:
-            "“Improving the quality of our mitochondria helps us live healthier and longer lives. Improving the quality of our mitochondria helps us live healthier and longer lives.”",
-          team: [
-            {
-              name: "Jack Peet",
-              role: "(Project Manager)",
-              image: employee1,
-            },
-            {
-              name: "Smith Watch",
-              role: "(Web Developer)",
-              image: employee2,
-            },
-            {
-              name: "Jhon Doe",
-              role: "(UI/UX Designer)",
-              image: employee3,
-            },
-          ],
-        },
+        // {
+        //   projectImg: projectimg,
+        //   category: "Production House",
+        //   heading: {
+        //     first: "IQRAHUB",
+        //     second: "MEDIA STORY",
+        //   },
+        //   description:
+        //     "“Improving the quality of our mitochondria helps us live healthier and longer lives. Improving the quality of our mitochondria helps us live healthier and longer lives.”",
+        //   team: [
+        //     {
+        //       name: "Jack Peet",
+        //       role: "(Project Manager)",
+        //       image: employee1,
+        //     },
+        //     {
+        //       name: "Smith Watch",
+        //       role: "(Web Developer)",
+        //       image: employee2,
+        //     },
+        //     {
+        //       name: "Jhon Doe",
+        //       role: "(UI/UX Designer)",
+        //       image: employee3,
+        //     },
+        //   ],
+        // },
         // You can add more slides for this project here if needed.
       ],
     },
@@ -80,6 +84,7 @@ const Projects = () => {
         {
           projectImg: projectimg,
           category: "Production House",
+          link:"#",
           heading: {
             first: "LA-CA",
             second: "BITE CATALOGUE",
@@ -107,7 +112,7 @@ const Projects = () => {
       ],
     },
   ];
-
+const navigate = useNavigate()
   return (
     <>
       <div className="sm:flex flex-col xs:items-start sm:items-center">
@@ -198,6 +203,9 @@ const Projects = () => {
                             </div>
                           ))}
                         </div>
+                        <Button variant="contained" style="mt-[37px]" onClick={()=>navigate(slide.link)}>
+                          View Project
+                        </Button>
                       </div>
                     </div>
                   </SwiperSlide>
