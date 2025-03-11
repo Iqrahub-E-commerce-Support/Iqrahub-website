@@ -7,12 +7,12 @@ const AppDevelopment = () => {
   return (
     <>
       <section
-        className="xs:h-[450px] sm:h-[550px] lg:h-[450px] bg-center  flex flex-col xs:justify-start sm:justify-start items-center gap-9 xs:pt-[15%]  sm:pt-[5%]  3xl:container 3xl:mx-auto "
+        className="xs:h-[620px]  3xl:h-[620px] xs:bg-top sm:bg-center bg-no-repeat  flex flex-col xs:justify-start sm:justify-start items-center gap-9 xs:pt-[15%]  sm:pt-[5%]  4xl:container 4xl:mx-auto "
         style={{ backgroundImage: `url(${bg}) ` }}
       >
         <ProjectHero />
       </section>
-      <section className="xs:-mt-[7rem] sm:-mt-[210px] md:-mt-[350px] lg:-mt-[200px]  xl:-mt-[140px] xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto">
+      <section className="xs:-mt-[240px] sm:-mt-[260px] md:-mt-[420px] lg:-mt-[410px]  xl:-mt-[340px] 3xl:-mt-[280px] xs:mx-6 sm:mx-7 md:mx-16 3xl:container 3xl:mx-auto">
         <Intro />
       </section>
       <section className="xs:mt-[20px] sm:mt-[40px] md:-mt-[70px] xl:-mt-[50px] 2xl:mt-[20px] 3xl:mt-[20px]  xs:mx-6 sm:mx-7 md:mx-[100px] 3xl:container 3xl:mx-auto ">

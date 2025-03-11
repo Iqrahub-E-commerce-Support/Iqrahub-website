@@ -14,7 +14,7 @@ const Intro = () => {
         <CustomizableHeading
           firstTxt="MOBILE"
           secondTxt="EXPERIENCES"
-          MainStyle="xs:text-[40px] sm:text-[48px] md:text-[57px] font-black xs:leading-[50px]  "
+          MainStyle="xs:text-[40px] sm:text-[48px] md:text-[57px] font-black xs:leading-[50px] md:leading-[50px]  "
           SpecialCharacterStyle="font-black text-yellow"
         />
         <p className="w-full md:w-[70%] mt-6 font-extralight text-sm md:text-base mx-auto md:mx-0">

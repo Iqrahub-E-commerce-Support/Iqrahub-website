@@ -107,6 +107,7 @@ export default {
       xl: "1280px",
       "2xl": "1536px",
       "3xl": "1700px",
+      "4xl":"2000px"
     },
   },
   plugins: [require("tailwind-scrollbar"), require("tailwindcss-animate")],

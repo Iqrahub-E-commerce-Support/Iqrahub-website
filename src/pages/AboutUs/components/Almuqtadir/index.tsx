@@ -33,26 +33,25 @@ const Almuqtadir = () => {
           <CustomizableHeading
             firstTxt="Muqtadir"
             secondTxt="Jewelry"
-            MainStyle="md:text-[48px] text-yellow uppercase z-20"
+            MainStyle="md:text-[48px] text-yellow uppercase md:leading-[48px]  z-20"
             SpecialCharacterStyle="text-white font-thin"
           />
-          <p className="text-[18px] mt-[10px]">
+          <p className="xs:text-[14px] text-[18px] mt-[10px] sm:w-[400px] md:w-full">
             Al Muqtadir Jewelry grew from one to seven showrooms (2020–2022),
-            building a strong market <br /> presence and loyal customers. Its 0%
+            building a strong market <br  className="xs:hidden md:block" /> presence and loyal customers. Its 0%
             making charge and advance booking offers drew crowds.
           </p>
         </div>
-        <div className="-mt-[39px]">
-          <p className="text-end text-[24px] font-black mb-[39px]">2019</p>
-          <CustomizableHeading
-            firstTxt="2019-2022"
-            secondTxt=""
-            MainStyle="md:text-[48px] text-yellow uppercase"
-            SpecialCharacterStyle="text-white font-thin"
-          />
-        </div>
+
+        {/* <p className="text-end text-[24px] font-black mb-[39px]">2019</p> */}
+        <CustomizableHeading
+          firstTxt="2019-2022"
+          secondTxt=""
+          MainStyle="md:text-[48px] text-yellow uppercase"
+          SpecialCharacterStyle="text-white font-thin"
+        />
       </div>
-      <div className="flex justify-start mt-[77px] gap-[33px]">
+      <div className=" md:flex justify-start xs:mt-[50px]  md:mt-[77px] gap-[33px]">
         <div className="z-30">
           <p className="text-24px">Market Insight</p>
           <div className="border-yellow border-2 w-[200px] mt-[15px] " />
@@ -68,23 +67,23 @@ const Almuqtadir = () => {
             </div>
           ))} */}
           <div className="flex gap-[34px] items-center mt-[23px]">
-            <div className="h-[100px] w-[384px] bg-gradient-to-r from-yellow via-yellow-opacity0.8 to-red"/>
+            <div className="h-[100px] w-[384px] bg-gradient-to-r from-yellow via-yellow-opacity0.8 to-red" />
             <p className="text-[36px]">90 %</p>
           </div>
           <div className="flex gap-[34px] items-center mt-[23px] opacity-80">
-            <div className="h-[100px] w-[252px] bg-gradient-to-r from-yellow via-yellow-opacity0.8 to-red"/>
+            <div className="h-[100px] w-[252px] bg-gradient-to-r from-yellow via-yellow-opacity0.8 to-red" />
             <p className="text-[36px]">42 %</p>
           </div>
           <div className="flex gap-[34px] items-center mt-[23px] opacity-40">
-            <div className="h-[100px] w-[138px] bg-gradient-to-r from-yellow via-yellow-opacity0.8 to-red"/>
+            <div className="h-[100px] w-[138px] bg-gradient-to-r from-yellow via-yellow-opacity0.8 to-red" />
             <p className="text-[36px]">12 %</p>
           </div>
         </div>
-        <div className="grid grid-rows-2 gap-[16px] z-30">
+        <div className="grid grid-rows-2 gap-[16px] z-30 xs:mt-[23px] md:mt-0">
           {revenueData.map(({ amount, description }, index) => (
             <div
               key={index}
-              className="glassy-bg flex flex-col justify-center items-center border-2 rounded-[20px] p-[28px] w-[345px]"
+              className="glassy-bg flex flex-col justify-center items-center border-2 rounded-[20px] p-[28px] md:w-[345px] 2xl:w-[445px]"
             >
               <h6 className="font-black text-[104px] capitalize">{amount}</h6>
               <p className="text-[16px] text-[#979797] capitalize text-center">
@@ -94,9 +93,9 @@ const Almuqtadir = () => {
           ))}
         </div>
       </div>
-      <div className="flex justify-end mt-[37px]">
+      {/* <div className="flex justify-end mt-[37px]">
         <p className="font-black text-[24px]">2023-2024</p>
-      </div>
+      </div> */}
     </>
   );
 };

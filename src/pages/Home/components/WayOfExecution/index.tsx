@@ -10,13 +10,15 @@ import Heading from "@/components/Heading";
 import StarIcon from "@/components/icons/StarIcon";
 import sampleVideo from "@/assets/images/video/sample_vid.mp4";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "@/app/resources/routes-constants";
 
 const WayOfExecution = () => {
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
   const [playingIndex, setPlayingIndex] = useState<number | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const [isMobileView, setIsMobileView] = useState(false);
-
+  const navigate = useNavigate()
   // Check screen size on mount and resize
   useEffect(() => {
     const checkScreenSize = () => {
@@ -110,7 +112,7 @@ const WayOfExecution = () => {
   const renderVideoSlide = (videoItem: { url: string }, index: number) => {
     const size = getSlideSize(index);
     const isCurrent = index === activeIndex;
-
+   
     // Simple version for mobile/tablet
     if (isMobileView) {
       return (
@@ -229,7 +231,7 @@ const WayOfExecution = () => {
           We empower businesses with branding solutions that resonate and
           inspire, helping you stand out in a competitive world.
         </p>
-        <GradientButton className="transition-transform duration-300 hover:scale-105">
+        <GradientButton onClick={()=>navigate(ROUTES.mediaStory)} className="transition-transform duration-300 hover:scale-105">
           Get in Touch{" "}
           <MdArrowForward className="transition-transform duration-300 group-hover:translate-x-1" />
         </GradientButton>
