@@ -7,15 +7,37 @@ import Projects from "./components/Projects";
 import Team from "./components/Team";
 
 const AboutUs = () => {
-  const [firstRef, firstInView] = useInView({ threshold: 0.1, triggerOnce: false });
-  const [secondRef, secondInView] = useInView({ threshold: 0.2, triggerOnce: false });
-  const [thirdRef, thirdInView] = useInView({ threshold: 0.2, triggerOnce: false });
-  const [fourthRef, fourthInView] = useInView({ threshold: 0.1, triggerOnce: false });
+  const [firstRef, firstInView] = useInView({
+    threshold: 0.1,
+    triggerOnce: false,
+  });
+  const [secondRef, secondInView] = useInView({
+    threshold: 0.2,
+    triggerOnce: false,
+  });
+  const [thirdRef, thirdInView] = useInView({
+    threshold: 0.2,
+    triggerOnce: false,
+  });
+  const [fourthRef, fourthInView] = useInView({
+    threshold: 0.1,
+    triggerOnce: false,
+  });
 
   const sectionVariants = {
     hidden: { opacity: 0, y: 100, scale: 0.9 },
-    visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: "easeOut" } },
-    exit: { opacity: 0, y: -100, scale: 0.9, transition: { duration: 0.3, ease: "easeIn" } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
+    exit: {
+      opacity: 0,
+      y: -100,
+      scale: 0.9,
+      transition: { duration: 0.3, ease: "easeIn" },
+    },
   };
 
   return (

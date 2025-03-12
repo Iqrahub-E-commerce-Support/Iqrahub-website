@@ -27,7 +27,8 @@ const IqrahubStory = () => {
           />
           <p className="xs:text-[14px] text-[18px] mt-[10px] ">
             Unleash Your Brand's Storytelling Potential with Iqrahub Story Media
-            - The Ultimate  <br className="xs:hidden sm:block" /> Marketing and Production Solution!"
+            - The Ultimate <br className="xs:hidden sm:block" /> Marketing and
+            Production Solution!"
           </p>
         </div>
         <div>

@@ -6,7 +6,7 @@ interface ButtonProps {
 }
 
 const Button = (props: ButtonProps) => {
-  const { children, style = "", variant,onClick } = props;
+  const { children, style = "", variant, onClick } = props;
   const defaultStyles = "px-7 py-2 rounded-3xl text-white";
   const contained = "px-7 py-2 rounded-3xl bg-white text-black";
   const outlined = "border px-7 py-2 rounded-3xl";
@@ -20,7 +20,11 @@ const Button = (props: ButtonProps) => {
           ? rounded
           : defaultStyles;
   return (
-    <button onClick={onClick} type="button" className={`${variantStyle} ${style}`}>
+    <button
+      onClick={onClick}
+      type="button"
+      className={`${variantStyle} ${style}`}
+    >
       <div className="flex gap-2 items-center">{children}</div>
     </button>
   );

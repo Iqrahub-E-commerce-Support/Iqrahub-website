@@ -245,7 +245,7 @@ const Team = () => {
             <div className="py-[22px] xs:flex sm:block md:place-self-center xl:place-self-start flex-col items-center">
               <h5 className="text-[18px] font-bold">Muhammed Sufiyan</h5>
               <h6 className="text-[14px] text-yellow capitalize mt-1">
-                Junior Video Editor 
+                Junior Video Editor
               </h6>
               <p className="2xl:mr-[42px] xs:mx-3 sm:mx-0 mt-[12px] xs:text-center sm:text-start ">
                 Hands-on editing while developing technical skills and

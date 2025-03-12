@@ -12,21 +12,21 @@ const FeaturedService = () => {
       heading: "Story Media Services",
       subHeading:
         "We’re a small but passionate team with a broad range of skills and experience. We believe in the power of creativity to solve complex problems.",
-        link:ROUTES.mediaStory
+      link: ROUTES.mediaStory,
     },
     {
       icon: <ServiceIcon width={70} height={70} />,
       heading: "Tech Services",
       subHeading:
         "Physical, digital, meta-physical – We’ll find a creative solution for all your business problems.",
-        link:`${ROUTES.techServices}${ROUTES.webdesign}`
+      link: `${ROUTES.techServices}${ROUTES.webdesign}`,
     },
   ];
-  const navigate:any = useNavigate()
-  const handlenavigate = (link:string)=>{
-    console.log(link)
+  const navigate: any = useNavigate();
+  const handlenavigate = (link: string) => {
+    console.log(link);
     navigate(link);
-  }
+  };
   return (
     <div>
       <div className="flex justify-between items-center">
@@ -41,7 +41,7 @@ const FeaturedService = () => {
             <div
               key={index}
               className="glassy-bg flex flex-col justify-between gap-10 border-2 transform transition-all duration-300 rounded-xl cursor-pointer px-6 py-[30px] relative overflow-hidden hover:bg-gradient-to-tl from-yellow-opacity0.2 to-transparent  "
-              onClick={()=>handlenavigate(service.link)}
+              onClick={() => handlenavigate(service.link)}
             >
               <div className="flex justify-between relative z-10 ">
                 {service.icon}
