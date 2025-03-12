@@ -12,19 +12,21 @@ import { ROUTES } from "@/app/resources/routes-constants";
 import { useNavigate } from "react-router-dom";
 // Sample videos (Replace with actual URLs)
 const videoList = [
-  { url: sampleVideo,link:ROUTES.caseStudy },
+  { url: sampleVideo, link: ROUTES.caseStudy },
   {
-    url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", link:ROUTES.almuqtadirCaseStudy
+    url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    link: ROUTES.almuqtadirCaseStudy,
   },
-  { url: sampleVideo,link:ROUTES.caseStudy },
+  { url: sampleVideo, link: ROUTES.caseStudy },
   {
-    url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", link:ROUTES.almuqtadirCaseStudy
+    url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    link: ROUTES.almuqtadirCaseStudy,
   },
-  { url: sampleVideo,link:ROUTES.caseStudy },
+  { url: sampleVideo, link: ROUTES.caseStudy },
   {
-    url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", link:ROUTES.almuqtadirCaseStudy
+    url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    link: ROUTES.almuqtadirCaseStudy,
   },
- 
 ];
 
 const VideoSection = () => {
@@ -32,7 +34,7 @@ const VideoSection = () => {
   const [playingIndex, setPlayingIndex] = useState<number | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const [isMobileView, setIsMobileView] = useState(false);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   // Detect screen size changes
   useEffect(() => {
     const checkScreenSize = () => setIsMobileView(window.innerWidth < 886);
@@ -85,7 +87,7 @@ const VideoSection = () => {
           heading2={`YOUR BRAND'S STORY`}
           subHeading="We artfully craft highly creative, one of a kind work, for brands and
                     agencies that strive for ownableoriginality."
-          button="All Projects"
+          // button="All Projects"
         />
       </div>
       <Swiper
@@ -115,7 +117,7 @@ const VideoSection = () => {
           1595: { slidesPerView: 4.3 },
           1630: { slidesPerView: 4.4 },
           1665: { slidesPerView: 4.5 },
-          1700: { slidesPerView: 5.05},
+          1700: { slidesPerView: 5.05 },
         }}
         // slidesPerView={isMobileView ? 1 : 4.3}
         loop={true}
@@ -155,10 +157,16 @@ const VideoSection = () => {
                   playsInline
                 />
                 <div className="absolute inset-0 flex items-start justify-between text-white z-30 p-4 h-0">
-                  <button onClick={()=>navigate(videoItem.link)} className="bg-white text-black px-3 py-1 rounded-full cursor-pointer">
+                  <button
+                    onClick={() => navigate(videoItem.link)}
+                    className="bg-white text-black px-3 py-1 rounded-full cursor-pointer"
+                  >
                     View Project
                   </button>
-                  <div onClick={()=>navigate(videoItem.link)} className="cursor-pointer">
+                  <div
+                    onClick={() => navigate(videoItem.link)}
+                    className="cursor-pointer"
+                  >
                     <ArrowIcon />
                   </div>
                 </div>

@@ -38,8 +38,9 @@ const Almuqtadir = () => {
           />
           <p className="xs:text-[14px] text-[18px] mt-[10px] sm:w-[400px] md:w-full">
             Al Muqtadir Jewelry grew from one to seven showrooms (2020–2022),
-            building a strong market <br  className="xs:hidden md:block" /> presence and loyal customers. Its 0%
-            making charge and advance booking offers drew crowds.
+            building a strong market <br className="xs:hidden md:block" />{" "}
+            presence and loyal customers. Its 0% making charge and advance
+            booking offers drew crowds.
           </p>
         </div>
 

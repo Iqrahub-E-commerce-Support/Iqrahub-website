@@ -3,7 +3,9 @@ import Hero from "./components/Hero";
 import CustomizedVideoWithFrame from "@/components/CustomizedVideoWithFrame";
 import StorySection from "./components/StorySection";
 import VideoSection from "./components/VideoSection";
+import useSmoothScrollUp from "@/hooks/useSmoothScrollUP";
 const MediaStory = () => {
+  useSmoothScrollUp();
   return (
     <>
       <section

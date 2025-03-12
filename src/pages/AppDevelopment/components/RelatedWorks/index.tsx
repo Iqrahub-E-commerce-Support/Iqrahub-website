@@ -48,20 +48,20 @@ const RelatedWorks = () => {
 
   return (
     <>
-    <div className="xs:mx-6 sm:mx-7 md:mr-[100px] 4xl:container 4xl:mx-auto">
-      <CustomizableHeaderContainer
-        heading1="RELATED WORK"
-        heading2="APP DESIGN & BUILD"
-        subHeading="We artfully design and build unique, custom apps for brands and agencies that seek innovative and original solutions."
-        button="All Projects"
-      />
-    </div>
+      <div className="xs:mx-6 sm:mx-7 md:mr-[100px] 4xl:container 4xl:mx-auto">
+        <CustomizableHeaderContainer
+          heading1="RELATED WORK"
+          heading2="APP DESIGN & BUILD"
+          subHeading="We artfully design and build unique, custom apps for brands and agencies that seek innovative and original solutions."
+          button="All Projects"
+        />
+      </div>
       <Swiper
         spaceBetween={20}
         breakpoints={{
           0: { slidesPerView: 1 },
           888: { slidesPerView: 2.3 },
-          900: { slidesPerView: 2.4},
+          900: { slidesPerView: 2.4 },
           928: { slidesPerView: 2.5 },
           988: { slidesPerView: 2.6 },
           1016: { slidesPerView: 2.7 },

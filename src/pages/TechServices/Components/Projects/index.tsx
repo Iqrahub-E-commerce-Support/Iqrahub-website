@@ -84,7 +84,7 @@ const Projects = () => {
         {
           projectImg: projectimg,
           category: "Production House",
-          link:"#",
+          link: "#",
           heading: {
             first: "LA-CA",
             second: "BITE CATALOGUE",
@@ -112,7 +112,7 @@ const Projects = () => {
       ],
     },
   ];
-const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <>
       <div className="sm:flex flex-col xs:items-start sm:items-center">
@@ -203,7 +203,11 @@ const navigate = useNavigate()
                             </div>
                           ))}
                         </div>
-                        <Button variant="contained" style="mt-[37px]" onClick={()=>navigate(slide.link)}>
+                        <Button
+                          variant="contained"
+                          style="mt-[37px]"
+                          onClick={() => navigate(slide.link)}
+                        >
                           View Project
                         </Button>
                       </div>

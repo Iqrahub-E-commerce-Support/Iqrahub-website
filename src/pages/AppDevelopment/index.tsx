@@ -3,7 +3,9 @@ import bg from "@/assets/images/caligraphy.png";
 import Intro from "./components/Intro";
 import Process from "./components/Process";
 import RelatedWorks from "./components/RelatedWorks";
+import useSmoothScrollUp from "@/hooks/useSmoothScrollUP";
 const AppDevelopment = () => {
+  useSmoothScrollUp();
   return (
     <>
       <section

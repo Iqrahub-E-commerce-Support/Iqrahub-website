@@ -10,6 +10,7 @@ import story4 from "@/assets/images/story/story4.jpg";
 import ProcessStepCard from "../ProcessStepCard";
 
 import ImageCard from "../ImageCard";
+import { ROUTES } from "@/app/resources/routes-constants";
 const StorySection = () => {
   // Process steps data
   const processSteps = [
@@ -58,12 +59,13 @@ const StorySection = () => {
         heading2="YOUR STORY"
         subHeading="Our innovative approach takes your narrative to new heights, engaging audiences like never before."
         button="View Project"
+        link={ROUTES.almuqtadirCaseStudy}
       />
 
       <div className="xs:mt-[50px] md:mt-[75px]">
         <div className="grid grid-cols-1 lg:grid-rows-2 gap-6">
           {/* First row */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1  lg:grid-cols-3 gap-6">
             {/* First column */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 grid-rows-1 lg:grid-rows-2 gap-6">
               <ProcessStepCard {...processSteps[0]} />

@@ -9,11 +9,13 @@ import VideoSection from "./components/VideoSection";
 import Impact from "./components/Impact";
 import OverView from "./components/OverView";
 import CustomerReview from "./components/CustomerReview";
+import useSmoothScrollUp from "@/hooks/useSmoothScrollUP";
 const AlmuqtadirCaseStudy = () => {
+  useSmoothScrollUp();
   return (
     <>
       <section
-        className="xs:h-full sm:h-full xs:bg-cover sm:bg-cover     xs:pt-[13%] sm:pt-[5%] lg:pt-[8%] xl:pt-[5%]  "
+        className="xs:h-full sm:h-full xs:bg-cover sm:bg-cover     xs:pt-[13%] sm:pt-[5%] lg:pt-[8%] xl:pt-[5%]  4xl:container 4xl:mx-auto"
         style={{ backgroundImage: `url(${bg})` }}
       >
         <Hero />
