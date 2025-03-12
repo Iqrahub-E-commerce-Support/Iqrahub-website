@@ -14,7 +14,9 @@ import Testimonial from "./components/Testimonial";
 import OurSuccess from "./components/OurSuccess";
 import Faq from "@/components/Faq";
 import caligraphy2 from "@/assets/images/calligraphy2.png";
+import useSmoothScrollUp from "@/hooks/useSmoothScrollUP";
 const Home = () => {
+  useSmoothScrollUp();
   return (
     <>
       <section

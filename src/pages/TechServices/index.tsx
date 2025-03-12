@@ -4,7 +4,9 @@ import VideoSection from "./Components/VIdeoSection";
 import Projects from "./Components/Projects";
 import ProjectHero from "@/components/ProjectHero";
 import caligraphy2 from "@/assets/images/techservicesCali.png";
+import useSmoothScrollUp from "@/hooks/useSmoothScrollUP";
 const TechSerivces = () => {
+  useSmoothScrollUp();
   return (
     <>
       <section

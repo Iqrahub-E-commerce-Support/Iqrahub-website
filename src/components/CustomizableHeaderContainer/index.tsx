@@ -1,18 +1,21 @@
 import CustomizableHeading from "../CustomizableHeading";
 import Button from "../Button";
 import { ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 interface CustomizableHeaderContainerProps {
   heading1?: string;
   heading2?: string;
   subHeading?: string;
   button?: string;
+  link?: any;
 }
 
 const CustomizableHeaderContainer = (
   props: CustomizableHeaderContainerProps,
 ) => {
-  const { heading1, heading2, subHeading, button } = props;
+  const { heading1, heading2, subHeading, button, link } = props;
+  const navigate = useNavigate();
   return (
     <>
       <div className="flex flex-wrap justify-between items-end">
@@ -27,9 +30,15 @@ const CustomizableHeaderContainer = (
             {subHeading}
           </p>
         </div>
-        <Button style="xs:mt-8  xl:mt-0 " variant="contained">
-          {button} <ArrowRight />
-        </Button>
+        {button && (
+          <Button
+            onClick={() => navigate(link)}
+            style="xs:mt-8  xl:mt-0 "
+            variant="contained"
+          >
+            {button} <ArrowRight />
+          </Button>
+        )}
       </div>
     </>
   );

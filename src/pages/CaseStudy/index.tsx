@@ -10,7 +10,9 @@ import KeyInsights from "./components/KeyInsights";
 import Solutions from "./components/Solutions";
 import VideoSection from "./components/VideoSection";
 import Conclusion from "./components/Conclusion";
+import useSmoothScrollUp from "@/hooks/useSmoothScrollUP";
 const CaseStudy = () => {
+  useSmoothScrollUp();
   return (
     <>
       <section

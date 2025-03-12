@@ -87,7 +87,7 @@ const VideoSection = () => {
           heading2={`YOUR BRAND'S STORY`}
           subHeading="We artfully craft highly creative, one of a kind work, for brands and
                     agencies that strive for ownableoriginality."
-          button="All Projects"
+          // button="All Projects"
         />
       </div>
       <Swiper

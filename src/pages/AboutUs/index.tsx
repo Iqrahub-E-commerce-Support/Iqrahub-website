@@ -5,6 +5,7 @@ import Almuqtadir from "./components/Almuqtadir";
 import almuqtadir from "@/assets/images/aboutus/almuqtadir.png";
 import Projects from "./components/Projects";
 import Team from "./components/Team";
+import useSmoothScrollUp from "@/hooks/useSmoothScrollUP";
 
 const AboutUs = () => {
   const [firstRef, firstInView] = useInView({
@@ -39,7 +40,7 @@ const AboutUs = () => {
       transition: { duration: 0.3, ease: "easeIn" },
     },
   };
-
+  useSmoothScrollUp();
   return (
     <>
       {/* First Section - Hide when second section appears */}
